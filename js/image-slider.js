@@ -158,6 +158,20 @@ function init(){
     // make each photo swipeable 
     var swipe = Draggable.create($(".project img"), {
       type: "x",
+      lockAxis : true ,
+      trigger:$(".project img"),
+      // fire setSwipe when swipe finished
+      onDragEnd:function(){
+        console.log( this.getDirection("start") );
+        /*const nextStep = wrapper(currentStep+1);
+        !isTweening() && transition('next', nextStep);
+        TweenLite.to(this.target,1,{ x:this.lastX , y:this.lastY });*/
+      }
+    });
+
+    // make each photo swipeable 
+    /*var swipe = Draggable.create($(".project img"), {
+      type: "x",
       throwProps: true,
       // fire setSwipe when swipe finished
       onPress:function(){
@@ -169,7 +183,7 @@ function init(){
         !isTweening() && transition('next', nextStep);
         TweenLite.to(this.target,1,{ x:this.lastX , y:this.lastY }); 
       }
-    });
+    });*/
 }
 
 // changed so script runs after DOM is loaded
