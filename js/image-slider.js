@@ -145,15 +145,31 @@ function init(){
 
     document.querySelector('button.next').addEventListener('click', function(e) {
         e.preventDefault();
-        const nextStep = wrapper(currentStep+1)
-        !isTweening() && transition('next', nextStep)
+        const nextStep = wrapper(currentStep+1);
+        !isTweening() && transition('next', nextStep);
     })
 
     document.querySelector('button.prev').addEventListener('click', function(e) {
-        e.preventDefault()
-        const prevStep = wrapper(currentStep-1)
-        !isTweening() && transition('prev', prevStep)
+        e.preventDefault();
+        const prevStep = wrapper(currentStep-1);
+        !isTweening() && transition('prev', prevStep);
     })
+
+    // make each photo swipeable 
+    var swipe = Draggable.create($(".project img"), {
+      type: "x",
+      throwProps: true,
+      // fire setSwipe when swipe finished
+      onPress:function(){
+        this.lastX = this.x;
+        this.lastY = this.y; 
+      },
+      onDragEnd:function(){
+        const nextStep = wrapper(currentStep+1);
+        !isTweening() && transition('next', nextStep);
+        TweenLite.to(this.target,1,{ x:this.lastX , y:this.lastY }); 
+      }
+    });
 }
 
 // changed so script runs after DOM is loaded
