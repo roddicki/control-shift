@@ -21,7 +21,7 @@
                 "filterType": "watchlisten"
             },
             "image": {
-                "url": "interwave_thumb.jpg",
+                "url": "interwave_thumb.png",
                 "alt": "Image showing the Interwave theme - womxn at work and relaxing"
             },
             "sliderImages": [
@@ -66,7 +66,7 @@
                 "filterType": "exhibition"
             },
             "image": {
-                "url": "face-on_thumb.jpg",
+                "url": "face-on_thumb.png",
                 "alt": "Image of Rachel's face mixed with Arnold Schwarzenegger"
             },
             "sliderImages": [
@@ -148,7 +148,7 @@
                 "actionLink": "http://perspectivesonvisibility.com"
             },
             "image": {
-                "url": "persp-visibility_thumb.jpg",
+                "url": "persp-visibility_thumb.png",
                 "alt": "Proxy user with phone strapped to  chest. The phone has an image of a face on it"
             },
             "sliderImages": [
@@ -198,7 +198,7 @@
                 "actionLink": "https://www.knitwitter.com/"
             },
             "image": {
-                "url": "knitwitter_thumb.jpg",
+                "url": "knitwitter_thumb.png",
                 "alt": "Digital knitting pattern"
             },
             "sliderImages": [
@@ -314,7 +314,7 @@
                 "filterType": "watchlisten event"
             },
             "image": {
-                "url": "indig-entanglements_thumb.jpg",
+                "url": "indig-entanglements_thumb.png",
                 "alt": "Man and digital hard drive"
             },
             "sliderImages": [
@@ -558,7 +558,7 @@
                 "filterType": "event"
             },
             "image": {
-                "url": "this-city-is_thumb.jpg",
+                "url": "this-city-is_thumb.png",
                 "alt": "animated updates describing this city"
             },
             "sliderImages": [
@@ -778,7 +778,7 @@
                 "filterType": "workshop"
             },
             "image": {
-                "url": "oracle-bot_thumb.jpg",
+                "url": "oracle-bot_thumb.png",
                 "alt": "image of robot in blue on pink and black background"
             },
             "sliderImages": [
@@ -830,7 +830,7 @@
                 "filterType": "event"
             },
             "image": {
-                "url": "deep-listening_thumb.jpg",
+                "url": "deep-listening_thumb.png",
                 "alt": "photo of Kathy Hinde exploring underwater perspectives"
             },
             "sliderImages": [
@@ -916,7 +916,7 @@
                 "filterType": "event"
             },
             "image": {
-                "url": "maps-of-cons_thumb.jpg",
+                "url": "maps-of-cons_thumb.png",
                 "alt": "Group of people looking at maps"
             },
             "sliderImages": [
@@ -1134,7 +1134,7 @@
                 "filterType": "workshop"
             },
             "image": {
-                "url": "robots-with-pens_thumb.jpg",
+                "url": "robots-with-pens_thumb.png",
                 "alt": "a pen plotter drawing a red wave"
             },
             "sliderImages": [
@@ -1385,7 +1385,7 @@
                 "filterType": "workshop"
             },
             "image": {
-                "url": "art-code-fruit_thumb.jpg",
+                "url": "art-code_thumb.png",
                 "alt": "two digital hand made drawings"
             },
              "sliderImages": [
