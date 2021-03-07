@@ -1,9 +1,208 @@
 [
+  {
+      "id": 11,
+      "artist": {
+          "name": "DANAE and Annika Kappner",
+          "bio_100w": ["<a href = 'https://digitalwitchcraft.works/Institute' target='_blank'>DANAE</a> is a Chilean working-class feminist writer, multimedia artist and technologist based in Rotterdam. She is a lecturer of Hacking and Autonomous Practices at the Willem de Kooning Academy in Rotterdam and the founder of The Digital Witchcraft Institute, an artistic-research organization that develops advanced and non-conforming digital technologies for posthuman futures. In the past, Danae has been a fellow of the Mozilla Foundation and has led several interdisciplinary projects in activist organizations dedicated to technology and human rights in the US, Brazil and Chile. She has presented her work in places such as Kyoto, Havana, San Francisco, Tunisia, London, Honolulu. She has also published in magazines, academic journals and outlets of creative non-fiction. She is currently writing a thesis on masochism and artificial intelligence.",
+              "<br>",
+             "<a href = 'http://annikakappner.com/' target='_blank'>Annika</a> creates multi-sensory compositions in the extended field of painting, combining installation, sculpture, sound and performance to create glitches in perception. Prompted by her experience as an investment banker, her work is interested in the evolution of consciousness, the shifting perception of (self) image in relation to mental patterns and the underlying forces that shape their systemic counterparts in nature, visual arts, technology and science. She seeks to add experiential perspectives of the contemporary relationship between human, nature and technology, addressing concepts of non-duality and otherness. She is a co-founder of the multi-disciplinary artist collective Elephants & Volcanoes."],
+          "image": [
+              {
+                  "url": "",
+                  "alt": ""
+              }
+          ]
+      },
+      "artwork": {
+          "artwork_name": "Oracle Bots",
+          "artwork_description_line": "Workshop for coding Bots that provide spiritual advice",
+          "artwork_description_150w_long": ["The computational world is full of mystical references and similarities with magical traditions. In this workshop participants explored parallels between coding and casting a spell through making oracle-bots. Bots are small computer programmes that automate text on social media streams we so often find ourselves on. Oracle-bots operate as divination machines and provide spiritual advice. The workshop consisted of coding sessions and guided meditations to explore the collective imagination around analogue and digital connectivity through the body."],
+          "artwork_description_50w_short": "The computational world is full of mystical references and similarities with magical traditions. In this workshop we'll explore parallels between coding and casting a spell through making oracle-bots. Bots are small computer programmes that automate text on social media streams we so often find ourselves on. Oracle-bots operate as divination machines and provide spiritual advice. The workshop will consist of coding sessions and guided meditations to explore the collective imagination around analogue and digital connectivity through the body.",
+          "details": {
+              "filterOnline": "online",
+              "filterType": "workshop"
+          },
+          "image": {
+              "url": "oracle-bot_thumb.png",
+              "alt": "image of robot in blue on pink and black background"
+          },
+          "sliderImages": [
+              {
+                  "url": "oracle-bots/oracle-bots_artwork_0.jpg",
+                  "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
+              },
+              {
+                  "url": "oracle-bots/oracle-bots_artwork_1.jpg",
+                  "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
+              },
+              {
+                  "url": "oracle-bots/oracle-bots_artwork_2.jpg",
+                  "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
+              },
+              {
+                  "url": "oracle-bots/oracle-bots_artwork_3.jpg",
+                  "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
+              },
+              {
+                  "url": "oracle-bots/oracle-bots_artwork_4.jpg",
+                  "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
+              }
+          ]
+      },
+      "social_media": {
+          "website": "http://digitalwitchcraft.net/oraclebots/"
+      }
+  },
+  {
+      "id": 10,
+      "artist": {
+          "name": "Kathy Hinde",
+          "bio_100w": ["Bristol based artist Kathy Hinde’s work grows from a partnership between nature and technology expressed through audio-visual installations and performances that combine sound, sculpture, image and light. She creates work that evolves and can be different each time it is experienced. Kathy frequently works in collaboration with other practitioners and scientists and often actively involves the audience in the creative process. Awards include an Honorary Mention at Prix Ars Electronica, a British Composer Award, an ORAM award and a Scottish Award for New Music. She became a Cryptic Artist in 2015, and is a member of the Bristol Experimental Expanded Film collective."],
+          "image": [
+              {
+                  "url": "DeepListening_artist_WEB.png",
+                  "alt": "photo of Kathy Hinde"
+          }
+          ]
+      },
+      "artwork": {
+          "artwork_name": "Deep Listening",
+          "artwork_description_line": "Artist walk exploring underwater perspectives of the Bristol floating harbour",
+          "artwork_description_150w_long": ["In this artist led walk, participants were invited to listen deeply to the waterways of Bristol using underwater microphones at the point where the floating harbour meets the gorge. <br><br>The walk contemplated the huge tidal range of the Bristol Channel by exploring an edge point of the city, demarcated by a shifting watery passageway that carves a liminal space between the urban and the rural. There are many interventions that keep Bristol’s relationship with water flowing and smooth. Watery compositions created from underwater sounds and shaped by tidal data, were integrated into the walk, inviting participants to consider the potential future of rising sea levels. <br><br>The walk created a meaningful connection with the watery environs of Bristol by pausing to reflect and to listen from an underwater perspective.<br><br>Thanks to Bristol Harbour Master and especially Marine Services Officer Ben Wookey for his contribution to Deep Listening.<br><br><em>Photo by James Cook</em>"],
+          "artwork_description_50w_short": "Join us for a walk along the harbour, to pause, reflect and listen to Bristol from an underwater perspective. We will contemplate tidal changes from an edge point of the city, demarcated by a shifting watery passageway carving a space between the urban and the rural.",
+          "details": {
+              "filterOnline": "person",
+              "filterType": "event"
+          },
+          "image": {
+              "url": "deep-listening_thumb.png",
+              "alt": "photo of Kathy Hinde exploring underwater perspectives"
+          },
+          "sliderImages": [
+              {
+                  "url": "deep-listening/deep-listening_artwork_0.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_1.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_2.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_3.jpg",
+                  "alt": "Deep Listening walk with Marine Services Officer Ben Wookey"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_4.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_5.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_6.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_7.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_8.jpg",
+                  "alt": "Deep Listening walk with Kathy Hinde"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_9.jpg",
+                  "alt": "Deep Listening walk"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_10.jpg",
+                  "alt": "Deep Listening walk with Kathy Hinde"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_11.jpg",
+                  "alt": "Deep Listening walk with Kathy Hinde"
+              },
+              {
+                  "url": "deep-listening/deep-listening_artwork_12.jpg",
+                  "alt": "Deep Listening walk"
+              }
+          ]
+      },
+      "social_media": {
+          "website": "http://kathyhinde.co.uk/deep-listening-walks/",
+          "twitter": "https://twitter.com/birdtwitchr",
+          "instagram": "https://www.instagram.com/kathyhinde/"
+      }
+  },
+  {
+      "id": 17,
+      "artist": {
+          "name": "MELT",
+          "bio_100w": ["As MELT, <a  target='_blank' href='https://lorenbritton.com/'>Loren Britton</a> and <a  target='_blank' href='https://www.isabelpaehr.com/'>Isabel Paehr</a> are Berlin-based arts-design researchers who work with games, tech and radical pedagogy. Investigating the political & material conditions of tech infrastructures, they re-distribute agency in socio-technological systems with the methods of queer play, unlearning and leaking. Their work crumbles structures, unbounds materials, dissolves technology and makes collectivities. MELT is exploring how to make something but to keep it open to change, and is doing this through formats like video artworks and workshops. MELT has been influenced by (melting) Ice, Freezers, Software, Signal, moving too fast/slow, Wendy Hui Kyong Chun, Denise Ferreira Da Silva, Digital Materialism, Post/De Colonial thinking, Gifs, Climate Protests, Anti-Racism and Dancing."],
+          "image": [
+              {
+                  "url": "",
+                  "alt": ""
+              }
+          ]
+      },
+      "artwork": {
+          "artwork_name": "MIAU ID",
+          "artwork_description_line": "Workshop exploring networks through embroidery whilst playing cats!",
+          "artwork_description_150w_long": ["In MIAU ID, the cats of the internet gather to decide upon a network structure that's good for every cat! In this online workshop, the game is played by a group of around 15 cats (people). Stitching on an embroidery hoop / yarn network, each cat has a specific ID and transmits messages. Through 'miauing' the cats address each other, as they perform different rules on different networks: Centralized, Decentralized and Distributed. Depending on the purrotcols (protocols) of the network, they weave different patterns.", "By embodying networks, cats explore the politics of centralization, but also P2P networks and sharing. Thus it becomes possible to question the hard-wired power relations embedded within internet infrastructures. Cats shift control by making technical specificities accessible in play and through practicing that there are as many teachers as there are cats (people) in the room. This creates space to understand why the internet can be 'shut down' and to consider alternative infrastructures. MIAU ID is playable by people of any age and accessible towards those with variable mobility, neurodiverse peoples and hearing impaired peoples. We would love to be in touch with any peoples who have other accessibility concerns.", "Note: there is a small cost for this workshop that covers materials and postage, we do not want this to put anyone off joining, and have bursaries available."],
+          "artwork_description_50w_short": "Calling feline creatures of the internet! Gather with us to decide upon a network structure that's good for every cat! On our agenda are three network types: Centralized, Decentralized and Distributed. In this embroidery workshop, we will play as cats and address each other via different rules. Let us find out about these network's purrtocols (protocols) together online, through the act of sewing.<br><br><em>There is a small cost for this workshop that covers materials (custom printed fabric designed by the artists, embroidery hoop, needle and thread) and postage if you live outside of Bristol. We do not want this to put anyone off joining, and have bursaries available.<br><br>Postage cut-off dates:<br> Outside Europe - book by 30 September<br>UK/Europe - book by 6th October<br>If you live in Bristol we'll get in touch about arranging materials pick-up.</em>",
+          "details": {
+              "filterOnline": "online",
+              "filterType": "workshop"
+          },
+          "image": {
+              "url": "miau-id_thumb.png",
+              "alt": "a messy network of yarn in differnt colours"
+          },
+          "sliderImages": [
+              {
+                  "url": "miau-id/miau_id_0.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              },
+              {
+                  "url": "miau-id/miau_id_1.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              },
+              {
+                  "url": "miau-id/miau_id_2.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              },
+              {
+                  "url": "miau-id/miau_id_3.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              },
+              {
+                  "url": "miau-id/miau_id_4.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              },
+              {
+                  "url": "miau-id/miau_id_5.jpg",
+                  "alt": "Miau ID artwork and workshop"
+              }
+          ]
+      },
+      "social_media": {
+          "website": "http://meltionary.com/",
+          "instagram": "https://www.instagram.com/meltionary"
+      }
+  },
+
+
     {
-        "id": 0,
+        "id": 11,
         "artist": {
-            "name": "KASAVA",
-            "bio_100w": ["KASAVA is a new Bristol based collective. A wholly authentic voice speaking from their own experiences - ranging from huge triumphs to the struggle bus and everything in between. KASAVA is founded by <a  target='_blank' href='https://rising.org.uk/what-are-your-plans/'>Josephine Gyasi</a>, <a  target='_blank' href='https://www.bristolpost.co.uk/authors/rema-mukena/'>Rema Mukena</a>, <a  target='_blank' href='https://staceyolika.com'>Stacey Olika</a>, <a  target='_blank' href='https://www.rifemagazine.co.uk/author/euella_jackson/'>Euella Jackson</a>, <a  target='_blank' href='https://www.parysgardener.com/'>Parys Gardener</a> and <a  target='_blank' href='https://www.instagram.com/courtenay.welcome'>Courtenay Welcome</a>. Six women come together to inspire, help you channel the art of knowing who you are - whilst injecting a solid dose of positivity and power. Building a community where creative womxn feel like they are the centre of the narrative and not the other. Through everything they curate, from events to podcasts, there’ll be laughter, tears and most importantly unfiltered conversations throughout."],
+            "name": "Heath Bunting",
+            "bio_100w": ["South West based artist <a href'http://irational.org/heath/' target='_blank'>Heath Bunting</a> has exhibited, performed and taught internationally for over 25 years. As a young adult, he undertook a three year apprenticeship in stained glass. After this, Heath spent several years roaming both Bristol and London as a street artist as well as distributing thousands of art-works via postal and fax networks. During the rise of the internet, he was a key participant of the net.art movement. Within this time he founded <add link> irational.org. He has setup and run multiple radio transmission and listening stations internationally. He has worked as staff at The Banff Centre for the Arts (three years) and The Cube Cinema (eight years). His current work, The Status Project, uses artificial intelligence to search for artificial life in both societal and natural systems. Heath regularly runs artist's training workshops in artist resilience."],
             "image": [
                 {
                     "url": "",
@@ -12,114 +211,74 @@
             ]
         },
         "artwork": {
-            "artwork_name": "Interwave",
-            "artwork_description_line": "Podcast series delving into unfiltered and intersectional narratives on Zoom fatigue",
-            "artwork_description_150w_long": ["This three-part podcast series takes a deep dive into the effects of “Zoom fatigue”, a new social phenomenon created by living and working online. Using interviews, discussions and intersectional reflections, Interwave explores how increased video calling has impacted our mental, emotional and physical health. Coming from a female-led perspective, KASAVA bring creative womxn to the centre of the narrative. Through laughter, tears and unfiltered conversations, the Interwave podcast series weaves important issues into the Zoom fatigue narrative, raising questions around who’s included and who isn’t, and ultimately, how can we be doing things differently?"],
-            "artwork_description_50w_short": "Let’s take a moment to reflect on what it is like to live and work online. Through laughter, tears and unfiltered conversations this three-part podcast series delves into the effects that “Zoom fatigue” has on our mental, emotional, and physical wellbeing. KASAVA bring creative women to the centre of the narrative, raising questions around who’s included and who isn’t, and ultimately, how can we do things differently?",
-            "details": {
-                "filterOnline": "online",
-                "filterType": "watchlisten"
-            },
-            "image": {
-                "url": "interwave_thumb.png",
-                "alt": "Image showing the Interwave theme - womxn at work and relaxing"
-            },
-            "sliderImages": [
-                {
-                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902716945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-                    "alt": "Interwave podcast 1"
-                },
-                {
-                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902730580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-                    "alt": "Interwave podcast 2"
-                },
-                {
-                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902738944&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-                    "alt": "Interwave podcast 3"
-                }
-            ]
-        },
-        "social_media": {
-            "instagram": "https://www.instagram.com/kasavacollective",
-            "twitter": "https://twitter.com/kasava_co"
-        }
-    },
-    {
-        "id": 1,
-        "artist": {
-            "name": "Rachel Smith",
-            "bio_100w": ["Bristol based Rachel Smith is a media artist and creative technologist with an MFA in Media Art from Bauhaus University Weimar and an undergraduate in Maths. She is a resident of the Pervasive Media Studio in Bristol and recently completed a Fellowship in Automation for the South West Creative Technology Network. Often creating playful experiences and interactive installations, she interrogates emerging technologies with both a critical and affectionate eye. Her main interests lie in the relationship between humans and machines and her work has a particular focus on the hidden decision-making processes found in artificial intelligence. She has exhibited internationally including at the Kunstverein Tiergarten in Berlin and the Ars Electronica festival."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Face / On",
-            "artwork_description_line": "Interactive installation playfully engaging with facial recognition technology",
-            "artwork_description_150w_long": ["Face / On takes the form of an interactive door embedded with a facial recognition system. On approach, the facial recognition system allocates a persona at random, for example, Female 47. Only a face fitting the criteria in the eyes of the system will be permitted entry. <br><br>In order to gain access visitors may need to adopt a disguise to trick the facial recognition system. <br><br>Using available tools (face swapping, filters, or ageing apps) it becomes possible to fool the door. In doing so, we build up an idea of how the system decides on such personal labels as age and gender. Where have these rules come from and what are the consequences? <br><br> Face / On interrogates the hidden algorithms which make decisions about our identities and lives. What are these categories in the eyes of the algorithm and how do they compare with our own idea about identity. The algorithim that makes the decisions in Face/On is developed by Microsoft and is widely available to integrate into products. It is a typical example of a facial recognition system that you might encounter elsewhere. <br><br>Face / On film:<br>videographer: David Weir<br>Sound: Tom Hoey."],
-            "artwork_description_50w_short": "How do AI systems decide on personal labels such as age and gender based on looks alone? Face / On is an interactive installation that explores what systems see. It takes the form of a closed door embedded with a facial recognition system. Face/On is a gatekeeper deciding on who looks like they fit its criteria, and who will be permitted entry past the threshold. It may be necessary to adopt a disguise to fool the system.",
+            "artwork_name": "Maps of Consequential Paradox",
+            "artwork_description_line": "Artist walk exploring networks in Brandon Hill park",
+            "artwork_description_150w_long": ["A walk around Brandon Hill park with Heath, your guide, examining sustainability, paradox and consequence that underlies the park exploring the ecology of the area as seen from the perspective of a computer. Guided by a custom map that has been generated by an algorithm, visitors explore the ecological interconnections of plants, animals and humans around Brandon Hill park. On this circuitous mis-guided walk, both the departure and arrival points will be local edible plants, but other subjects such as labour, shopping and money will probably be visited.<br>Visit Maps of Consequential Paradox website <a  target='_blank' href='http://status.irational.org/consequential_paradox/'>here</a>."],
+            "artwork_description_50w_short": "We invite you to take a stroll around Brandon Hill. Heath, your guide, will walk with you to explore the paradoxes and consequences hidden within the park. Guided by a custom map that has been generated by an algorithm, see the parts of the park from the perspective of a computer.",
             "details": {
                 "filterOnline": "person",
-                "filterType": "exhibition"
+                "filterType": "event"
             },
             "image": {
-                "url": "face-on_thumb.png",
-                "alt": "Image of Rachel's face mixed with Arnold Schwarzenegger"
+                "url": "maps-of-cons_thumb.png",
+                "alt": "Group of people looking at maps"
             },
             "sliderImages": [
                 {
-                    "url": "https://www.youtube.com/embed/SyXWody2rSQ?start=2&height=434",
-                    "alt": "face-on alt 1"
+                    "url": "maps-of-cons/maps-of-cons_artwork_0.jpg",
+                    "alt": "maps-of-cons alt 1"
                 },
                 {
-                    "url": "face-on/face-on_artwork_0.jpg",
-                    "alt": "face-on alt 2"
+                    "url": "maps-of-cons/maps-of-cons_artwork_1.jpg",
+                    "alt": "maps-of-cons alt 2"
                 },
                 {
-                    "url": "face-on/face-on_artwork_1.jpg",
-                    "alt": "face-on alt 2"
+                    "url": "maps-of-cons/maps-of-cons_artwork_2.jpg",
+                    "alt": "maps-of-cons alt 3"
                 },
                 {
-                    "url": "face-on/face-on_artwork_2.jpg",
-                    "alt": "face-on alt 3"
+                    "url": "maps-of-cons/maps-of-cons_artwork_3.jpg",
+                    "alt": "maps-of-cons alt 4"
                 },
                 {
-                    "url": "face-on/face-on_artwork_3.jpg",
-                    "alt": "face-on alt 4"
+                    "url": "maps-of-cons/maps-of-cons_artwork_4.jpg",
+                    "alt": "maps-of-cons alt 5"
                 },
                 {
-                    "url": "face-on/face-on_artwork_4.jpg",
-                    "alt": "face-on alt 5"
+                    "url": "maps-of-cons/maps-of-cons_artwork_5.jpg",
+                    "alt": "maps-of-cons alt 6"
                 },
                 {
-                    "url": "face-on/face-on_artwork_5.jpg",
-                    "alt": "face-on alt 6"
+                    "url": "maps-of-cons/maps-of-cons_artwork_6.jpg",
+                    "alt": "maps-of-cons alt 7"
                 },
                 {
-                    "url": "face-on/face-on_artwork_6.jpg",
-                    "alt": "face-on alt 7"
+                    "url": "maps-of-cons/maps-of-cons_artwork_7.jpg",
+                    "alt": "maps-of-cons alt 8"
                 },
                 {
-                    "url": "face-on/face-on_artwork_7.jpg",
-                    "alt": "face-on alt 8"
+                    "url": "maps-of-cons/maps-of-cons_artwork_8.jpg",
+                    "alt": "maps-of-cons alt 9"
                 },
                 {
-                    "url": "face-on/face-on_artwork_8.jpg",
-                    "alt": "face-on alt 9"
+                    "url": "maps-of-cons/maps-of-cons_artwork_9.jpg",
+                    "alt": "maps-of-cons alt 10"
                 },
                 {
-                    "url": "face-on/face-on_artwork_9.jpg",
-                    "alt": "face-on alt 10"
+                    "url": "maps-of-cons/maps-of-cons_artwork_10.jpg",
+                    "alt": "maps-of-cons alt 11"
+                },
+                {
+                    "url": "maps-of-cons/maps-of-cons_artwork_11.jpg",
+                    "alt": "maps-of-cons alt 12"
                 }
             ]
         },
         "social_media": {
-            "website": "https://www.watershed.co.uk/studio/residents/rachel-smith"
+            "website": "http://status.irational.org/consequential_paradox/"
         }
     },
+
     {
         "id": 2,
         "artist": {
@@ -175,10 +334,10 @@
         }
     },
     {
-        "id": 3,
+        "id": 15,
         "artist": {
-            "name": "Wisterlitz",
-            "bio_100w": ["<a  target='_blank' href='https://wisterlitz.wordpress.com/'>Wisterlitz</a> (Liz Lister and Becky Hurwitz) make playful, interactive work exploring relationships between science, technologies, and society. Their work reflects on the position of women in relation to these areas, often looking afresh at invisible histories through a contemporary lens and combining physical making with digital mediums."],
+            "name": "Arjun Harrison-Mann, Benjamin Redgrove and Kaiya Waerea",
+            "bio_100w": ["<a href='http://arjunhm.co.uk/' target='_blank'>Arjun Harrison-Mann</a> and <a href='http://benjaminredgrove.com/' target='_blank'>Benjamin Redgrove</a> are an artist & designer duo, whose work is grounded in The Social Model of Disability, often in collaboration with activist group Disabled People Against Cuts. As allies to the Disability Rights Movement, and stemming from personal experiences with disability benefits in the UK, their work often sits somewhere between provocation and service. <br><br><a href='https://www.kaiyawaerea.com/' target='_blank'>Kaiya Waerea</a> is a writer and designer, whose work looks critically at chronic illness and the body by activating alternate forms of knowledge production to interrogate how we can collaboratively develop new ways of listening and taking care of each other. <br><br>Together they are exploring notions of radical accessibility, the relationship between power & presence and the foregrounding of the aesthetics of accessibility."],
             "image": [
                 {
                     "url": "",
@@ -187,51 +346,83 @@
             ]
         },
         "artwork": {
-            "artwork_name": "Knitwitter",
-            "artwork_description_line": "An invitation to encode secret messages into your knitting.",
-            "artwork_description_150w_long": ["What if we could encode our own secret messages as an everyday item, something innocuous, hiding in plain sight? Knitwitter is an invitation for anyone familiar with knitting needles or a crochet hook and yarn to encode some text into a pattern, and then use that pattern to hide their message in a piece of knitting or crochet. The Knitwitter app encodes your text into binary code and makes pattern suggestions, but the message you choose to encode and how you choose to interpret the pattern in your knitting or crochet is up to you. Women have used knitting to encode secret messages since World War 1. <br><br>Now, encoded messages are sent all the time using programming languages and machine code. Instant, digital, text-based communications are made from millions of hidden zeros and ones that we entrust our phones to interpret for us and keep secret from others. <a  target='_blank' href='https://www.knitwitter.com/'>Knitwitter</a> will grow into a collaboratively made knitted artwork highlighting our intimate yet intangible and complex relationship with code.<br><br>Participate in Knitwitter by visiting the <a  target='_blank' href='https://www.knitwitter.com/'>website</a>, and encode your own message in a piece of knitting. Wisterlitz will collect, curate, and display the knitted messages into a collaborative artwork."],
-            "artwork_description_50w_short": "Text-based communications are made from millions of hidden zeros and ones that we entrust our phones to interpret for us. The Knitwitter app instead transforms your messages into binary patterns for you to knit. If you are familiar with knitting needles or a crochet hook (or you’ve always wanted to learn), head to the knitwitter site to encode and knit your own messages. <br><br><em>Wisterlitz will curate images of the knitted messages into a collaborative artwork, tag your pictures with #knitwitter to be part of the knitted database of yarn! Participate by visiting the <a  target='_blank' href='https://www.knitwitter.com/'>Knitwitter website</a></em>. ",
+            "artwork_name": "Proxy Politics: Making and Unmaking Perspectives on Access",
+            "artwork_description_line": "Workshop exploring disability activism & accessibility with video calling devices",
+            "artwork_description_150w_long": ["This workshop is aimed at artists & activists who are engaged with or interested in disability activism & accessibility in the arts. Working through simple prompts, we will be using our video calling devices and materials around our homes to discuss perspectives on access and make simple tools to think through disability and representation. "],
+            "artwork_description_50w_short": "This workshop is aimed at artists and activists who are engaged with or interested in disability activism & accessibility in the arts. Working through simple prompts, Arjun, Ben and Kaiya will be using video calling devices and materials around our homes to discuss perspectives on access and make simple tools to think through disability and representation.",
+
             "details": {
                 "filterOnline": "online",
-                "filterType": "workshop",
-                "actionText": "Go to Knitwitter",
-                "actionLink": "https://www.knitwitter.com/"
+                "filterType": "workshop"
             },
             "image": {
-                "url": "knitwitter_thumb.png",
-                "alt": "Digital knitting pattern"
+                "url": "proxy-politics_thumb.gif",
+                "alt": "Proxy protester with phone strapped to his chest. The phone has an image of a face on itr"
             },
             "sliderImages": [
                 {
-                    "url": "knitwitter/knitwitter_artwork_0.png",
-                    "alt": "A message encoded as binary code in knitting using knitwitter"
+                    "url": "proxy-politics/proxy-politics_artwork_1.jpg",
+                    "alt": "Demonstration of how to strap a phone to your chest"
                 },
                 {
-                    "url": "knitwitter/knitwitter_artwork_1.jpg",
-                    "alt": "Knitwitter web site"
+                    "url": "proxy-politics/proxy-politics_artwork_2.jpg",
+                    "alt": "Demonstration of how to strap a phone to your chest"
                 },
                 {
-                    "url": "knitwitter/knitwitter_artwork_2.jpg",
-                    "alt": "Knitting encoded as binary code using knitwitter"
-                },
-                {
-                    "url": "knitwitter/knitwitter_artwork_3.jpg",
-                    "alt": "A message encoded as binary code in knitting using knitwitter"
-                },
-                {
-                    "url": "knitwitter/knitwitter_artwork_4.jpg",
-                    "alt": "A message inspired by the removal of Colston's statue encoded as binary code using knitwitter"
-                },
-                {
-                    "url": "knitwitter/knitwitter_artwork_5.jpg",
-                    "alt": "A Fair Isle style message encoded as binary code in knitting using knitwitter"
+                    "url": "proxy-politics/proxy-politics_artwork_0.jpg",
+                    "alt": "Image of the proxy politics zoom workshop"
                 }
             ]
         },
         "social_media": {
-            "website": "https://www.knitwitter.com/",
-            "facebook": "https://www.facebook.com/groups/knitwitter/",
-            "instagram": "https://www.instagram.com/knit.witter/"
+            "website": "http://proxyprotest.com/"
+        }
+    },
+
+
+    {
+        "id": 0,
+        "artist": {
+            "name": "KASAVA",
+            "bio_100w": ["KASAVA is a new Bristol based collective. A wholly authentic voice speaking from their own experiences - ranging from huge triumphs to the struggle bus and everything in between. KASAVA is founded by <a  target='_blank' href='https://rising.org.uk/what-are-your-plans/'>Josephine Gyasi</a>, <a  target='_blank' href='https://www.bristolpost.co.uk/authors/rema-mukena/'>Rema Mukena</a>, <a  target='_blank' href='https://staceyolika.com'>Stacey Olika</a>, <a  target='_blank' href='https://www.rifemagazine.co.uk/author/euella_jackson/'>Euella Jackson</a>, <a  target='_blank' href='https://www.parysgardener.com/'>Parys Gardener</a> and <a  target='_blank' href='https://www.instagram.com/courtenay.welcome'>Courtenay Welcome</a>. Six women come together to inspire, help you channel the art of knowing who you are - whilst injecting a solid dose of positivity and power. Building a community where creative womxn feel like they are the centre of the narrative and not the other. Through everything they curate, from events to podcasts, there’ll be laughter, tears and most importantly unfiltered conversations throughout."],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Interwave",
+            "artwork_description_line": "Podcast series delving into unfiltered and intersectional narratives on Zoom fatigue",
+            "artwork_description_150w_long": ["This three-part podcast series takes a deep dive into the effects of “Zoom fatigue”, a new social phenomenon created by living and working online. Using interviews, discussions and intersectional reflections, Interwave explores how increased video calling has impacted our mental, emotional and physical health. Coming from a female-led perspective, KASAVA bring creative womxn to the centre of the narrative. Through laughter, tears and unfiltered conversations, the Interwave podcast series weaves important issues into the Zoom fatigue narrative, raising questions around who’s included and who isn’t, and ultimately, how can we be doing things differently?"],
+            "artwork_description_50w_short": "Let’s take a moment to reflect on what it is like to live and work online. Through laughter, tears and unfiltered conversations this three-part podcast series delves into the effects that “Zoom fatigue” has on our mental, emotional, and physical wellbeing. KASAVA bring creative women to the centre of the narrative, raising questions around who’s included and who isn’t, and ultimately, how can we do things differently?",
+            "details": {
+                "filterOnline": "online",
+                "filterType": "watchlisten"
+            },
+            "image": {
+                "url": "interwave_thumb.png",
+                "alt": "Image showing the Interwave theme - womxn at work and relaxing"
+            },
+            "sliderImages": [
+                {
+                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902716945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+                    "alt": "Interwave podcast 1"
+                },
+                {
+                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902730580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+                    "alt": "Interwave podcast 2"
+                },
+                {
+                    "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/902738944&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+                    "alt": "Interwave podcast 3"
+                }
+            ]
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/kasavacollective",
+            "twitter": "https://twitter.com/kasava_co"
         }
     },
 
@@ -282,6 +473,55 @@
         "social_media": {
             "website": "http://www.ireneposch.net",
             "instagram": "http://www.instagram.com/ireneposch"
+        }
+    },
+    {
+        "id": 14,
+        "artist": {
+            "name": "Antonio Roberts",
+            "bio_100w": ["Antonio Roberts is an artist and curator based in Birmingham, UK. His practices explore what ownership and authorship mean in an age impacted by digital technology.<br><br>His work has been featured at galleries and festivals including databit.me in Arles, France (2012), Glitch Moment/ums at Furtherfield Gallery, London (2013), Loud Tate: Code at Tate Britain (2014), glitChicago at the Ukrainian Institute of Modern Art in Chicago, US (2014), Permission Taken at Birmingham Open Media and University of Birmingham (2015-2016), Common Property at Jerwood Arts, London (2016), Ways of Something at Whitney Museum of American Art, New York (2017), Green Man Festival, Wales (2017), Barbican, London (2018), Copy / Paste at the Victoria and Albert Museum (2019) and We Are Your Friends at Czurles Nelson Gallery, Buffalo, US (2019).<br><br>He has curated exhibitions and projects including GLI.TC/H Birmingham (2011), the Birmingham editions of Bring Your Own Beamer (2012, 2013), Stealth (2015), and No Copyright Infringement Intended (2017), and Copy Paste (2020). He is part of a-n's Artist Council, is an Artist Advisor for Jerwood Arts and from 2014 - 2019 he was Curator at Vivid Projects where he produced the Black Hole Club artist development programme."],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Live Coding Visuals",
+            "artwork_description_line": "Live coding visuals workshop using Improviz",
+            "artwork_description_150w_long": ["A creative coding workshop to make live visuals for live coding events and Algoraves. Lled by visual artist Antonio Roberts aka hellocatfood, it introduced the world of live coding, and guided participants through the basics of using <a href='https://improviz.rumblesan.com' target='_blank'>Improviz</a> for live visuals."],
+            "artwork_description_50w_short": "If you've ever been curious about using code to make live visuals and have aspirations to perform at live coding events and Algoraves then this workshop is perfect for you. This two-hour workshop, led by visual artist Antonio Roberts aka hellocatfood, will introduce you to the world of live coding, and guide you through the basics of using <a href='https://improviz.rumblesan.com' target='_blank'>Improviz</a> for live visuals.",
+            "details": {
+                "filterOnline": "online",
+                "filterType": "workshop"
+            },
+            "image": {
+                "url": "live-coding_thumb.gif",
+                "alt": "vibrant live coded visuals with code-text"
+            },
+            "sliderImages": [
+                {
+                    "url": "live-coding/live-coding_artwork_3.jpg",
+                    "alt": "Live coding workshop using Improviz"
+                },
+                {
+                   "url": "live-coding/live-coding_artwork_0.jpg",
+                    "alt": "Live coding workshop using Improviz"
+                },
+                {
+                    "url": "live-coding/live-coding_artwork_1.jpg",
+                    "alt": "Live coding workshop using Improviz"
+                },
+                {
+                   "url": "live-coding/live-coding_artwork_2.jpg",
+                    "alt": "Live coding workshop using Improviz"
+                }
+            ]
+        },
+        "social_media": {
+            "website": "https://hellocatfood.com",
+            "instagram": "http://instagram.com/hellocatfood"
         }
     },
 
@@ -390,12 +630,16 @@
             "twitter": "https://twitter.com/RusselHlongwane"
         }
     },
-
     {
-        "id": 5,
+        "id": 13,
         "artist": {
-            "name": "Control Alt Delete",
-            "bio_100w": ["Control Alt Delete is a group of resident art makers and code wranglers aged 10-16 years. They meet every Monday, as part of Jump Studios at Knowle West Media Centre, to explore how to be creative with technology. To make this work they collaborated with Bristol based media artist <a  target='_blank' href='https://www.beccarose.co.uk'> Becca Rose</a>"],
+            "name": "Russel Hlongwane",
+            "bio_100w": ["Russel Hlongwane is a cultural producer and creative industries consultant based in Durban, South Africa. His work obsesses over the tensions in Heritage/ Modernity and Culture/Tradition as it applies to black life. His practice includes cultural research, creative producing, design, film and curatorship. He is part of a number of working groups spread across the Southern African Region, the African continent more broadly and internationally. He has shown work in Munich, Marrakech, Maputo, Karlsruhe, Harare, Bristol, Tokyo as well as throughout South Africa.",
+            "<br>",
+            "<strong>Russel will be in conversation with:</strong>",
+            "<a href = 'https://digitalwitchcraft.works/Institute' target='_blank'>DANAE</a>, a Chilean working-class feminist writer, multimedia artist and technologist based in Rotterdam. DANAE is a lecturer of Hacking and Autonomous Practices at the Willem de Kooning Academy in Rotterdam and the founder of The Digital Witchcraft Institute, an artistic-research organization that develops advanced and non-conforming digital technologies for posthuman futures. In the past, Danae has been a fellow of the Mozilla Foundation and has led several interdisciplinary projects in activist organizations dedicated to technology and human rights in the US, Brazil and Chile. She has presented her work in places such as Kyoto, Havana, San Francisco, Tunisia, London, Honolulu. She has also published in magazines, academic journals and outlets of creative non-fiction. She is currently writing a thesis on masochism and artificial intelligence.",
+            "<br>",
+            "<a href = 'http://www.dilmandila.com/' target='_blank'>Dilman Dila</a>, author of a critically acclaimed collection of short stories, A Killing in the Sun. Dilman has been shortlisted for the Commonwealth Short Story Prize (2013) and for the Nommo Awards for Best Novella (2017), and long listed for the BBC International Radio Playwriting Competition (2014), among other accolades. His short fiction have featured in several anthologies, and his films include What Happened in Room 13 (2007) and The Felistas Fable (2013), which was nominated for Best First Feature by a Director at AMAA (2014)."],
             "image": [
                 {
                     "url": "",
@@ -404,137 +648,31 @@
             ]
         },
         "artwork": {
-            "artwork_name": "Get this position",
-            "artwork_description_line": "Exhibition of DIY augmented reality filters by young people from Knowle West",
-            "artwork_description_150w_long": ["Augmented reality filters, used in apps such as Tik Tok, Instagram and Snapchat are part of our lives in intimate ways whilst also defining who we are. Rather than defining themselves through the eyes of others, young people from KWMC’s Jump Studio have made their own augmented realities to share with the world.<br><br><em>Co-produced by <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a>. Workshops took place at KWMC between 21 Sept - 5 Oct 2020.</em>"],
-            "artwork_description_50w_short": "Augmented reality filters, used in apps such as Tik Tok, Instagram and Snapchat are part of our lives in intimate ways whilst also defining who we are. Rather than defining themselves through the eyes of others, young people from KWMC’s Jump Studio have made their own augmented realities to share with the world. How do they look? <br><br><em>Co-produced by <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a>. Workshops are taking place at KWMC between 21 Sept - 5 Oct</em>",
-
+            "artwork_name": "Thinking the digital through the indigenous",
+            "artwork_description_line": "Panel discussion with invited filmmakers, what are the new languages for technology?",
+            "artwork_description_150w_long": ["A conversation between Russel Hlongwane, DANAE and Dilman Dila exploring the Western dominance of our understanding of technology. It’s links to colonialism and the legacy of imperialism. <br><br>The talk proposed a more productive and equitable arrangement of technology, its tools and structures. A reimagined system that accounts for humanity’s multi-dimensionality and proposes a new digital political economy. <br>The conversation also explores the crossovers between Russel, DANAE and Dilman’s practices."],
+            "artwork_description_50w_short": "The invited filmmakers use their films as vehicles to think through some core questions. This panel discussion offers an alternative to the assumption that technology is a western invention; whilst problematising 'tech tools' through different lenses and practices. The artists also propose new languages to imagine technology, beyond hardware and software.",
             "details": {
-                "filterOnline": "online",
-                "filterType": "exhibition"
+                "filterOnline": "",
+                "filterType": "event"
             },
             "image": {
-                "url": "get-this-position_thumb.gif",
-                "alt": "moving image of an face with colour"
+                "url": "think-ind_thumb.png",
+                "alt": "Date and text subtitles"
             },
             "sliderImages": [
                 {
-                    "url": "get-this-pos/get-this-pos_artwork_0.jpg",
-                    "alt": "AR filters workshop for young people"
-                },
-                {
-                    "url": "get-this-pos/get-this-pos_artwork_1.jpg",
-                    "alt": "AR filters workshop for young people"
-                },
-                {
-                    "url": "get-this-pos/get-this-pos_artwork_2.jpg",
-                    "alt": "AR filters workshop for young people"
-                },
-                {
-                    "url": "get-this-pos/get-this-pos_artwork_3.jpg",
-                    "alt": "AR filters workshop for young people"
-                }
-                ,
-                {
-                    "url": "get-this-pos/get-this-pos_artwork_4.jpg",
-                    "alt": "AR filters workshop for young people"
+                    "url": "https://www.youtube.com/embed/N7UmalH1w1Q?start=340&height=315",
+                    "alt": "Live coding workshop using Improviz"
                 }
             ]
         },
         "social_media": {
-            "website": "https://kwmc.org.uk/projects/jumpstudios/",
-            "twitter": "https://twitter.com/jumpkwmc",
-            "instagram": "https://www.instagram.com/jumpkwmc/"
+            "website": "https://www.facebook.com/russel.hlongwane",
+            "instagram": "https://www.instagram.com/russel.hlongwane/",
+            "twitter": "https://twitter.com/RusselHlongwane"
         }
     },
-
-    {
-        "id": 6,
-        "artist": {
-            "name": "Dasha Ilina",
-            "bio_100w": ["Dasha Ilina is a Russian digital artist based in Paris, France. Her work explores the relationship we develop with the digital devices we use on a daily basis, specifically in regards to the human body. Ilina’s work centers around  notions of care and technology, DIY practices and low-tech solutions to examining various issues such as phone addiction, tech-related health problems and privacy in the digital age. She is the founder of the Center for Technological Pain, a center that proposes DIY solutions to health problems caused by digital technologies. She is also the co-director of NØ SCHOOL."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Center for Technological Pain",
-            "artwork_description_line": "Exhibition of DIY solutions to health problems caused by digital technologies",
-            "artwork_description_150w_long": ["<a  target='_blank' href='http://centerfortechpain.com/'>Center for Technological Pain</a> (CTP) is a mock company that offers DIY and open source solutions to solve health problems caused by digital technologies such as smartphones and laptops. Among the prototypes it has developed are mechanical eye shields that reduce eye-strain, a headset to free the user’s hands, an insomnia-free box and various more or less absurd contraptions to relieve strained elbows and fingers. CTP further questions the negative effects of technology by adapting self-defense techniques and organizing workshops to fight this contemporary addiction.<br><br>For Control Shift CTP was presented in a double shop front in the Galleries Shopping Centre in central Bristol."],
-            "artwork_description_50w_short": "Center for Technological Pain (CTP) offers DIY products for tech-pain free lives. The mock-company was set up to manage, prevent and treat the symptoms caused by digital technologies. Among their products are contraptions to relieve eye-strain, insomnia, and strained elbows and fingers. This installation presents the latest innovations from CTP as well as exhibiting new products made by Bristol-based designers and makers in a recent workshop with CTP CEO, Dasha Ilina. <br><br> <em>Exhibition co-produced with <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a> and KWMC: The Factory</em>",
-            "details": {
-                "filterOnline": "person",
-                "filterType": "exhibition"
-            },
-            "image": {
-                "url": "CTP_thumb.png",
-                "alt": "Image of CTP installed in the galleries shopping centre"
-            },
-            "sliderImages": [
-                {
-                    "url": "ctp/CTP_artwork_0.jpg",
-                    "alt": "CTP alt 1"
-                },
-                {
-                    "url": "ctp/CTP_artwork_2.jpg",
-                    "alt": "CTP alt 2"
-                },
-                {
-                    "url": "ctp/CTP_artwork_1.jpg",
-                    "alt": "CTP alt 3"
-                },
-                {
-                    "url": "ctp/CTP_artwork_3.jpg",
-                    "alt": "CTP alt 4"
-                },
-                {
-                    "url": "ctp/CTP_artwork_4.jpg",
-                    "alt": "CTP alt 5"
-                },
-                {
-                    "url": "ctp/CTP_artwork_5.jpg",
-                    "alt": "CTP alt 6"
-                },
-                {
-                    "url": "ctp/CTP_artwork_6.jpg",
-                    "alt": "CTP alt 7"
-                },
-                {
-                    "url": "ctp/CTP_artwork_7.jpg",
-                    "alt": "CTP alt 8"
-                },
-                {
-                    "url": "ctp/CTP_artwork_8.jpg",
-                    "alt": "CTP alt 9"
-                },
-                {
-                    "url": "ctp/CTP_artwork_9.jpg",
-                    "alt": "CTP alt 10"
-                },
-                {
-                    "url": "ctp/CTP_artwork_10.jpg",
-                    "alt": "CTP alt 11"
-                },
-                {
-                    "url": "ctp/CTP_artwork_11.jpg",
-                    "alt": "CTP alt 12"
-                },
-                {
-                    "url": "ctp/CTP_artwork_12.jpg",
-                    "alt": "CTP alt 13"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://www.dashailina.com/",
-            "twitter": "https://twitter.com/PublicDasha",
-            "instagram": "https://www.instagram.com/dashesandcommas/"
-        }
-    },
-
 
     {
         "id": 7,
@@ -646,6 +784,171 @@
             "website": "https://www.nahomatsuda.com/"
         }
     },
+
+    {
+        "id": 1,
+        "artist": {
+            "name": "Rachel Smith",
+            "bio_100w": ["Bristol based Rachel Smith is a media artist and creative technologist with an MFA in Media Art from Bauhaus University Weimar and an undergraduate in Maths. She is a resident of the Pervasive Media Studio in Bristol and recently completed a Fellowship in Automation for the South West Creative Technology Network. Often creating playful experiences and interactive installations, she interrogates emerging technologies with both a critical and affectionate eye. Her main interests lie in the relationship between humans and machines and her work has a particular focus on the hidden decision-making processes found in artificial intelligence. She has exhibited internationally including at the Kunstverein Tiergarten in Berlin and the Ars Electronica festival."],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Face / On",
+            "artwork_description_line": "Interactive installation playfully engaging with facial recognition technology",
+            "artwork_description_150w_long": ["Face / On takes the form of an interactive door embedded with a facial recognition system. On approach, the facial recognition system allocates a persona at random, for example, Female 47. Only a face fitting the criteria in the eyes of the system will be permitted entry. <br><br>In order to gain access visitors may need to adopt a disguise to trick the facial recognition system. <br><br>Using available tools (face swapping, filters, or ageing apps) it becomes possible to fool the door. In doing so, we build up an idea of how the system decides on such personal labels as age and gender. Where have these rules come from and what are the consequences? <br><br> Face / On interrogates the hidden algorithms which make decisions about our identities and lives. What are these categories in the eyes of the algorithm and how do they compare with our own idea about identity. The algorithim that makes the decisions in Face/On is developed by Microsoft and is widely available to integrate into products. It is a typical example of a facial recognition system that you might encounter elsewhere. <br><br>Face / On film:<br>videographer: David Weir<br>Sound: Tom Hoey."],
+            "artwork_description_50w_short": "How do AI systems decide on personal labels such as age and gender based on looks alone? Face / On is an interactive installation that explores what systems see. It takes the form of a closed door embedded with a facial recognition system. Face/On is a gatekeeper deciding on who looks like they fit its criteria, and who will be permitted entry past the threshold. It may be necessary to adopt a disguise to fool the system.",
+            "details": {
+                "filterOnline": "person",
+                "filterType": "exhibition"
+            },
+            "image": {
+                "url": "face-on_thumb.png",
+                "alt": "Image of Rachel's face mixed with Arnold Schwarzenegger"
+            },
+            "sliderImages": [
+                {
+                    "url": "https://www.youtube.com/embed/SyXWody2rSQ?start=2&height=434",
+                    "alt": "face-on alt 1"
+                },
+                {
+                    "url": "face-on/face-on_artwork_0.jpg",
+                    "alt": "face-on alt 2"
+                },
+                {
+                    "url": "face-on/face-on_artwork_1.jpg",
+                    "alt": "face-on alt 2"
+                },
+                {
+                    "url": "face-on/face-on_artwork_2.jpg",
+                    "alt": "face-on alt 3"
+                },
+                {
+                    "url": "face-on/face-on_artwork_3.jpg",
+                    "alt": "face-on alt 4"
+                },
+                {
+                    "url": "face-on/face-on_artwork_4.jpg",
+                    "alt": "face-on alt 5"
+                },
+                {
+                    "url": "face-on/face-on_artwork_5.jpg",
+                    "alt": "face-on alt 6"
+                },
+                {
+                    "url": "face-on/face-on_artwork_6.jpg",
+                    "alt": "face-on alt 7"
+                },
+                {
+                    "url": "face-on/face-on_artwork_7.jpg",
+                    "alt": "face-on alt 8"
+                },
+                {
+                    "url": "face-on/face-on_artwork_8.jpg",
+                    "alt": "face-on alt 9"
+                },
+                {
+                    "url": "face-on/face-on_artwork_9.jpg",
+                    "alt": "face-on alt 10"
+                }
+            ]
+        },
+        "social_media": {
+            "website": "https://www.watershed.co.uk/studio/residents/rachel-smith"
+        }
+    },
+
+    {
+        "id": 6,
+        "artist": {
+            "name": "Dasha Ilina",
+            "bio_100w": ["Dasha Ilina is a Russian digital artist based in Paris, France. Her work explores the relationship we develop with the digital devices we use on a daily basis, specifically in regards to the human body. Ilina’s work centers around  notions of care and technology, DIY practices and low-tech solutions to examining various issues such as phone addiction, tech-related health problems and privacy in the digital age. She is the founder of the Center for Technological Pain, a center that proposes DIY solutions to health problems caused by digital technologies. She is also the co-director of NØ SCHOOL."],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Center for Technological Pain",
+            "artwork_description_line": "Exhibition of DIY solutions to health problems caused by digital technologies",
+            "artwork_description_150w_long": ["<a  target='_blank' href='http://centerfortechpain.com/'>Center for Technological Pain</a> (CTP) is a mock company that offers DIY and open source solutions to solve health problems caused by digital technologies such as smartphones and laptops. Among the prototypes it has developed are mechanical eye shields that reduce eye-strain, a headset to free the user’s hands, an insomnia-free box and various more or less absurd contraptions to relieve strained elbows and fingers. CTP further questions the negative effects of technology by adapting self-defense techniques and organizing workshops to fight this contemporary addiction.<br><br>For Control Shift CTP was presented in a double shop front in the Galleries Shopping Centre in central Bristol."],
+            "artwork_description_50w_short": "Center for Technological Pain (CTP) offers DIY products for tech-pain free lives. The mock-company was set up to manage, prevent and treat the symptoms caused by digital technologies. Among their products are contraptions to relieve eye-strain, insomnia, and strained elbows and fingers. This installation presents the latest innovations from CTP as well as exhibiting new products made by Bristol-based designers and makers in a recent workshop with CTP CEO, Dasha Ilina. <br><br> <em>Exhibition co-produced with <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a> and KWMC: The Factory</em>",
+            "details": {
+                "filterOnline": "person",
+                "filterType": "exhibition"
+            },
+            "image": {
+                "url": "CTP_thumb.png",
+                "alt": "Image of CTP installed in the galleries shopping centre"
+            },
+            "sliderImages": [
+                {
+                    "url": "ctp/CTP_artwork_0.jpg",
+                    "alt": "CTP alt 1"
+                },
+                {
+                    "url": "ctp/CTP_artwork_2.jpg",
+                    "alt": "CTP alt 2"
+                },
+                {
+                    "url": "ctp/CTP_artwork_1.jpg",
+                    "alt": "CTP alt 3"
+                },
+                {
+                    "url": "ctp/CTP_artwork_3.jpg",
+                    "alt": "CTP alt 4"
+                },
+                {
+                    "url": "ctp/CTP_artwork_4.jpg",
+                    "alt": "CTP alt 5"
+                },
+                {
+                    "url": "ctp/CTP_artwork_5.jpg",
+                    "alt": "CTP alt 6"
+                },
+                {
+                    "url": "ctp/CTP_artwork_6.jpg",
+                    "alt": "CTP alt 7"
+                },
+                {
+                    "url": "ctp/CTP_artwork_7.jpg",
+                    "alt": "CTP alt 8"
+                },
+                {
+                    "url": "ctp/CTP_artwork_8.jpg",
+                    "alt": "CTP alt 9"
+                },
+                {
+                    "url": "ctp/CTP_artwork_9.jpg",
+                    "alt": "CTP alt 10"
+                },
+                {
+                    "url": "ctp/CTP_artwork_10.jpg",
+                    "alt": "CTP alt 11"
+                },
+                {
+                    "url": "ctp/CTP_artwork_11.jpg",
+                    "alt": "CTP alt 12"
+                },
+                {
+                    "url": "ctp/CTP_artwork_12.jpg",
+                    "alt": "CTP alt 13"
+                }
+            ]
+        },
+        "social_media": {
+            "website": "http://www.dashailina.com/",
+            "twitter": "https://twitter.com/PublicDasha",
+            "instagram": "https://www.instagram.com/dashesandcommas/"
+        }
+    },
+
     {
         "id": 9,
         "artist": {
@@ -700,6 +1003,63 @@
             "instagram": "https://www.instagram.com/dashesandcommas/"
         }
     },
+
+
+
+
+
+
+    {
+        "id": 14,
+        "artist": {
+            "name": "Joseph Wilk",
+            "bio_100w": ["Joseph Wilk is an artist working with programming code, realtime media & audio. In particular, he is interested in live programming as performance art. His experience of disability —living with pain, physical limitations, disillusionment and disconnection— strongly impacts his practice. He deconstructs, misuses and repurposes software to challenge notions of ownership, narrative and visibility. He thinks of programming as a means of facilitating and augmenting human communication rather than replacing it, facilitating new forms of expression that put humans at the centre of control."],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Robots with Pens",
+            "artwork_description_line": "Workshop to make experimental robot drawings using code",
+            "artwork_description_150w_long": ["In this workshop Joseph Wilk explored automated drawing. Inspired by the work of computer art pioneer Vera Molnár remixing, experimenting, and breaking code using the <a href='https://p5js.org/' target='_blank'>P5</a> editor. Participants learnt how to generate drawings for a pen plotter (a robot that draws with paper & pens).<br><br>This workshop is co-produced by <a href='https://www.swctn.org.uk/' target='_blank'>SWCTN</a>"],
+            "artwork_description_50w_short": "Join Joseph for a journey along the lines of automated drawing. Inspired by the work of computer art pioneer Vera Molnár we’ll be remixing, experimenting, and breaking code using the <a href='https://p5js.org/' target='_blank'>P5</a> editor. You’ll learn how to generate drawings for a pen plotter (a robot that draws with paper & pens). At the end of the session everyone gets to take their robot drawings home (via post of course!).<br><br>This workshop is co-produced by <a href='https://www.swctn.org.uk/' target='_blank'>SWCTN</a>",
+            "details": {
+                "filterOnline": "online",
+                "filterType": "workshop"
+            },
+            "image": {
+                "url": "robots-with-pens_thumb.png",
+                "alt": "a pen plotter drawing a red wave"
+            },
+            "sliderImages": [
+                {
+                    "url": "robots-pens/robots-with-pens_artwork_0.jpg",
+                    "alt": "Code controlled robotic drawing machines, zoom workshop"
+                },
+                {
+                   "url": "robots-pens/robots-with-pens_artwork_1.jpg",
+                    "alt": "Code controlled robotic drawing machines, zoom workshop"
+                },
+                {
+                    "url": "robots-pens/robots-with-pens_artwork_2.jpg",
+                    "alt": "Code controlled robotic drawing machines, zoom workshop"
+                },
+                {
+                    "url": "robots-pens/robots-with-pens_artwork_3.jpg",
+                    "alt": "Code controlled robotic drawing machines, zoom workshop"
+                }
+            ]
+        },
+        "social_media": {
+            "website": "http://art.josephwilk.net",
+            "instagram": "https://www.instagram.com/joseph_wilk",
+            "twitter": "https://twitter.com/josephwilk"
+        }
+    },
+
     {
         "id": 10,
         "artist": {
@@ -754,318 +1114,10 @@
             "twitter": "https://twitter.com/crispysmokedweb"
         }
     },
-    {
-        "id": 11,
-        "artist": {
-            "name": "DANAE and Annika Kappner",
-            "bio_100w": ["<a href = 'https://digitalwitchcraft.works/Institute' target='_blank'>DANAE</a> is a Chilean working-class feminist writer, multimedia artist and technologist based in Rotterdam. She is a lecturer of Hacking and Autonomous Practices at the Willem de Kooning Academy in Rotterdam and the founder of The Digital Witchcraft Institute, an artistic-research organization that develops advanced and non-conforming digital technologies for posthuman futures. In the past, Danae has been a fellow of the Mozilla Foundation and has led several interdisciplinary projects in activist organizations dedicated to technology and human rights in the US, Brazil and Chile. She has presented her work in places such as Kyoto, Havana, San Francisco, Tunisia, London, Honolulu. She has also published in magazines, academic journals and outlets of creative non-fiction. She is currently writing a thesis on masochism and artificial intelligence.",
-                "<br>",
-               "<a href = 'http://annikakappner.com/' target='_blank'>Annika</a> creates multi-sensory compositions in the extended field of painting, combining installation, sculpture, sound and performance to create glitches in perception. Prompted by her experience as an investment banker, her work is interested in the evolution of consciousness, the shifting perception of (self) image in relation to mental patterns and the underlying forces that shape their systemic counterparts in nature, visual arts, technology and science. She seeks to add experiential perspectives of the contemporary relationship between human, nature and technology, addressing concepts of non-duality and otherness. She is a co-founder of the multi-disciplinary artist collective Elephants & Volcanoes."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Oracle Bots",
-            "artwork_description_line": "Workshop for coding Bots that provide spiritual advice",
-            "artwork_description_150w_long": ["The computational world is full of mystical references and similarities with magical traditions. In this workshop participants explored parallels between coding and casting a spell through making oracle-bots. Bots are small computer programmes that automate text on social media streams we so often find ourselves on. Oracle-bots operate as divination machines and provide spiritual advice. The workshop consisted of coding sessions and guided meditations to explore the collective imagination around analogue and digital connectivity through the body."],
-            "artwork_description_50w_short": "The computational world is full of mystical references and similarities with magical traditions. In this workshop we'll explore parallels between coding and casting a spell through making oracle-bots. Bots are small computer programmes that automate text on social media streams we so often find ourselves on. Oracle-bots operate as divination machines and provide spiritual advice. The workshop will consist of coding sessions and guided meditations to explore the collective imagination around analogue and digital connectivity through the body.",
-            "details": {
-                "filterOnline": "online",
-                "filterType": "workshop"
-            },
-            "image": {
-                "url": "oracle-bot_thumb.png",
-                "alt": "image of robot in blue on pink and black background"
-            },
-            "sliderImages": [
-                {
-                    "url": "oracle-bots/oracle-bots_artwork_0.jpg",
-                    "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
-                },
-                {
-                    "url": "oracle-bots/oracle-bots_artwork_1.jpg",
-                    "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
-                },
-                {
-                    "url": "oracle-bots/oracle-bots_artwork_2.jpg",
-                    "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
-                },
-                {
-                    "url": "oracle-bots/oracle-bots_artwork_3.jpg",
-                    "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
-                },
-                {
-                    "url": "oracle-bots/oracle-bots_artwork_4.jpg",
-                    "alt": "Oracle Bots online workshop with DANAE and Annika Kappner"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://digitalwitchcraft.net/oraclebots/"
-        }
-    },
-    {
-        "id": 10,
-        "artist": {
-            "name": "Kathy Hinde",
-            "bio_100w": ["Bristol based artist Kathy Hinde’s work grows from a partnership between nature and technology expressed through audio-visual installations and performances that combine sound, sculpture, image and light. She creates work that evolves and can be different each time it is experienced. Kathy frequently works in collaboration with other practitioners and scientists and often actively involves the audience in the creative process. Awards include an Honorary Mention at Prix Ars Electronica, a British Composer Award, an ORAM award and a Scottish Award for New Music. She became a Cryptic Artist in 2015, and is a member of the Bristol Experimental Expanded Film collective."],
-            "image": [
-                {
-                    "url": "DeepListening_artist_WEB.png",
-                    "alt": "photo of Kathy Hinde"
-            }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Deep Listening",
-            "artwork_description_line": "Artist walk exploring underwater perspectives of the Bristol floating harbour",
-            "artwork_description_150w_long": ["In this artist led walk, participants were invited to listen deeply to the waterways of Bristol using underwater microphones at the point where the floating harbour meets the gorge. <br><br>The walk contemplated the huge tidal range of the Bristol Channel by exploring an edge point of the city, demarcated by a shifting watery passageway that carves a liminal space between the urban and the rural. There are many interventions that keep Bristol’s relationship with water flowing and smooth. Watery compositions created from underwater sounds and shaped by tidal data, were integrated into the walk, inviting participants to consider the potential future of rising sea levels. <br><br>The walk created a meaningful connection with the watery environs of Bristol by pausing to reflect and to listen from an underwater perspective.<br><br>Thanks to Bristol Harbour Master and especially Marine Services Officer Ben Wookey for his contribution to Deep Listening.<br><br><em>Photo by James Cook</em>"],
-            "artwork_description_50w_short": "Join us for a walk along the harbour, to pause, reflect and listen to Bristol from an underwater perspective. We will contemplate tidal changes from an edge point of the city, demarcated by a shifting watery passageway carving a space between the urban and the rural.",
-            "details": {
-                "filterOnline": "person",
-                "filterType": "event"
-            },
-            "image": {
-                "url": "deep-listening_thumb.png",
-                "alt": "photo of Kathy Hinde exploring underwater perspectives"
-            },
-            "sliderImages": [
-                {
-                    "url": "deep-listening/deep-listening_artwork_0.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_1.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_2.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_3.jpg",
-                    "alt": "Deep Listening walk with Marine Services Officer Ben Wookey"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_4.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_5.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_6.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_7.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_8.jpg",
-                    "alt": "Deep Listening walk with Kathy Hinde"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_9.jpg",
-                    "alt": "Deep Listening walk"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_10.jpg",
-                    "alt": "Deep Listening walk with Kathy Hinde"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_11.jpg",
-                    "alt": "Deep Listening walk with Kathy Hinde"
-                },
-                {
-                    "url": "deep-listening/deep-listening_artwork_12.jpg",
-                    "alt": "Deep Listening walk"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://kathyhinde.co.uk/deep-listening-walks/",
-            "twitter": "https://twitter.com/birdtwitchr",
-            "instagram": "https://www.instagram.com/kathyhinde/"
-        }
-    },
-    {
-        "id": 11,
-        "artist": {
-            "name": "Heath Bunting",
-            "bio_100w": ["South West based artist <a href'http://irational.org/heath/' target='_blank'>Heath Bunting</a> has exhibited, performed and taught internationally for over 25 years. As a young adult, he undertook a three year apprenticeship in stained glass. After this, Heath spent several years roaming both Bristol and London as a street artist as well as distributing thousands of art-works via postal and fax networks. During the rise of the internet, he was a key participant of the net.art movement. Within this time he founded <add link> irational.org. He has setup and run multiple radio transmission and listening stations internationally. He has worked as staff at The Banff Centre for the Arts (three years) and The Cube Cinema (eight years). His current work, The Status Project, uses artificial intelligence to search for artificial life in both societal and natural systems. Heath regularly runs artist's training workshops in artist resilience."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Maps of Consequential Paradox",
-            "artwork_description_line": "Artist walk exploring networks in Brandon Hill park",
-            "artwork_description_150w_long": ["A walk around Brandon Hill park with Heath, your guide, examining sustainability, paradox and consequence that underlies the park exploring the ecology of the area as seen from the perspective of a computer. Guided by a custom map that has been generated by an algorithm, visitors explore the ecological interconnections of plants, animals and humans around Brandon Hill park. On this circuitous mis-guided walk, both the departure and arrival points will be local edible plants, but other subjects such as labour, shopping and money will probably be visited.<br>Visit Maps of Consequential Paradox website <a  target='_blank' href='http://status.irational.org/consequential_paradox/'>here</a>."],
-            "artwork_description_50w_short": "We invite you to take a stroll around Brandon Hill. Heath, your guide, will walk with you to explore the paradoxes and consequences hidden within the park. Guided by a custom map that has been generated by an algorithm, see the parts of the park from the perspective of a computer.",
-            "details": {
-                "filterOnline": "person",
-                "filterType": "event"
-            },
-            "image": {
-                "url": "maps-of-cons_thumb.png",
-                "alt": "Group of people looking at maps"
-            },
-            "sliderImages": [
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_0.jpg",
-                    "alt": "maps-of-cons alt 1"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_1.jpg",
-                    "alt": "maps-of-cons alt 2"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_2.jpg",
-                    "alt": "maps-of-cons alt 3"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_3.jpg",
-                    "alt": "maps-of-cons alt 4"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_4.jpg",
-                    "alt": "maps-of-cons alt 5"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_5.jpg",
-                    "alt": "maps-of-cons alt 6"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_6.jpg",
-                    "alt": "maps-of-cons alt 7"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_7.jpg",
-                    "alt": "maps-of-cons alt 8"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_8.jpg",
-                    "alt": "maps-of-cons alt 9"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_9.jpg",
-                    "alt": "maps-of-cons alt 10"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_10.jpg",
-                    "alt": "maps-of-cons alt 11"
-                },
-                {
-                    "url": "maps-of-cons/maps-of-cons_artwork_11.jpg",
-                    "alt": "maps-of-cons alt 12"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://status.irational.org/consequential_paradox/"
-        }
-    },
-    {
-        "id": 13,
-        "artist": {
-            "name": "Russel Hlongwane",
-            "bio_100w": ["Russel Hlongwane is a cultural producer and creative industries consultant based in Durban, South Africa. His work obsesses over the tensions in Heritage/ Modernity and Culture/Tradition as it applies to black life. His practice includes cultural research, creative producing, design, film and curatorship. He is part of a number of working groups spread across the Southern African Region, the African continent more broadly and internationally. He has shown work in Munich, Marrakech, Maputo, Karlsruhe, Harare, Bristol, Tokyo as well as throughout South Africa.",
-            "<br>",
-            "<strong>Russel will be in conversation with:</strong>",
-            "<a href = 'https://digitalwitchcraft.works/Institute' target='_blank'>DANAE</a>, a Chilean working-class feminist writer, multimedia artist and technologist based in Rotterdam. DANAE is a lecturer of Hacking and Autonomous Practices at the Willem de Kooning Academy in Rotterdam and the founder of The Digital Witchcraft Institute, an artistic-research organization that develops advanced and non-conforming digital technologies for posthuman futures. In the past, Danae has been a fellow of the Mozilla Foundation and has led several interdisciplinary projects in activist organizations dedicated to technology and human rights in the US, Brazil and Chile. She has presented her work in places such as Kyoto, Havana, San Francisco, Tunisia, London, Honolulu. She has also published in magazines, academic journals and outlets of creative non-fiction. She is currently writing a thesis on masochism and artificial intelligence.",
-            "<br>",
-            "<a href = 'http://www.dilmandila.com/' target='_blank'>Dilman Dila</a>, author of a critically acclaimed collection of short stories, A Killing in the Sun. Dilman has been shortlisted for the Commonwealth Short Story Prize (2013) and for the Nommo Awards for Best Novella (2017), and long listed for the BBC International Radio Playwriting Competition (2014), among other accolades. His short fiction have featured in several anthologies, and his films include What Happened in Room 13 (2007) and The Felistas Fable (2013), which was nominated for Best First Feature by a Director at AMAA (2014)."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Thinking the digital through the indigenous",
-            "artwork_description_line": "Panel discussion with invited filmmakers, what are the new languages for technology?",
-            "artwork_description_150w_long": ["A conversation between Russel Hlongwane, DANAE and Dilman Dila exploring the Western dominance of our understanding of technology. It’s links to colonialism and the legacy of imperialism. <br><br>The talk proposed a more productive and equitable arrangement of technology, its tools and structures. A reimagined system that accounts for humanity’s multi-dimensionality and proposes a new digital political economy. <br>The conversation also explores the crossovers between Russel, DANAE and Dilman’s practices."],
-            "artwork_description_50w_short": "The invited filmmakers use their films as vehicles to think through some core questions. This panel discussion offers an alternative to the assumption that technology is a western invention; whilst problematising 'tech tools' through different lenses and practices. The artists also propose new languages to imagine technology, beyond hardware and software.",
-            "details": {
-                "filterOnline": "",
-                "filterType": "event"
-            },
-            "image": {
-                "url": "think-ind_thumb.png",
-                "alt": "Date and text subtitles"
-            },
-            "sliderImages": [
-                {
-                    "url": "https://www.youtube.com/embed/N7UmalH1w1Q?start=340&height=315",
-                    "alt": "Live coding workshop using Improviz"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "https://www.facebook.com/russel.hlongwane",
-            "instagram": "https://www.instagram.com/russel.hlongwane/",
-            "twitter": "https://twitter.com/RusselHlongwane"
-        }
-    },
-    {
-        "id": 14,
-        "artist": {
-            "name": "Antonio Roberts",
-            "bio_100w": ["Antonio Roberts is an artist and curator based in Birmingham, UK. His practices explore what ownership and authorship mean in an age impacted by digital technology.<br><br>His work has been featured at galleries and festivals including databit.me in Arles, France (2012), Glitch Moment/ums at Furtherfield Gallery, London (2013), Loud Tate: Code at Tate Britain (2014), glitChicago at the Ukrainian Institute of Modern Art in Chicago, US (2014), Permission Taken at Birmingham Open Media and University of Birmingham (2015-2016), Common Property at Jerwood Arts, London (2016), Ways of Something at Whitney Museum of American Art, New York (2017), Green Man Festival, Wales (2017), Barbican, London (2018), Copy / Paste at the Victoria and Albert Museum (2019) and We Are Your Friends at Czurles Nelson Gallery, Buffalo, US (2019).<br><br>He has curated exhibitions and projects including GLI.TC/H Birmingham (2011), the Birmingham editions of Bring Your Own Beamer (2012, 2013), Stealth (2015), and No Copyright Infringement Intended (2017), and Copy Paste (2020). He is part of a-n's Artist Council, is an Artist Advisor for Jerwood Arts and from 2014 - 2019 he was Curator at Vivid Projects where he produced the Black Hole Club artist development programme."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Live Coding Visuals",
-            "artwork_description_line": "Live coding visuals workshop using Improviz",
-            "artwork_description_150w_long": ["A creative coding workshop to make live visuals for live coding events and Algoraves. Lled by visual artist Antonio Roberts aka hellocatfood, it introduced the world of live coding, and guided participants through the basics of using <a href='https://improviz.rumblesan.com' target='_blank'>Improviz</a> for live visuals."],
-            "artwork_description_50w_short": "If you've ever been curious about using code to make live visuals and have aspirations to perform at live coding events and Algoraves then this workshop is perfect for you. This two-hour workshop, led by visual artist Antonio Roberts aka hellocatfood, will introduce you to the world of live coding, and guide you through the basics of using <a href='https://improviz.rumblesan.com' target='_blank'>Improviz</a> for live visuals.",
-            "details": {
-                "filterOnline": "online",
-                "filterType": "workshop"
-            },
-            "image": {
-                "url": "live-coding_thumb.gif",
-                "alt": "vibrant live coded visuals with code-text"
-            },
-            "sliderImages": [
-                {
-                    "url": "live-coding/live-coding_artwork_3.jpg",
-                    "alt": "Live coding workshop using Improviz"
-                },
-                {
-                   "url": "live-coding/live-coding_artwork_0.jpg",
-                    "alt": "Live coding workshop using Improviz"
-                },
-                {
-                    "url": "live-coding/live-coding_artwork_1.jpg",
-                    "alt": "Live coding workshop using Improviz"
-                },
-                {
-                   "url": "live-coding/live-coding_artwork_2.jpg",
-                    "alt": "Live coding workshop using Improviz"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "https://hellocatfood.com",
-            "instagram": "http://instagram.com/hellocatfood"
-        }
-    },
+
+
+
+
 
 
 
@@ -1112,56 +1164,7 @@
 
 
 
-    {
-        "id": 14,
-        "artist": {
-            "name": "Joseph Wilk",
-            "bio_100w": ["Joseph Wilk is an artist working with programming code, realtime media & audio. In particular, he is interested in live programming as performance art. His experience of disability —living with pain, physical limitations, disillusionment and disconnection— strongly impacts his practice. He deconstructs, misuses and repurposes software to challenge notions of ownership, narrative and visibility. He thinks of programming as a means of facilitating and augmenting human communication rather than replacing it, facilitating new forms of expression that put humans at the centre of control."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Robots with Pens",
-            "artwork_description_line": "Workshop to make experimental robot drawings using code",
-            "artwork_description_150w_long": ["In this workshop Joseph Wilk explored automated drawing. Inspired by the work of computer art pioneer Vera Molnár remixing, experimenting, and breaking code using the <a href='https://p5js.org/' target='_blank'>P5</a> editor. Participants learnt how to generate drawings for a pen plotter (a robot that draws with paper & pens).<br><br>This workshop is co-produced by <a href='https://www.swctn.org.uk/' target='_blank'>SWCTN</a>"],
-            "artwork_description_50w_short": "Join Joseph for a journey along the lines of automated drawing. Inspired by the work of computer art pioneer Vera Molnár we’ll be remixing, experimenting, and breaking code using the <a href='https://p5js.org/' target='_blank'>P5</a> editor. You’ll learn how to generate drawings for a pen plotter (a robot that draws with paper & pens). At the end of the session everyone gets to take their robot drawings home (via post of course!).<br><br>This workshop is co-produced by <a href='https://www.swctn.org.uk/' target='_blank'>SWCTN</a>",
-            "details": {
-                "filterOnline": "online",
-                "filterType": "workshop"
-            },
-            "image": {
-                "url": "robots-with-pens_thumb.png",
-                "alt": "a pen plotter drawing a red wave"
-            },
-            "sliderImages": [
-                {
-                    "url": "robots-pens/robots-with-pens_artwork_0.jpg",
-                    "alt": "Code controlled robotic drawing machines, zoom workshop"
-                },
-                {
-                   "url": "robots-pens/robots-with-pens_artwork_1.jpg",
-                    "alt": "Code controlled robotic drawing machines, zoom workshop"
-                },
-                {
-                    "url": "robots-pens/robots-with-pens_artwork_2.jpg",
-                    "alt": "Code controlled robotic drawing machines, zoom workshop"
-                },
-                {
-                    "url": "robots-pens/robots-with-pens_artwork_3.jpg",
-                    "alt": "Code controlled robotic drawing machines, zoom workshop"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://art.josephwilk.net",
-            "instagram": "https://www.instagram.com/joseph_wilk",
-            "twitter": "https://twitter.com/josephwilk"
-        }
-    },
+
     {
         "id": 14,
         "artist": {
@@ -1214,51 +1217,7 @@
             "website": "https://whereismyspace.carrd.co/"
         }
     },
-    {
-        "id": 15,
-        "artist": {
-            "name": "Arjun Harrison-Mann, Benjamin Redgrove and Kaiya Waerea",
-            "bio_100w": ["<a href='http://arjunhm.co.uk/' target='_blank'>Arjun Harrison-Mann</a> and <a href='http://benjaminredgrove.com/' target='_blank'>Benjamin Redgrove</a> are an artist & designer duo, whose work is grounded in The Social Model of Disability, often in collaboration with activist group Disabled People Against Cuts. As allies to the Disability Rights Movement, and stemming from personal experiences with disability benefits in the UK, their work often sits somewhere between provocation and service. <br><br><a href='https://www.kaiyawaerea.com/' target='_blank'>Kaiya Waerea</a> is a writer and designer, whose work looks critically at chronic illness and the body by activating alternate forms of knowledge production to interrogate how we can collaboratively develop new ways of listening and taking care of each other. <br><br>Together they are exploring notions of radical accessibility, the relationship between power & presence and the foregrounding of the aesthetics of accessibility."],
-            "image": [
-                {
-                    "url": "",
-                    "alt": ""
-                }
-            ]
-        },
-        "artwork": {
-            "artwork_name": "Proxy Politics: Making and Unmaking Perspectives on Access",
-            "artwork_description_line": "Workshop exploring disability activism & accessibility with video calling devices",
-            "artwork_description_150w_long": ["This workshop is aimed at artists & activists who are engaged with or interested in disability activism & accessibility in the arts. Working through simple prompts, we will be using our video calling devices and materials around our homes to discuss perspectives on access and make simple tools to think through disability and representation. "],
-            "artwork_description_50w_short": "This workshop is aimed at artists and activists who are engaged with or interested in disability activism & accessibility in the arts. Working through simple prompts, Arjun, Ben and Kaiya will be using video calling devices and materials around our homes to discuss perspectives on access and make simple tools to think through disability and representation.",
 
-            "details": {
-                "filterOnline": "online",
-                "filterType": "workshop"
-            },
-            "image": {
-                "url": "proxy-politics_thumb.gif",
-                "alt": "Proxy protester with phone strapped to his chest. The phone has an image of a face on itr"
-            },
-            "sliderImages": [
-                {
-                    "url": "proxy-politics/proxy-politics_artwork_1.jpg",
-                    "alt": "Demonstration of how to strap a phone to your chest"
-                },
-                {
-                    "url": "proxy-politics/proxy-politics_artwork_2.jpg",
-                    "alt": "Demonstration of how to strap a phone to your chest"
-                },
-                {
-                    "url": "proxy-politics/proxy-politics_artwork_0.jpg",
-                    "alt": "Image of the proxy politics zoom workshop"
-                }
-            ]
-        },
-        "social_media": {
-            "website": "http://proxyprotest.com/"
-        }
-    },
     {
         "id": 16,
         "artist": {
@@ -1306,11 +1265,12 @@
             "instagram": "https://www.instagram.com/shanfinnegan/"
         }
     },
+
     {
-        "id": 17,
+        "id": 3,
         "artist": {
-            "name": "MELT",
-            "bio_100w": ["As MELT, <a  target='_blank' href='https://lorenbritton.com/'>Loren Britton</a> and <a  target='_blank' href='https://www.isabelpaehr.com/'>Isabel Paehr</a> are Berlin-based arts-design researchers who work with games, tech and radical pedagogy. Investigating the political & material conditions of tech infrastructures, they re-distribute agency in socio-technological systems with the methods of queer play, unlearning and leaking. Their work crumbles structures, unbounds materials, dissolves technology and makes collectivities. MELT is exploring how to make something but to keep it open to change, and is doing this through formats like video artworks and workshops. MELT has been influenced by (melting) Ice, Freezers, Software, Signal, moving too fast/slow, Wendy Hui Kyong Chun, Denise Ferreira Da Silva, Digital Materialism, Post/De Colonial thinking, Gifs, Climate Protests, Anti-Racism and Dancing."],
+            "name": "Wisterlitz",
+            "bio_100w": ["<a  target='_blank' href='https://wisterlitz.wordpress.com/'>Wisterlitz</a> (Liz Lister and Becky Hurwitz) make playful, interactive work exploring relationships between science, technologies, and society. Their work reflects on the position of women in relation to these areas, often looking afresh at invisible histories through a contemporary lens and combining physical making with digital mediums."],
             "image": [
                 {
                     "url": "",
@@ -1319,48 +1279,51 @@
             ]
         },
         "artwork": {
-            "artwork_name": "MIAU ID",
-            "artwork_description_line": "Workshop exploring networks through embroidery whilst playing cats!",
-            "artwork_description_150w_long": ["In MIAU ID, the cats of the internet gather to decide upon a network structure that's good for every cat! In this online workshop, the game is played by a group of around 15 cats (people). Stitching on an embroidery hoop / yarn network, each cat has a specific ID and transmits messages. Through 'miauing' the cats address each other, as they perform different rules on different networks: Centralized, Decentralized and Distributed. Depending on the purrotcols (protocols) of the network, they weave different patterns.", "By embodying networks, cats explore the politics of centralization, but also P2P networks and sharing. Thus it becomes possible to question the hard-wired power relations embedded within internet infrastructures. Cats shift control by making technical specificities accessible in play and through practicing that there are as many teachers as there are cats (people) in the room. This creates space to understand why the internet can be 'shut down' and to consider alternative infrastructures. MIAU ID is playable by people of any age and accessible towards those with variable mobility, neurodiverse peoples and hearing impaired peoples. We would love to be in touch with any peoples who have other accessibility concerns.", "Note: there is a small cost for this workshop that covers materials and postage, we do not want this to put anyone off joining, and have bursaries available."],
-            "artwork_description_50w_short": "Calling feline creatures of the internet! Gather with us to decide upon a network structure that's good for every cat! On our agenda are three network types: Centralized, Decentralized and Distributed. In this embroidery workshop, we will play as cats and address each other via different rules. Let us find out about these network's purrtocols (protocols) together online, through the act of sewing.<br><br><em>There is a small cost for this workshop that covers materials (custom printed fabric designed by the artists, embroidery hoop, needle and thread) and postage if you live outside of Bristol. We do not want this to put anyone off joining, and have bursaries available.<br><br>Postage cut-off dates:<br> Outside Europe - book by 30 September<br>UK/Europe - book by 6th October<br>If you live in Bristol we'll get in touch about arranging materials pick-up.</em>",
+            "artwork_name": "Knitwitter",
+            "artwork_description_line": "An invitation to encode secret messages into your knitting.",
+            "artwork_description_150w_long": ["What if we could encode our own secret messages as an everyday item, something innocuous, hiding in plain sight? Knitwitter is an invitation for anyone familiar with knitting needles or a crochet hook and yarn to encode some text into a pattern, and then use that pattern to hide their message in a piece of knitting or crochet. The Knitwitter app encodes your text into binary code and makes pattern suggestions, but the message you choose to encode and how you choose to interpret the pattern in your knitting or crochet is up to you. Women have used knitting to encode secret messages since World War 1. <br><br>Now, encoded messages are sent all the time using programming languages and machine code. Instant, digital, text-based communications are made from millions of hidden zeros and ones that we entrust our phones to interpret for us and keep secret from others. <a  target='_blank' href='https://www.knitwitter.com/'>Knitwitter</a> will grow into a collaboratively made knitted artwork highlighting our intimate yet intangible and complex relationship with code.<br><br>Participate in Knitwitter by visiting the <a  target='_blank' href='https://www.knitwitter.com/'>website</a>, and encode your own message in a piece of knitting. Wisterlitz will collect, curate, and display the knitted messages into a collaborative artwork."],
+            "artwork_description_50w_short": "Text-based communications are made from millions of hidden zeros and ones that we entrust our phones to interpret for us. The Knitwitter app instead transforms your messages into binary patterns for you to knit. If you are familiar with knitting needles or a crochet hook (or you’ve always wanted to learn), head to the knitwitter site to encode and knit your own messages. <br><br><em>Wisterlitz will curate images of the knitted messages into a collaborative artwork, tag your pictures with #knitwitter to be part of the knitted database of yarn! Participate by visiting the <a  target='_blank' href='https://www.knitwitter.com/'>Knitwitter website</a></em>. ",
             "details": {
                 "filterOnline": "online",
-                "filterType": "workshop"
+                "filterType": "workshop",
+                "actionText": "Go to Knitwitter",
+                "actionLink": "https://www.knitwitter.com/"
             },
             "image": {
-                "url": "miau-id_thumb.png",
-                "alt": "a messy network of yarn in differnt colours"
+                "url": "knitwitter_thumb.png",
+                "alt": "Digital knitting pattern"
             },
             "sliderImages": [
                 {
-                    "url": "miau-id/miau_id_0.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_0.png",
+                    "alt": "A message encoded as binary code in knitting using knitwitter"
                 },
                 {
-                    "url": "miau-id/miau_id_1.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_1.jpg",
+                    "alt": "Knitwitter web site"
                 },
                 {
-                    "url": "miau-id/miau_id_2.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_2.jpg",
+                    "alt": "Knitting encoded as binary code using knitwitter"
                 },
                 {
-                    "url": "miau-id/miau_id_3.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_3.jpg",
+                    "alt": "A message encoded as binary code in knitting using knitwitter"
                 },
                 {
-                    "url": "miau-id/miau_id_4.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_4.jpg",
+                    "alt": "A message inspired by the removal of Colston's statue encoded as binary code using knitwitter"
                 },
                 {
-                    "url": "miau-id/miau_id_5.jpg",
-                    "alt": "Miau ID artwork and workshop"
+                    "url": "knitwitter/knitwitter_artwork_5.jpg",
+                    "alt": "A Fair Isle style message encoded as binary code in knitting using knitwitter"
                 }
             ]
         },
         "social_media": {
-            "website": "http://meltionary.com/",
-            "instagram": "https://www.instagram.com/meltionary"
+            "website": "https://www.knitwitter.com/",
+            "facebook": "https://www.facebook.com/groups/knitwitter/",
+            "instagram": "https://www.instagram.com/knit.witter/"
         }
     },
     {
@@ -1421,6 +1384,62 @@
         },
         "social_media": {
             "website": "https://cranbim.github.io/artcodeandabowloffruit/"
+        }
+    },
+    {
+        "id": 5,
+        "artist": {
+            "name": "Control Alt Delete",
+            "bio_100w": ["Control Alt Delete is a group of resident art makers and code wranglers aged 10-16 years. They meet every Monday, as part of Jump Studios at Knowle West Media Centre, to explore how to be creative with technology. To make this work they collaborated with Bristol based media artist <a  target='_blank' href='https://www.beccarose.co.uk'> Becca Rose</a>"],
+            "image": [
+                {
+                    "url": "",
+                    "alt": ""
+                }
+            ]
+        },
+        "artwork": {
+            "artwork_name": "Get this position",
+            "artwork_description_line": "Exhibition of DIY augmented reality filters by young people from Knowle West",
+            "artwork_description_150w_long": ["Augmented reality filters, used in apps such as Tik Tok, Instagram and Snapchat are part of our lives in intimate ways whilst also defining who we are. Rather than defining themselves through the eyes of others, young people from KWMC’s Jump Studio have made their own augmented realities to share with the world.<br><br><em>Co-produced by <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a>. Workshops took place at KWMC between 21 Sept - 5 Oct 2020.</em>"],
+            "artwork_description_50w_short": "Augmented reality filters, used in apps such as Tik Tok, Instagram and Snapchat are part of our lives in intimate ways whilst also defining who we are. Rather than defining themselves through the eyes of others, young people from KWMC’s Jump Studio have made their own augmented realities to share with the world. How do they look? <br><br><em>Co-produced by <a  target='_blank' href='https://kwmc.org.uk/Knowle'> Knowle West Media Centre</a>. Workshops are taking place at KWMC between 21 Sept - 5 Oct</em>",
+
+            "details": {
+                "filterOnline": "online",
+                "filterType": "exhibition"
+            },
+            "image": {
+                "url": "get-this-position_thumb.gif",
+                "alt": "moving image of an face with colour"
+            },
+            "sliderImages": [
+                {
+                    "url": "get-this-pos/get-this-pos_artwork_0.jpg",
+                    "alt": "AR filters workshop for young people"
+                },
+                {
+                    "url": "get-this-pos/get-this-pos_artwork_1.jpg",
+                    "alt": "AR filters workshop for young people"
+                },
+                {
+                    "url": "get-this-pos/get-this-pos_artwork_2.jpg",
+                    "alt": "AR filters workshop for young people"
+                },
+                {
+                    "url": "get-this-pos/get-this-pos_artwork_3.jpg",
+                    "alt": "AR filters workshop for young people"
+                }
+                ,
+                {
+                    "url": "get-this-pos/get-this-pos_artwork_4.jpg",
+                    "alt": "AR filters workshop for young people"
+                }
+            ]
+        },
+        "social_media": {
+            "website": "https://kwmc.org.uk/projects/jumpstudios/",
+            "twitter": "https://twitter.com/jumpkwmc",
+            "instagram": "https://www.instagram.com/jumpkwmc/"
         }
     },
     {
