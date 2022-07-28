@@ -105,8 +105,7 @@ a:hover {
 
 
 
-p a, h1 a {
-    text-decoration: none;
+p a, h1 a, h2 a {
     color: var(--dark-primary);
     border-bottom: 1px solid var(--mid-primary);
 }
@@ -806,7 +805,6 @@ input:-webkit-autofill {
 }
 
 .activeLink {
-    text-decoration: underline !important;
     color: var(--dark-primary) !important;
 }
 
