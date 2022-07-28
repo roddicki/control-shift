@@ -788,6 +788,9 @@ input:-webkit-autofill {
     .logo-ht img {
         max-height: 60px;
     }
+    .logo-ht-sml img {
+        max-height: 40px;
+    }
 
 }
 
