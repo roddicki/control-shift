@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Control Shift is an exciting new arts programme coming to Bristol (UK) in June 2020.">
+  <meta name="keywords" content="art, artists, Bristol, data, embodiement, materiality, code">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta property="og:url" content="http://www.control-shift.network">
+  <meta property="og:title" content="Control Shift">
+  <meta property="og:description" content="Control Shift is an exciting new arts programme coming to Bristol (UK), exploring creative and critical approaches to technology, rooted in embodiment and materiality.">
+  <meta property="og:image" content="https://www.control-shift.network/img/control-shiftBanner.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,623;0,700;1,300;1,400;1,500;1,600;1,623;1,700&display=swap" rel="stylesheet">
+  <title> Control (╯°▽°)╯ ┻━┻ Shift </title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!--  Stylesheet -->
+  <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+</head>
+
+<body>
+  <div class="container">
+      <h1 class="pt-4 text-center">Control Shift</h1>
+      <p>data from this <a href="https://docs.google.com/spreadsheets/d/1fynslgkkR_e_GHcTjv65E_9fQL8XSgt4Iwy_ymVO2k8/edit#gid=0">Google sheet</a></p>
+      <h2>Upcoming events</h2>
+      <div class="upcoming-events"></div>  
+      <h2>Past events</h2>
+      <div class="past-events"></div>   
+  </div>
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  function formatEvents(data) {
+    document.querySelector
+    for (var i = 0; i < data.length; i++) {
+      console.log(data[i]);
+      let dateNow = new Date();
+      let eventDate = new Date(data[i].date);
+    
+      let card = document.createElement("div");
+      card.className = "card";
+
+      let cardBody = document.createElement("div");
+      cardBody.className = "card-body";
+
+      let title = document.createElement("h5");
+      title.className = "card-title";
+      title.innerHTML = data[i].title;
+
+      let subtitle = document.createElement("h6");
+      subtitle.className = "card-subtitle mb-2 text-muted";
+      subtitle.innerHTML = data[i].subtitle;
+
+      let deadline = document.createElement("p");
+      deadline.className = "card-text";
+      deadline.innerHTML = eventDate.toDateString();
+
+      let synopsisText = data[i].synopsis;
+      let shortdescription = document.createElement("p");
+      shortdescription.className = "card-text";
+      shortdescription.innerHTML = synopsisText;
+
+      let link = document.createElement("a");
+      link.className = "btn btn-primary stretched-link";
+      link.href="event.html?id=";
+      link.innerHTML = "More..."
+
+      cardBody.appendChild(title);
+      cardBody.appendChild(subtitle);
+      cardBody.appendChild(deadline);
+      cardBody.appendChild(shortdescription);
+      cardBody.appendChild(link);
+      card.appendChild(cardBody);
+
+      if(data[i].show && eventDate >= dateNow) {
+        document.querySelector(".upcoming-events").appendChild(card);
+      } else if(data[i].show && eventDate < dateNow) {
+        document.querySelector(".past-events").appendChild(card);
+      }
+    }
+
+  }
+
+  $.ajax({
+    type: 'GET',
+    url: 'https://script.googleusercontent.com/macros/echo?user_content_key=NvtPb6QXwKiDgFEKHm_yz_jPfgD7F1_o0EQ-3XXdk5_6Xm3LYb5ht7kdTW1INej1us7wW2Z19JHk3f7OKmb8ixkVK1pkRxawm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJ0w9utdNfmG6ESQ-7gd-J4RbKem-VFX23r0_bUIszW-CJq3yjANn27FhP9uBpgFMyaq-rLsLmpUCoOrJ14Yplhkf6558cMJ4Q&lib=MvwZz7DUNtHF4aQMzz3OE8zs-bVuk2t_I',
+    data: {get_param: 'value'},
+    dataType: 'json',
+    success: function (data) {
+      console.log(data);
+      formatEvents(data);
+    }
+  });
+  </script>
+</body>
+
+</html>
