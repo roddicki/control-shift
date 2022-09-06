@@ -37,13 +37,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script>
+
+  // format incoming data from google sheet
+  // split into past and upcoming based on date  
   function formatEvents(data) {
     document.querySelector
     for (var i = 0; i < data.length; i++) {
       console.log(data[i]);
       let dateNow = new Date();
+      dateNow.setDate(dateNow.getDate()-1);
       let eventDate = new Date(data[i].date);
-    
       let card = document.createElement("div");
       card.className = "card";
 
@@ -58,9 +61,9 @@
       subtitle.className = "card-subtitle mb-2 text-muted";
       subtitle.innerHTML = data[i].subtitle;
 
-      let deadline = document.createElement("p");
-      deadline.className = "card-text";
-      deadline.innerHTML = eventDate.toDateString();
+      let eventTime = document.createElement("p");
+      eventTime.className = "card-text";
+      eventTime.innerHTML = eventDate.toDateString();
 
       let synopsisText = data[i].synopsis;
       let shortdescription = document.createElement("p");
@@ -74,7 +77,7 @@
 
       cardBody.appendChild(title);
       cardBody.appendChild(subtitle);
-      cardBody.appendChild(deadline);
+      cardBody.appendChild(eventTime);
       cardBody.appendChild(shortdescription);
       cardBody.appendChild(link);
       card.appendChild(cardBody);
@@ -88,16 +91,25 @@
 
   }
 
+  // sort google sheet data by date
+  function custom_sort(a, b) {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  }
+
+
+  // get json data from google sheet
   $.ajax({
     type: 'GET',
     url: 'https://script.googleusercontent.com/macros/echo?user_content_key=NvtPb6QXwKiDgFEKHm_yz_jPfgD7F1_o0EQ-3XXdk5_6Xm3LYb5ht7kdTW1INej1us7wW2Z19JHk3f7OKmb8ixkVK1pkRxawm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJ0w9utdNfmG6ESQ-7gd-J4RbKem-VFX23r0_bUIszW-CJq3yjANn27FhP9uBpgFMyaq-rLsLmpUCoOrJ14Yplhkf6558cMJ4Q&lib=MvwZz7DUNtHF4aQMzz3OE8zs-bVuk2t_I',
     data: {get_param: 'value'},
     dataType: 'json',
     success: function (data) {
-      console.log(data);
-      formatEvents(data);
+      console.log(data.sort(custom_sort));
+      let sortedData = data.sort(custom_sort)
+      formatEvents(sortedData);
     }
   });
+
   </script>
 </body>
 
