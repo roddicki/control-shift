@@ -147,7 +147,34 @@ a.dropdown-item:hover {
     /*    border: 1px black solid;*/
 }
 
+.height-100 {
+    height: 100vh !important;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.intro {
+    position: relative;
+    top: -50px;
+    margin-left: 200px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+@media (max-width: 480px) { 
+    .intro {
+        margin-left: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+} 
+
 /*P5 sketch container*/
+/*commenting this out as not using
 .sketch {
     padding-right: 0;
     padding-left: 0;
@@ -172,7 +199,7 @@ a.dropdown-item:hover {
         background-image: url("../img/image-temp-ipad.png");
         background-size: cover;
     }
-} 
+} */
 
 .jumbotron {
     min-height: 70vh;
