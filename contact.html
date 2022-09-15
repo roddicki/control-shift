@@ -27,46 +27,63 @@
         <!-- row  -->
         <div class="row">
             <div class="col-sm">
-                <h1 class="pt-4">Contact us / Subscribe</h1>
+                <h1 class="pt-4">Contact us</h1>
 
-                <p>If you have any questions please contact us through the form below. <br>Join our mailing list for the latest news and info by checking the subscribe box.</p>
+                <!-- <form action="https://mailthis.to/rod@roddickinson.net"
+                    method="POST" encType="multipart/form-data">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="_replyto" placeholder="Your email">
+                    <textarea name="message" placeholder="Enter your message here"></textarea>
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input type="hidden" name="_after" value="https://myhomepage.net/">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="Thanks">
+                    <input type="submit" value="Send">
+                </form> -->
+
+                <p>If you have any questions please contact us through the form below.</p>
 
                 <div class="form-area d-flex justify-content-center padding-bottom">
-                    <form role="form" name="contactForm" id="contactForm">
+                    <form role="form" name="contactForm" id="contactForm" action="https://mailthis.to/rod@roddickinson.net"
+                    method="POST" encType="multipart/form-data">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" value="" name="FNAME" class="form-control mc" id="mce-FNAME" placeholder="First Name" required>
+                            <div class="form-group col-md-12">
+                                <input type="text" value="" name="name" class="form-control mc" id="name" placeholder="Name" required>
                             </div>
-                            <div class="form-group col-md-6">
+                            <!-- <div class="form-group col-md-6">
                                 <input type="text" value="" name="LNAME" class="form-control mc" id="mce-LNAME" placeholder="Last Name" required>
+                            </div> -->
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="email" value="" name="_replyto" class="form-control required email mc" id="mce-EMAIL" placeholder="Email" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <input type="email" value="" name="EMAIL" class="form-control required email mc" id="mce-EMAIL" placeholder="Email" required>
+                                <textarea id="inputMsg" type="textarea" name="message" class="form-control" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                <input type="hidden" name="_subject" value="Contact form submitted">
+                                <input type="hidden" name="_after" value="https://myhomepage.net/">
+                                <input type="hidden" name="_honeypot" value="">
+                                <input type="hidden" name="_confirmation" value="Thanks">
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <textarea id="inputMsg" type="textarea" name="inputMsg" class="form-control" placeholder="Optional Message" maxlength="140" rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
+                        <!-- <div class="form-row">
                             <div class="form-check col-md-12 pl-4">
                                 <input type="checkbox" class="form-check-input" id="SubscribeCheckBox" checked="checked">
                                 <label class="checkmark form-check-label" for="SubscribeCheckBox">Subscribe me to the Control Shift mailing list, I have read and agree to the <a href="privacy.html" target="_blank">Privacy Policy</a></label>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="overlay is-hidden" id="overlay">
                             <span class="" id="sendStatus">hello</span><span class="button-close" onclick="closeModal();"></span>
                         </div>
 
-                        <div id="sendMsg" class="send-submit">
-                            Send
+                        <div>
+                            <input type="submit" class="send-submit" value="Send" style="border:0px;">
                         </div>
 
                     </form>
