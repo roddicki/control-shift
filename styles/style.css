@@ -463,11 +463,11 @@ h1 {
 }
 
 .feeling h1 {
-    font-size: 3em;
+    font-size: 5.5em;
     font-family: var(--font-feeling);
-    font-weight: 100;
+    margin-top: 150px;
     margin-bottom: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
     /*    text-shadow: 2px 2px var(--dark-link);*/
 }
 
