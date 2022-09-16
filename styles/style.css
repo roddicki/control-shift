@@ -17,6 +17,8 @@
     --font-paragraph-text: 'Karla', sans-serif;
     --font-small-headings: OfficeCode, serif;
     --font-nav-bar: OfficeCode, serif;
+    --font-feeling1: kaerukaeru;
+    --font-feeling2: PicNic;
 }
 
 @font-face {
@@ -43,6 +45,18 @@
     font-family: YoungSerif;
     src: url("../fonts/YoungSerif-Regular.otf") format("opentype");
 }
+
+
+@font-face {
+    font-family: kaerukaeru;
+    src: url("../fonts/kaerukaeru.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PicNic;
+    src: url("../fonts/PicNic.otf") format("opentype");
+}
+
 
 /* setting up the grid
 see https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display
@@ -443,6 +457,15 @@ a.dropdown-item:hover {
 h1 {
     font-size: 2em;
     font-family: var(--font-small-headings);
+    font-weight: 1200;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    /*    text-shadow: 2px 2px var(--dark-link);*/
+}
+
+.feeling h1 {
+    font-size: 2em;
+    font-family: var(--font-feeling1);
     font-weight: 1200;
     margin-bottom: 20px;
     letter-spacing: 2px;
