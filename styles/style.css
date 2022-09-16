@@ -244,7 +244,14 @@ a.dropdown-item:hover {
     padding-bottom: 30px;
     background-color: #fdfcd1;
 }
-=
+
+.navbar .navbar-brand {
+    font-size: 1.2em;
+    font-family: var(--font-small-headings);
+    font-weight: 1200;
+    letter-spacing: 2px;
+    color: var(--mid-primary);
+}
 
 
 
