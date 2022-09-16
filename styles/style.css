@@ -17,8 +17,7 @@
     --font-paragraph-text: 'Karla', sans-serif;
     --font-small-headings: OfficeCode, serif;
     --font-nav-bar: OfficeCode, serif;
-    --font-feeling1: kaerukaeru;
-    --font-feeling2: PicNic;
+    --font-feeling: PicNic;
 }
 
 @font-face {
@@ -162,7 +161,7 @@ a.dropdown-item:hover {
 }
 
 .height-100 {
-    height: 100vh !important;
+    height: 85vh !important;
 }
 
 .v-center {
@@ -173,7 +172,7 @@ a.dropdown-item:hover {
 
 .intro {
     position: relative;
-    top: -50px;
+    top: -80px;
     margin-left: 200px;
     min-width: 500px;
     max-width: 500px;
@@ -243,7 +242,7 @@ a.dropdown-item:hover {
     color: var(--dark-primary);
 }
 
-.navbar-light .navbar-toggler {
+.bar-light .navbar-toggler {
     color: transparent !important;
     border: 0px;
     padding-right: 0;
@@ -456,19 +455,19 @@ a.dropdown-item:hover {
 /* home page central heading */
 h1 {
     font-size: 2em;
-    font-family: var(--font-small-headings);
-    font-weight: 1200;
+    font-family: var(--font-large-headings);
+    font-weight: 180;
     margin-bottom: 20px;
     letter-spacing: 2px;
     /*    text-shadow: 2px 2px var(--dark-link);*/
 }
 
 .feeling h1 {
-    font-size: 2em;
-    font-family: var(--font-feeling1);
-    font-weight: 1200;
+    font-size: 3em;
+    font-family: var(--font-feeling);
+    font-weight: 100;
     margin-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     /*    text-shadow: 2px 2px var(--dark-link);*/
 }
 
