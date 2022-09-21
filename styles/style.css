@@ -272,6 +272,15 @@ a.dropdown-item:hover {
     color: var(--mid-primary) !important;
 }
 
+.navbar-toggler {
+    padding: 0.35rem 0.55rem;
+    font-size: 1.25rem;
+    /* line-height: 0.2 !important; */
+    background-color: transparent;
+     border: 0px solid transparent; 
+    border-radius: 0.25rem;
+}
+
 
 
 
