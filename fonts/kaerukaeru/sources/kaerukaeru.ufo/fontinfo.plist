@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>800</integer>
+	<key>capHeight</key>
+	<integer>700</integer>
+	<key>copyright</key>
+	<string>2019, NoFoundry, Velvetyne Type Foundry</string>
+	<key>descender</key>
+	<integer>-200</integer>
+	<key>familyName</key>
+	<string>kaeru kaeru</string>
+	<key>openTypeHeadCreated</key>
+	<string>2019/07/16 20:40:16</string>
+	<key>openTypeHheaAscender</key>
+	<integer>1000</integer>
+	<key>openTypeHheaDescender</key>
+	<integer>-200</integer>
+	<key>openTypeNameDesigner</key>
+	<string>Isabel Motz</string>
+	<key>openTypeNameDesignerURL</key>
+	<string>http://nofoundry.xyz , https://www.velvetyne.fr</string>
+	<key>openTypeNameManufacturer</key>
+	<string>Isabel Motz, Velvetyne Type Foundry, NoFoundry</string>
+	<key>openTypeNameManufacturerURL</key>
+	<string>http://nofoundry.xyz , https://www.velvetyne.fr</string>
+	<key>openTypeNamePreferredFamilyName</key>
+	<string>kaeru kaeru</string>
+	<key>openTypeNamePreferredSubfamilyName</key>
+	<string>Regular</string>
+	<key>openTypeOS2CodePageRanges</key>
+	<array>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2TypoAscender</key>
+	<integer>800</integer>
+	<key>openTypeOS2TypoDescender</key>
+	<integer>-200</integer>
+	<key>openTypeOS2TypoLineGap</key>
+	<integer>200</integer>
+	<key>openTypeOS2UnicodeRanges</key>
+	<array>
+		<integer>0</integer>
+		<integer>1</integer>
+	</array>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>openTypeOS2WinAscent</key>
+	<integer>1000</integer>
+	<key>openTypeOS2WinDescent</key>
+	<integer>200</integer>
+	<key>postscriptBlueValues</key>
+	<array>
+	</array>
+	<key>postscriptFontName</key>
+	<string>kaerukaeru-Regular</string>
+	<key>postscriptFullName</key>
+	<string>kaeru kaeru Regular</string>
+	<key>postscriptOtherBlues</key>
+	<array>
+	</array>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
+	<key>styleName</key>
+	<string>Regular</string>
+	<key>unitsPerEm</key>
+	<integer>1000</integer>
+	<key>versionMajor</key>
+	<integer>1</integer>
+	<key>versionMinor</key>
+	<integer>0</integer>
+	<key>xHeight</key>
+	<integer>500</integer>
+</dict>
+</plist>

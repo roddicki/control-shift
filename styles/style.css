@@ -17,6 +17,7 @@
     --font-paragraph-text: 'Karla', sans-serif;
     --font-small-headings: OfficeCode, serif;
     --font-nav-bar: OfficeCode, serif;
+    --font-feeling: PicNic;
 }
 
 @font-face {
@@ -43,6 +44,18 @@
     font-family: YoungSerif;
     src: url("../fonts/YoungSerif-Regular.otf") format("opentype");
 }
+
+
+@font-face {
+    font-family: kaerukaeru;
+    src: url("../fonts/kaerukaeru.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PicNic;
+    src: url("../fonts/PicNic.otf") format("opentype");
+}
+
 
 /* setting up the grid
 see https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display
@@ -147,7 +160,34 @@ a.dropdown-item:hover {
     /*    border: 1px black solid;*/
 }
 
+.height-100 {
+    height: 85vh !important;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.intro {
+    position: relative;
+    top: -80px;
+    margin-left: 200px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+@media (max-width: 480px) { 
+    .intro {
+        margin-left: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+} 
+
 /*P5 sketch container*/
+/*commenting this out as not using
 .sketch {
     padding-right: 0;
     padding-left: 0;
@@ -172,7 +212,7 @@ a.dropdown-item:hover {
         background-image: url("../img/image-temp-ipad.png");
         background-size: cover;
     }
-} 
+} */
 
 .jumbotron {
     min-height: 70vh;
@@ -202,7 +242,7 @@ a.dropdown-item:hover {
     color: var(--dark-primary);
 }
 
-.navbar-light .navbar-toggler {
+.bar-light .navbar-toggler {
     color: transparent !important;
     border: 0px;
     padding-right: 0;
@@ -217,7 +257,21 @@ a.dropdown-item:hover {
     padding-bottom: 30px;
     background-color: #fdfcd1;
 }
-=
+
+.navbar .navbar-brand {
+    font-size: 1.2em;
+    font-family: var(--font-small-headings);
+    font-weight: 1200;
+    letter-spacing: 2px;
+    color: var(--mid-primary);
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus {
+    background-color: transparent;
+    color: var(--mid-primary) !important;
+}
+
 
 
 
@@ -263,6 +317,10 @@ a.dropdown-item:hover {
         border-bottom: 1px solid var(--dark-link);
         padding-bottom: 30px;
         background-color: #fdfcd1;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 0.8em;
     }
 }
 
@@ -408,11 +466,26 @@ a.dropdown-item:hover {
 /* home page central heading */
 h1 {
     font-size: 2em;
-    font-family: var(--font-small-headings);
-    font-weight: 1200;
+    font-family: var(--font-large-headings);
+    font-weight: 180;
     margin-bottom: 20px;
     letter-spacing: 2px;
     /*    text-shadow: 2px 2px var(--dark-link);*/
+}
+
+.feeling h1 {
+    font-size: 5.5em;
+    font-family: var(--font-feeling);
+    margin-top: 160px;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    /*    text-shadow: 2px 2px var(--dark-link);*/
+}
+
+@media only screen and (max-width: 600px) {
+    .feeling h1 {
+        font-size: 3.5em;
+    }
 }
 
 /* home page central heading */

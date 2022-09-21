@@ -1,0 +1,20 @@
+unified font repository version: "0.2"
+unified font repository url: https://github.com/unified-font-repository/Unified-Font-Repository
+
+typeface family:
+  name: Kaeru Kaeru
+  tags:
+  - display
+  - experimental
+  - soft
+  - nature
+
+repository url: https://gitlab.com/velvetyne/kaerukaeru
+project url: http://velvetyne.fr/fonts/kaeru-kaeru/
+project status: 
+	- Published
+tools:
+  - Glyphs
+similar fonts:
+sample text:
+  - en_us: A quick brown fox jumps over the lazy dog.
