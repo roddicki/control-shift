@@ -493,7 +493,7 @@ h1 {
 }
 
 .feeling h1 {
-    font-size: 5.5em;
+    font-size: 4.0em;
     font-family: var(--font-feeling);
     margin-top: 160px;
     margin-bottom: 20px;
@@ -855,12 +855,10 @@ input:-webkit-autofill {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 400px) {
     .home-page-content {
         margin-top: 70px !important;
     }
-
-
 }
 
 @media (max-width: 1000px) {
