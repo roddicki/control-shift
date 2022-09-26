@@ -394,7 +394,7 @@ a.dropdown-item:hover {
     text-align: center !important;
     font-style: italic;
     color: var(--background);
-    font-size: 0.85em;
+    font-size: 0.95em;
 }
 
 .footer,
