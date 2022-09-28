@@ -19,13 +19,14 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <!--  Stylesheet -->
   <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+  <script src="/livereload.js"></script>
 </head>
 
 <body>
   <div class="container">
       <h1 class="pt-4 text-center">Control Shift</h1>
       <p>data from this <a href="https://docs.google.com/spreadsheets/d/1fynslgkkR_e_GHcTjv65E_9fQL8XSgt4Iwy_ymVO2k8/edit#gid=0">Google sheet</a></p>
-      <h2>Upcoming events</h2>
+      <h2>Events</h2>
       <div class="upcoming-events"></div>  
       <h2>Past events</h2>
       <div class="past-events"></div>   
@@ -43,6 +44,7 @@
   function formatEvents(data) {
     document.querySelector
     for (var i = 0; i < data.length; i++) {
+      console.log('here it comes');
       console.log(data[i]);
       let dateNow = new Date();
       dateNow.setDate(dateNow.getDate()-1);
@@ -55,7 +57,7 @@
 
       let title = document.createElement("h5");
       title.className = "card-title";
-      title.innerHTML = data[i].title;
+      title.innerHTML = data[i]['title-of-work'];
 
       let subtitle = document.createElement("h6");
       subtitle.className = "card-subtitle mb-2 text-muted";
@@ -81,6 +83,7 @@
       cardBody.appendChild(shortdescription);
       cardBody.appendChild(link);
       card.appendChild(cardBody);
+      console.log(card);
 
       if(data[i].show && eventDate >= dateNow) {
         document.querySelector(".upcoming-events").appendChild(card);
