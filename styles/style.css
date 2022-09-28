@@ -1,6 +1,7 @@
 /* Setting up colours */
 :root {
     --background: #FDFCD1;
+    --light-primary: #8badcc;
     --mid-primary: #074bdd;
     --dark-primary: #053cb0;
 
@@ -600,6 +601,71 @@ li {
     padding-left: 5px;
     font-style: italic;
 
+}
+
+/*event listings*/
+.event-card {
+    position: relative;
+    margin: 20px;
+    /*max-width: 900px;*/
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.event-card:last-child {
+    border-bottom: 0px;
+}
+
+.event-card .text-muted {
+    color: var(--light-primary) !important;
+}
+
+.event-card .card-title {
+    margin-bottom: 0px !important;
+    font-size: 1.6em;
+    color: var(--mid-primary);
+    font-family: var(--font-small-headings);
+    font-weight: 800;
+    letter-spacing: 0px; 
+}
+
+.event-card .card-title a  {
+    text-decoration: none;;
+    border-bottom: 0px;
+}
+
+.event-card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+}
+
+.past-events-title {
+    margin-top:40px;
+    color: var(--light-primary) !important;
+}
+
+.past-events .card-title a {
+    color: var(--light-primary) !important;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 700px) {
+    .event-card {
+        position: static;
+    }
+    .event-card .date {
+        position: static;
+    }
+
+    .event-card .card-title{
+        padding-bottom: 10px;
+    }
 }
 
 /* form */
