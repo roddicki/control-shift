@@ -626,7 +626,7 @@ li {
 
 .event-card .card-title {
     margin-bottom: 0px !important;
-    font-size: 1.6em;
+    font-size: 1.15em;
     color: var(--mid-primary);
     font-family: var(--font-small-headings);
     font-weight: 800;
