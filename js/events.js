@@ -23,8 +23,7 @@ function formatEvents(data) {
 
     let title = document.createElement("h2");
     title.className = "card-title";
-    //title.innerHTML = "<a href='artwork.html?artwork="+artworkName+"&&id=" + id+"'>"artworkName + " by " + data[i]['artist-name']+"</a>";
-    title.innerHTML = "<a href='artwork.html?artwork="+slug+"'>"+artworkName + " by " + data[i]['artist-name']+"</a>";
+    title.innerHTML = "<a href='artwork.html?artwork="+slug+"'>"+artworkName + "<br>by " + data[i]['artist-name']+"</a>";
 
     cardColTitle.appendChild(title);
 
@@ -61,8 +60,6 @@ function formatEvents(data) {
     link.href="event.html?id=";
     link.innerHTML = "More..."
     
-    console.log(card);
-
     if(data[i]['show-on-website'] && eventDate >= dateNow) {
       document.querySelector(".upcoming-events").appendChild(card);
     } else if(data[i]['show-on-website'] && eventDate < dateNow) {
