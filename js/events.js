@@ -62,11 +62,11 @@ function formatEvents(data) {
     
     if(data[i]['show-on-website'] && eventDate >= dateNow) {
       document.querySelector(".upcoming-events").appendChild(card);
-    } else if(data[i]['show-on-website'] && eventDate < dateNow) {
+    } 
+    /*else if(data[i]['show-on-website'] && eventDate < dateNow) {
       document.querySelector(".past-events").appendChild(card);
-    }
+    }*/
   }
-
 }
 
 function formatEventPage(slug, data) {
@@ -96,7 +96,7 @@ function getParamKey(key) {
 }
 
 // get json data from google sheet and format
-function getData(){
+function getHomePageData(){
   $.ajax({
     type: 'GET',
     url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
