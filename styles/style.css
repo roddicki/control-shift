@@ -654,6 +654,10 @@ li {
     color: var(--light-primary) !important;
 }
 
+.thumb-img {
+    min-height: 150px !important;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 700px) {
     .event-card {

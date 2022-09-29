@@ -1,3 +1,4 @@
+// HOME PAGE FORMATTING
 // format incoming data from google sheet
 // split into past and upcoming based on date  
 function formatEvents(data) {
@@ -62,13 +63,99 @@ function formatEvents(data) {
     
     if(data[i]['show-on-website'] && eventDate >= dateNow) {
       document.querySelector(".upcoming-events").appendChild(card);
-    } else if(data[i]['show-on-website'] && eventDate < dateNow) {
+    } 
+    /*else if(data[i]['show-on-website'] && eventDate < dateNow) {
       document.querySelector(".past-events").appendChild(card);
-    }
+    }*/
   }
-
 }
 
+// PROGRAMME PAGE FORMATTING
+// format incoming data from google sheet
+// split into past and upcoming based on date  
+function formatProgEvents(data) {
+  for (var i = 0; i < data.length; i++) {
+    console.log(data[i]);
+    let dateNow = new Date();
+    dateNow.setDate(dateNow.getDate()-1);
+    let eventDate = new Date(data[i]['date-of-event']);
+    let slug = data[i]['slug'];
+    let artworkName = data[i]['title-of-work'];
+    let startDate = new Date(data[i]['date-of-event']);
+    let endDate;  
+    if (data[i]['end-date-of-event']) {
+        endDate = new Date(data[i]['end-date-of-event']); 
+    }
+    let card = document.createElement("div");
+    card.className = "col-md-4 pt-4 pb-3";
+    card.onclick = function() {
+        console.log('clicked id=' +  id);
+        location.href = "artwork.html?artwork="+slug;
+    }
+
+    let imgLink = document.createElement("a");
+    imgLink.className = "thumbnail";
+    imgLink.href = "artwork.html?artwork="+slug;
+
+    let imgContainer = document.createElement("div");
+    imgContainer.className = "blueSquare";
+
+    let img = document.createElement("img");
+    img.src = data[i]['artwork-image-thumb-url']; 
+    img.alt = data[i]['artwork-image-alt-text'];
+    img.className = "mx-auto d-block thumb-img img-fluid";
+
+    imgContainer.appendChild(img);
+    imgLink.appendChild(imgContainer);
+    card.appendChild(imgLink);
+
+    let textContainer = document.createElement("div");
+
+    let textLink = document.createElement("a");
+    textLink.className = "mainLinkText";
+    textLink.href = "artwork.html?artwork="+slug;
+
+    let title = document.createElement("div");
+    title.className = "gridText gridTitle pt-4 text-center";
+    title.innerHTML = artworkName;
+
+    let artist = document.createElement("div");
+    artist.className = "gridText gridAbout pt-0 text-center";
+    artist.innerHTML = "by " + data[i]['artist-name'];
+
+    let description = document.createElement("div");
+    description.className = "gridText aboutText pt-2 text-center";
+    description.innerHTML = data[i]['event-synopsis'];
+
+    let dates = document.createElement("div");
+    dates.className = "gridText aboutText pt-2 text-center";
+    let dateDescription = startDate.toDateString();
+    if (endDate) {
+        dateDescription = startDate.toDateString() + " - " + endDate.toDateString();
+    }
+    dates.innerHTML = dateDescription;
+
+    textLink.appendChild(title);
+    textLink.appendChild(artist);
+    textLink.appendChild(description);
+    textLink.appendChild(dates);
+
+    textContainer.appendChild(textLink);
+    card.appendChild(textContainer);
+
+    if(data[i]['show-on-website'] && endDate >= dateNow) {
+      document.querySelector("#upcoming-events").appendChild(card);
+    } 
+    else if(data[i]['show-on-website'] && startDate >= dateNow) {
+      document.querySelector("#upcoming-events").appendChild(card);
+    } 
+    else if(data[i]['show-on-website'] && startDate < dateNow) {
+      document.querySelector("#past-events").appendChild(card);
+    }
+  }
+}
+
+// INDIVIDUAL ARTWORK FORMATTING
 function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
     if (data[i]['slug'] == slug) {
@@ -96,7 +183,7 @@ function getParamKey(key) {
 }
 
 // get json data from google sheet and format
-function getData(){
+function getHomePageData(){
   $.ajax({
     type: 'GET',
     url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
@@ -120,6 +207,21 @@ function getEventData(){
     success: function (data) {
       let slug = getParamKey('artwork');
       formatEventPage(slug, data);
+    }
+  });
+}
+
+// get json data from google sheet and format
+function getProgrammeData(){
+  $.ajax({
+    type: 'GET',
+    url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
+    data: {get_param: 'value'},
+    dataType: 'json',
+    success: function (data) {
+      console.log(data.sort(custom_sort));
+      let sortedData = data.sort(custom_sort)
+      formatProgEvents(sortedData);
     }
   });
 }

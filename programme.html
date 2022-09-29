@@ -19,170 +19,66 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--  Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/artworks.css">
-    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <!-- <script src="/livereload.js"></script> -->
 </head>
+
 <body>
-    
-    
     <div id="navbar"></div>
-    <!--  Grid of artworks generated from json file - see js below -->
-    <div class="pb-3 container home-page-content pt-4 nav-bar-space">
-        <h1>Programme</h1>
-        <p>
-           Join us to re-imagine our digital tools over three weeks of workshops, exhibitions and events - online and across Bristol (UK). 
-        </p>
-        <p>
-            The programme provides different lenses and approaches through which to
-            <em>demystify</em>, <em>reframe</em> and <em>transform</em> our relationships with technology.
-        </p>
+    <!-- <div class="container home-page-content pt-4 nav-bar-space"> -->
+    <div class="container nav-bar-space">
 
-        <!--  filtering grid -->
-<!--        <p class="pt-2">Filter by type of event and location:</p>-->
-        <div class="filterInputs">
-            <label class="time-filter"><input type="radio" name="type" value="" checked><i></i><span>All</span></label>
-            <label class="time-filter"><input type="radio" name="type" value="workshop"><i></i><span>Workshop</span></label>
-            <label class="time-filter"><input type="radio" name="type" value="exhibition"><i></i><span>Exhibition</span></label>
-            <label class="time-filter"><input type="radio" name="type" value="event"><i></i><span>Event</span></label>
-            <label class="time-filter"><input type="radio" name="type" value="watchlisten"><i></i><span>Watch + Listen</span></label>
-        </div> 
-        <div class="filterInputs pb-3">
-            <label class="online-filter"><input type="radio" name="online" value="" checked><i></i><span>All</span></label>
-            <label class="online-filter"><input type="radio" name="online" value="online"><i></i><span>Online</span></label>
-            <label class="online-filter"><input type="radio" name="online" value="person"><i></i><span>In person</span></label>
+        <h1 class="pt-4">Events</h1>
+        <p>Join us at a workshop, come see some artworks, or gather somewhere in-between from October 2022 and April 2023. </p>
+        <div id="upcoming-events" class="row pb-3">
+            <!-- inject events -->
         </div>
 
-        <div class="padding-bottom" class="container">
-            <div id="myData" class="row"></div>
+        <h1 class="pt-4 past-events-title text-muted">Past Events</h1>
+        <!-- row  -->
+        <div id="past-events" class="row pb-3">
+            <!-- inject events -->
+
+            <!-- artist block -->
+            <!-- <div class="col-md-4 artworkImageDiv pt-4 pb-3">
+                <a href="artwork.html?artwork=Oracle_Bots" data-id="DANAE and Annika Kappner" class="thumbnail">
+                    <div class="blueSquare">
+                        <img src="2020/img/artists-work/oracle-bot_thumb.png" alt="image of robot in blue on pink and black background" class=" mx-auto d-block artworkImage img-fluid" id="artworkID">
+                    </div>
+                </a>
+                <div>
+                    <a href="artwork.html?artwork=Oracle_Bots" class="mainLinkText">
+                        <div class="gridText gridTitle pt-4 text-center" id="gridTitleHighlight">Oracle Bots</div>
+                        <div class="gridText gridAbout pt-0 text-center"> by DANAE and Annika Kappner</div>
+                        <div class="gridText gridAbout pt-0 text-center"> 30 Nov 2022</div>
+                        <div class="gridText aboutText pt-2 text-center">Workshop for coding Bots that provided spiritual advice</div>
+                    </a>
+                </div>
+            </div> -->
+            <!-- artist block -->
+
         </div>
+        <!-- row  -->
+
     </div>
-    <div id="modal"></div>
-    
     <!-- Include Footer -->
     <div id="footer"></div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
-
-    <!-- <script src="/modal.js"></script> -->
     <script>
         $('#navbar').load('./components/navigation.html');
         $('#head').load('./components/head.html');
-        setTimeout(function(){ $('#footer').load('./components/footer.html')}, 200); // stop flash of footer content before rest of the page is loaded
-        $('#modal').load('./components/artist-modal.html');
+        $('#footer').load('./components/footer.html');
+
     </script>
-
+    <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
+    <script src="js/events.js"></script>
     <script>
-        fetch('artworks.json') // fetching json code
-        .then(function (response) {
-            return response.json(); // Takes a Response stream & returns a promise that resolves with the result of parsing the body text as JSON.
-        })
-        .then(function (data) {
-            appendData(data); // If successful, runs appendData function below
-        })
-        .catch(function (err) {
-            console.log('error: ' + err); // catches error & console logs out the error message
-        });
-        // function to generate grid of artworks from json file
-        function appendData(data) {
-            let mainContainer = document.getElementById("myData");
-            for (let i = 0; i < data.length; i++) {
-                //Making artist Container div to hold artist info
-                let artistContainer = document.createElement("div");
-                artistContainer.setAttribute("class", "col-md-4 artworkImageDiv pt-4 pb-3"); // setting this div to have bootstrap class "col", so each artists container is a responsive bootstrap coloumn
-                
-                artistContainer.setAttribute("data-filterable", data[i].artwork.details.filterType + " " + data[i].artwork.details.filterOnline)
-                artistContainer.setAttribute("id", "outerImage"); //setting unique id to artist name
-                //setting Artist Name
-                let textTitle = document.createElement("div");
-                textTitle.setAttribute("id", "gridTextBoxHighlight");
-                let textInfo = document.createElement("div");
-                
-                let p1 = document.createElement("div");
-                p1.innerHTML = data[i].artwork.artwork_name;
-                p1.setAttribute("class", "gridText gridTitle pt-4 text-center");
-                p1.setAttribute("id", "gridTitleHighlight");
-
-                let p2 = document.createElement("div");
-                if (data[i].artist.name === "Russel Hlongwane") {
-                    p2.innerHTML = "curated by " + data[i].artist.name
-                } else {
-                    p2.innerHTML = " by " + data[i].artist.name
-                }
-                p2.setAttribute("class", "gridText gridAbout pt-0 text-center");
-                
-                let p3 = document.createElement("div");
-                p3.innerHTML = data[i].artwork.artwork_description_line;
-                p3.setAttribute("class", "gridText aboutText pt-2 text-center");
-
-                //general link 
-                let link = document.createElement('a');
-                link.setAttribute("href", "#" + data[i].artwork.artwork_name);
-                link.setAttribute("class", "mainLinkText");
-
-                //make anchor
-                var a = document.createElement('a');
-                a.setAttribute("href", "#" + data[i].artwork.artwork_name);
-                a.setAttribute("data-id", data[i].artist.name);
-                a.setAttribute("class", "thumbnail");
-                //make div overlay for image - for the coloured filter
-                let blueSquare = document.createElement("div");
-                blueSquare.setAttribute("class", "blueSquare");
-                // setting Image
-                let image = document.createElement("IMG"); //creating image element
-                image.setAttribute("src", `./img/artists-work/` + data[i].artwork.image.url ); //variable 'src' set to first image in array;
-                image.setAttribute("alt", data[i].artwork.image.alt); //variable 'alt' set to matching alt value
-                image.setAttribute("class", " mx-auto d-block artworkImage img-fluid");
-                image.setAttribute("id", "artworkID");
-                //adding new elements to one another & positioning in mainContainer
-                a.appendChild(blueSquare);
-                blueSquare.appendChild(image);
-                artistContainer.appendChild(a); 
-                link.appendChild(p1)
-                link.appendChild(p2);
-                link.appendChild(p3)
-                textInfo.appendChild(link)
-                artistContainer.appendChild(textTitle); 
-                artistContainer.appendChild(textInfo); 
-                mainContainer.appendChild(artistContainer);
-                loadWindowSystem();
-            }
-            $.getScript("./js/modal.js");
-        }
+        getProgrammeData();
     </script>
-    
-    <script>
-        // FILTER FUNCTIONALITY
-        function loadWindowSystem(){
-            const el_filters = document.querySelectorAll('[name="type"], [name="online"]'),
-            el_filterable = document.querySelectorAll('[data-filterable]');
-            const applyFilter = () => {
-            // Filter checked inputs
-            const el_checked = [...el_filters].filter(el => el.checked && el.value);
-            // Collect checked inputs values to array
-            const filters = [...el_checked].map(el => el.value);
-            // Get elements to filter
-            const el_filtered = [...el_filterable].filter(el => {
-                const props = el.getAttribute('data-filterable').trim().split(/\s+/);
-                return filters.every(fi => props.includes(fi))
-            });
-            // Hide all
-            el_filterable.forEach(el => el.classList.add('is-hidden'));
-            // Show filtered
-            el_filtered.forEach(el => el.classList.remove('is-hidden'));
-            }
-            // Assign event listener
-            el_filters.forEach(el => el.addEventListener('change', applyFilter));
-            // Init
-            applyFilter();
-        };  
-    
-        // $("#outerImage").hover(function(){
-        //     console.log('hovering')
-        // $('.gridTitle').css({'color':'blue','background-color':'white' });
-// });
-</script>
+</body>
 
-</body></html>
+</html>
