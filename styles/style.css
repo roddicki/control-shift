@@ -985,8 +985,9 @@ input:-webkit-autofill {
 }
 
 .artwork-title a {
-    float: left;
+    /*float: left;*/
     border: none;
+    text-decoration: underline;
 }
 
 .fa-arrow-left:before {
@@ -1201,8 +1202,8 @@ a:hover.mainLinkText {
     color: var(--dark-primary);
     margin-bottom: 3px;
     font-style: italic;
-    padding-left: 100px;    
-    padding-right: 100px;
+   /* padding-left: 100px;    
+    padding-right: 100px;*/
     
 }
 
@@ -1211,8 +1212,8 @@ a:hover.mainLinkText {
     font-family: var(--font-paragraph-modal);
     color: var(--dark-primary);
     margin-bottom: 3px;
-    padding-left:100px;
-    padding-right:100px;
+   /* padding-left:100px;
+    padding-right:100px;*/
 }
 
 .modal-top-text {
