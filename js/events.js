@@ -161,6 +161,16 @@ function formatEventPage(slug, data) {
     if (data[i]['slug'] == slug) {
       console.log(slug);
       console.log(data[i]);
+
+      let artworkImgContainer = document.querySelector('.artwork-image');
+      let artworkImg = document.createElement("img");
+      artworkImg.className = "img-fluid";
+      artworkImg.src = data[i]['artwork-image-url'];
+      artworkImg.alt = data[i]['artwork-image-alt-text'];
+      artworkImgContainer.appendChild(artworkImg);
+
+      //artworkImg.innerHTML = "<img src=\""+ data[i]['artwork-image-url'] +"\"> ";//data[i]['artwork-image-url'];
+
       let artworkTitle = document.querySelector('.artwork-title-text');
       artworkTitle.innerHTML = data[i]['title-of-work'];
 
@@ -176,7 +186,7 @@ function formatEventPage(slug, data) {
       let dateDescription = startDate.toDateString();
       if (data[i]['end-date-of-event']) {
           endDate = new Date(data[i]['end-date-of-event']); 
-          dateDescription = startDate.toDateString() + " - " + endDate.toDateString();
+          dateDescription = startDate.toDateString() + " -<br>" + endDate.toDateString();
       }
       if (data[i]['start-time'] && data[i]['end-time']) {
           dateDescription += "<br>" + data[i]['start-time'] + " - " + data[i]['end-time'];
