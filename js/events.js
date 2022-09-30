@@ -159,13 +159,14 @@ function formatProgEvents(data) {
 function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
     if (data[i]['slug'] == slug) {
+      console.log(slug);
       console.log(data[i]);
-      let info = "<h2>Temporary info dump:</h2> <br>";
-      for (const [key, value] of Object.entries(data[i])) {
-        info += key+": "+value+"<br>"
-        console.log(`${key}: ${value}`);
-      }
-      document.querySelector(".info").innerHTML = info;
+      let artworkTitle = document.querySelector('.artwork-title-text');
+      artworkTitle.innerHTML = data[i]['title-of-work'];
+
+      let artistName = document.querySelector('.artist-name-text');
+      artistName.innerHTML = data[i]['artist-name'];
+      
     }
   }
 }

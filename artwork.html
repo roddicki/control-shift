@@ -34,20 +34,27 @@
       <div class="row pb-3">
           <div class="col-sm">
                 <!-- ARTWORK IMAGE-->
-              <div id="artwork-image"><img src="MELT_browser.png"> 
-                </div>
-       <!--  Artwork Title -->
+              <div id="artwork-image">
+                <img src="MELT_browser.png"> 
+              </div>
+              <!--  Artwork Title -->
               <div class="col-sm">   
-              <h1 class="pb-4  artwork-title"><span class="artwork-title-text modal-header-text pb-4">Ready? SET! Start culling, start collecting!</span></h1>
+              <h1 class="pb-4  artwork-title">
+                <span class="artwork-title-text modal-header-text pb-4">
+                  <!-- inject title -->
+                </span>
+              </h1>
                 
-                <!-- by Artist -->
-      <h2 class="pt-2 pb-3 modal-h2-text"><span class="artist-name-text">By MELT (Ren Loren Britton & Isabel Paehr)</span></h2>
+              <!-- by Artist -->
+              <h2 class="pt-2 pb-3 modal-h2-text">
+                <span class="artist-name-text"><!-- inject artist name --></span>
+              </h2>
           
-                      <!-- event info -->  
-            <hr>
-        <div class="row">
-               <!-- type of event --> 
-              <div class="col-sm"><h2 class="pt-2 pb-3 text-center artwork-type">online / in-person workshop</h2>
+              <!-- event info -->  
+              <hr>
+              <div class="row">
+                <!-- type of event --> 
+                <div class="col-sm"><h2 class="pt-2 pb-3 text-center artwork-type">online / in-person workshop</h2>
               </div>
               <!-- date and time --> 
               <div class="col-sm"><h2 class="pt-2 pb-3 text-center artwork-date">Sunday 30 Oct<br>2-5pm</h2>
@@ -121,6 +128,11 @@
 
     </script>
     <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
+    <script src="js/events.js"></script>
+    <script>
+        //get jsom data 
+        getEventData();
+    </script>
 </body>
 
 </html>
