@@ -338,7 +338,8 @@ a.dropdown-item:hover {
     }
 
     .navbar .navbar-brand {
-        font-size: 1em;
+        font-size: 0.8em;
+        padding-left: 50px;
     }
 
 
@@ -995,7 +996,7 @@ input:-webkit-autofill {
 }
 
 .artwork-title a {
-    /*float: left;*/
+    float: left;
     border: none;
     text-decoration: underline;
 }

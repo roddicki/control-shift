@@ -166,7 +166,48 @@ function formatEventPage(slug, data) {
 
       let artistName = document.querySelector('.artist-name-text');
       artistName.innerHTML = data[i]['artist-name'];
+
+      let artworkType = document.querySelector('.artwork-type');
+      artworkType.innerHTML = data[i]['attendance-type'] + "<br>" + data[i]['artwork-type'];
+
+      let artworkDate = document.querySelector('.artwork-date');
+      let startDate = new Date(data[i]['date-of-event']);
+      let endDate;  
+      let dateDescription = startDate.toDateString();
+      if (data[i]['end-date-of-event']) {
+          endDate = new Date(data[i]['end-date-of-event']); 
+          dateDescription = startDate.toDateString() + " - " + endDate.toDateString();
+      }
+      if (data[i]['start-time'] && data[i]['end-time']) {
+          dateDescription += "<br>" + data[i]['start-time'] + " - " + data[i]['end-time'];
+      }
+      else if (data[i]['start-time']) {
+          dateDescription += "<br>" + data[i]['start-time'];
+      }
+      artworkDate.innerHTML = dateDescription;
       
+      let needsBooking = data[i]['needs-booking']
+      if (needsBooking) {
+        let col = document.createElement('div');
+        col.className = "col-sm";
+        artworkBooking = "<h2 class=\"pt-2 pb-3 text-center artwork-book\"><a href='"+data[i]['booking-link']+"'>Book here</a></h2>";
+        col.innerHTML = artworkBooking;
+        let artworkInfoRow = document.querySelector('.artwork-info');
+        artworkInfoRow.appendChild(col);
+      }
+      
+      let artworkInfoText = document.querySelector('.artwork-info-text');
+      artworkInfoText.innerHTML = data[i]['artwork-copy'];
+
+      let artistShortName = document.querySelector('.artist-short-name');
+      artistShortName.innerHTML = data[i]['artist-short-name'];
+
+      let artistBio = document.querySelector('.artist-bio-text');
+      artistBio.innerHTML = data[i]['artist-bio'];
+
+      
+
+
     }
   }
 }
