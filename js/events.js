@@ -178,7 +178,7 @@ function formatEventPage(slug, data) {
       artistName.innerHTML = data[i]['artist-name'];
 
       let artworkType = document.querySelector('.artwork-type');
-      artworkType.innerHTML = data[i]['attendance-type'] + "<br>" + data[i]['artwork-type'];
+      artworkType.innerHTML = "<a style='padding:30px' href=\"#\"><i class=\"fa fa-map-marker fa-lg\" aria-hidden=\"true\"></i></a> "+data[i]['attendance-type'] + " " + data[i]['artwork-type'];
 
       let artworkDate = document.querySelector('.artwork-date');
       let startDate = new Date(data[i]['date-of-event']);
@@ -215,8 +215,33 @@ function formatEventPage(slug, data) {
       let artistBio = document.querySelector('.artist-bio-text');
       artistBio.innerHTML = data[i]['artist-bio'];
 
-      
+      if (data[i]["artist-website-url"]) {
+        let artistWebsite = document.querySelector("#website-container");
+        artistWebsite.style.display = "inline";
+        let artistWebsiteLink = document.querySelector("#websiteLink");
+        artistWebsiteLink.href = data[i]["artist-website-url"];
+      }
 
+      if (data[i]["artist-social-instagram"]) {
+        let artistInsta = document.querySelector("#instagram-container");
+        artistInsta.style.display = "inline";
+        let instaLink = document.querySelector("#instaLink");
+        instaLink.href = data[i]["artist-social-instagram"];
+      }
+
+      if (data[i]["artist-social-twitter"]) {
+        let artistTwitter = document.querySelector("#twitter-container");
+        artistTwitter.style.display = "inline";
+        let twitLink = document.querySelector("#twitLink");
+        twitLink.href = data[i]["artist-social-twitter"];
+      }
+
+      if (data[i]["artist-social-linkedin"]) {
+        let artistTwitter = document.querySelector("#linkedIn-container");
+        artistTwitter.style.display = "inline";
+        let twitLink = document.querySelector("#linkedInLink");
+        twitLink.href = data[i]["artist-social-linkedin"];
+      }
 
     }
   }
