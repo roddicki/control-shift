@@ -266,13 +266,17 @@ a.dropdown-item:hover {
     font-weight: 1200;
     letter-spacing: 2px;
     color: var(--mid-primary);
+    text-decoration: none !important;
 }
 
-.navbar-brand:hover, 
+/*.navbar-brand:hover, 
 .navbar-brand:focus {
     background-color: transparent;
+    text-decoration: none;
     color: var(--mid-primary) !important;
-}
+}*/
+
+
 
 .navbar-toggler {
     padding: 0.35rem 0.55rem;
@@ -293,7 +297,7 @@ a.dropdown-item:hover {
     font-size: 1.6em;
     background-color: var(--background);
     z-index: 100;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 
@@ -397,6 +401,8 @@ a.dropdown-item:hover {
     font-style: italic;
     color: var(--background);
     font-size: 0.85em;
+    width: 70%;
+    margin: auto;
 }
 
 .footer,
@@ -585,9 +591,10 @@ li {
 }
 
 .gridTitle {
-     font-family: var(--font-small-headings);
+    font-family: var(--font-small-headings);
     font-weight: 800;
     font-size: 1.15em;
+    min-height: 90px;
 
 }
 
@@ -605,14 +612,23 @@ li {
 }
 
 /*event listings*/
+section#events hr {
+    background-color: var(--dark-primary) !important;
+}
 
+section#events {
+    /*background-color: red;*/
+}
 .events.container {
-    max-width: 900px;
+    /*max-width: 900px;*/
+    width: 70%;
+    max-width: 2000px;
+    
 }
 
 .event-card {
     position: relative;
-    margin: 20px;
+    /*margin: 20px;*/
     /*max-width: 900px;*/
     background-color: transparent;
     padding-top: 20px;
@@ -666,6 +682,9 @@ li {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 700px) {
+    .events.container {
+        width: 100%;
+    }
     .event-card {
         position: static;
         margin: 0;
@@ -1019,11 +1038,35 @@ input:-webkit-autofill {
     /*opacity: 100;*/
 }
 
-.artworkDate {
+.artwork-type {
+    position: relative;
+    /*left: 10px;
+    min-height: 60px;*/
+}
+
+.artwork-type a {
     position: absolute;
     top: 0;
+    left: 0px;
+}
+
+.artwork-type .map-icon {
+    border: 0;
+}
+
+.artwork-type span {
+    padding-left: 30px;
+}
+
+.map-icon .fa-map-marker {
+    font-size: 3rem;
+}
+
+.artworkDate {
+    /*position: absolute;
+    top: 0;
     right: 0;
-    padding-top: 5px;
+    padding-top: 5px;*/
 }
 
 /* #outerImage:hover > #gridTextBoxHighlight { color: var(--light-link); } */
@@ -1190,8 +1233,22 @@ label input[type="radio"]:checked ~ span {
     margin-top: 20px;
 }
 
+.artwork-image-container {
+    padding: 0px !important;
+}
+
 .artwork-title-text {
-    margin-top: 30px;
+    display: inline-block;
+    max-width: 800px;
+    font-size: 1.8rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 700px) {
+    .artwork-title-text {
+        font-size: 1.6rem;
+    }
+   
 }
 
 .mainLinkText {

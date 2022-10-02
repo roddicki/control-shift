@@ -48,7 +48,7 @@ function formatEvents(data) {
 
     let cardColSynopis = document.createElement("div");
     cardColSynopis.className = "col-sm text-muted";
-    cardColSynopis.innerHTML = data[i]['artwork-type'] + " - " + data[i]['event-synopsis'];
+    cardColSynopis.innerHTML = data[i]['event-synopsis'];
 
     cardRow = document.createElement("div");
     cardRow.className = "row";
@@ -128,7 +128,7 @@ function formatProgEvents(data) {
     description.innerHTML = data[i]['event-synopsis'];
 
     let dates = document.createElement("div");
-    dates.className = "gridText aboutText pt-2 text-center";
+    dates.className = "gridText gridAbout pt-2 text-center";
     let dateDescription = startDate.toDateString();
     if (endDate) {
         dateDescription = startDate.toDateString() + " - " + endDate.toDateString();
@@ -137,8 +137,9 @@ function formatProgEvents(data) {
 
     textLink.appendChild(title);
     textLink.appendChild(artist);
-    textLink.appendChild(description);
     textLink.appendChild(dates);
+    textLink.appendChild(description);
+    
 
     textContainer.appendChild(textLink);
     card.appendChild(textContainer);
@@ -172,13 +173,22 @@ function formatEventPage(slug, data) {
       //artworkImg.innerHTML = "<img src=\""+ data[i]['artwork-image-url'] +"\"> ";//data[i]['artwork-image-url'];
 
       let artworkTitle = document.querySelector('.artwork-title-text');
+      //artworkTitle.innerHTML = "<a href=\"programme.html\"> <i class=\"fas fa-arrow-left\" aria-hidden=\"true\"></i></a>" + data[i]['title-of-work'];
       artworkTitle.innerHTML = data[i]['title-of-work'];
 
       let artistName = document.querySelector('.artist-name-text');
       artistName.innerHTML = data[i]['artist-name'];
 
+      let eventLocation = "";
+      if (data[i]["map-link"]) {
+        eventLocation = "<a class=\"map-icon\" href=\""+ data[i]["map-link"] +"\"><i class=\"fa fa-map-marker fa-xl\" aria-hidden=\"true\"></i></a>";
+      }
+      let eventType = "<span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>"
+
       let artworkType = document.querySelector('.artwork-type');
-      artworkType.innerHTML = "<a style='padding:30px' href=\"#\"><i class=\"fa fa-map-marker fa-lg\" aria-hidden=\"true\"></i></a> "+data[i]['attendance-type'] + " " + data[i]['artwork-type'];
+      artworkType.innerHTML = eventLocation + eventType;
+      //artworkType.innerHTML = " <span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>";
+
 
       let artworkDate = document.querySelector('.artwork-date');
       let startDate = new Date(data[i]['date-of-event']);
