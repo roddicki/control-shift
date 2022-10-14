@@ -190,16 +190,16 @@ a.dropdown-item:hover {
 } 
 
 /*P5 sketch container*/
-/*commenting this out as not using
+/*
 .sketch {
     padding-right: 0;
     padding-left: 0;
 }
 
 #sketch-container {
-    background-image: url("../img/image-temp-desktop.png");
+   background-image: url("../img/image-temp-desktop.png");
     background-size: cover;
-    height: 500px;
+    height: 00px;
     overflow: hidden;
 }
 
@@ -208,7 +208,7 @@ a.dropdown-item:hover {
         background-image: url("../img/image-temp-iphone.png");
         background-size: cover;
     }
-} 
+} */
 
 @media (min-width: 480px) and (max-width: 1024px){ 
     #sketch-container {
