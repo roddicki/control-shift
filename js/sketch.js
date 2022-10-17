@@ -1,60 +1,58 @@
 // making some sketches for Feeling Machines 2022
 
-var img1;
-var img2;
-var imgSize = 1;
 
-var visuals;
-var visTex;
+var img = [];
+var imgMain;
+var imgAspect = window.innerWidth/4;
+
+     var rand1;
+  var rand2;
+  var rand3;
 
 function preload() {
   // load images
-  img1 = loadImage("js/test1.png");
-      img2 = loadImage("js/test2.png");
+    for (var i = 0; i<14;i++){
+     img[i] = loadImage("js/models/" + i + ".png");
+        
+     }
     
-      // Load model with normalise parameter set to true
-  visuals = loadModel('js/test1obj.obj', true);
-    visTex = loadImage("js/test3.png");
+    imgMain=loadImage("js/models/main.png");
+    
 }
 
 
 function setup() {
-canvas = createCanvas(innerWidth, innerHeight, WEBGL);
+canvas = createCanvas(innerWidth, innerHeight);
     canvas.parent('sketch-container');
-   // canvas.style("z-index","-1")
- // createCanvas(750, 500);
   imageMode(CENTER);
-  //noStroke();
- // background("#2d99ac");
 
+       rand1 = ~~random(13);
+  rand2 = ~~random(13);
+   rand3 = ~~random(13);
+    
+    img[rand3].resize(imgAspect*.8, 0)
+img[rand2].resize(imgAspect*.6, 0)
+     img[rand1].resize(imgAspect, 0)
+    
 }
 
 function draw() {
-background("#FDFCD1");
-//stretchImage();
-    floatingShape();
-}
-
-function windowResized() {
-    resizeCanvas(window.innerWidth, setHeight());
-    image(img11, width / 2, 600, imgSize);
-}
-
-
-function stretchImage(){
-  //    image(img1, width/2, height / 2, innerWidth+imgSize);
-     image(img2, width/2, height / 2, innerWidth+imgSize);
-  imgSize=imgSize+(frameCount*0.001)
-    //print(imgSize);
+    background("#FDFCD1");
     
+   // rotate(47+frameCount*0.004);
+  //    imgMain.resize(500, 0)
+    //image(imgMain,width/2,height/2);
+    
+    image(img[rand1], 239+(frameCount*0.04)+(mouseX*.007),600+frameCount*0.003+(mouseX*.005));
+    image(img[rand2], 458+(frameCount*0.01),400-(frameCount*0.03));
+    image(img[rand3], 760-(frameCount*0.01),360-(frameCount*0.06));
+    
+
 }
 
-function floatingShape(){
- 
-     translate(0,0,337+frameCount*0.001);
-  rotateZ(frameCount*0.0001+mouseX*0.0001);
-      rotateY(frameCount*0.001+mouseY*0.0001);
-    texture(visTex);
-  model(visuals);
-    
-}
+//function windowResized() {
+//    resizeCanvas(window.innerWidth, window.innerHeight);
+//    image(img1, width / 2, 600, imgSize);
+//}
+
+

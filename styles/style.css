@@ -190,32 +190,31 @@ a.dropdown-item:hover {
 } 
 
 /*P5 sketch container*/
-/*
+
 .sketch {
     padding-right: 0;
     padding-left: 0;
 }
 
 #sketch-container {
-   background-image: url("../img/image-temp-desktop.png");
+  /* background-image: url("../img/web_pngs/main.png");*/
     background-size: cover;
-    height: 00px;
     overflow: hidden;
 }
 
 @media (max-width: 480px) { 
     #sketch-container {
-        background-image: url("../img/image-temp-iphone.png");
+  /* background-image: url("../img/web_pngs/main.png");*/
         background-size: cover;
     }
-} */
+} 
 
 @media (min-width: 480px) and (max-width: 1024px){ 
     #sketch-container {
-        background-image: url("../img/image-temp-ipad.png");
+  /* background-image: url("../img/web_pngs/main.png");*/
         background-size: cover;
     }
-} */
+} 
 
 .jumbotron {
     min-height: 70vh;
