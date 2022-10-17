@@ -38,21 +38,17 @@ img[rand2].resize(imgAspect*.6, 0)
 
 function draw() {
     background("#FDFCD1");
+   
+//top right
+ image(img[rand3], 760-(frameCount*0.01),360-(frameCount*0.06));
     
-   // rotate(47+frameCount*0.004);
-  //    imgMain.resize(500, 0)
-    //image(imgMain,width/2,height/2);
+    //top left
+    image(img[rand2], 450+(frameCount*0.01),400-(frameCount*0.03));
     
-    image(img[rand1], 239+(frameCount*0.04)+(mouseX*.007),600+frameCount*0.003+(mouseX*.005));
-    image(img[rand2], 458+(frameCount*0.01),400-(frameCount*0.03));
-    image(img[rand3], 760-(frameCount*0.01),360-(frameCount*0.06));
+    //bottom
+        image(img[rand1], 239-(frameCount*0.04),600-frameCount*0.003);
     
 
 }
-
-//function windowResized() {
-//    resizeCanvas(window.innerWidth, window.innerHeight);
-//    image(img1, width / 2, 600, imgSize);
-//}
 
 
