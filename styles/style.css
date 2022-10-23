@@ -156,6 +156,7 @@ a.dropdown-item:hover {
 
 
 .container {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     overflow: hidden;
@@ -174,8 +175,8 @@ a.dropdown-item:hover {
 
 .intro {
     position: relative;
-    top: -320px;
-    margin-left: 450px;
+    top: -80px;
+    margin-left: 200px;
     min-width: 500px;
     max-width: 500px;
 }
@@ -190,31 +191,32 @@ a.dropdown-item:hover {
 } 
 
 /*P5 sketch container*/
-
+commenting this out as not using
 .sketch {
     padding-right: 0;
     padding-left: 0;
 }
 
 #sketch-container {
-  /* background-image: url("../img/web_pngs/main.png");*/
-    background-size: cover;
-    overflow: hidden;
+    border: 1px solid green;
+    position: absolute;
+    top: 0;
+    left:0;
 }
 
-@media (max-width: 480px) { 
+/*@media (max-width: 480px) { 
     #sketch-container {
-  /* background-image: url("../img/web_pngs/main.png");*/
+        background-image: url("../img/image-temp-iphone.png");
         background-size: cover;
     }
 } 
 
 @media (min-width: 480px) and (max-width: 1024px){ 
     #sketch-container {
-  /* background-image: url("../img/web_pngs/main.png");*/
+        background-image: url("../img/image-temp-ipad.png");
         background-size: cover;
     }
-} 
+} */
 
 .jumbotron {
     min-height: 70vh;
