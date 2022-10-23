@@ -201,6 +201,7 @@ commenting this out as not using
     position: absolute;
     top: 0;
     left:0;
+    z-index: -1;
 }
 
 /*@media (max-width: 480px) { 
