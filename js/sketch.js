@@ -38,6 +38,10 @@ img[rand2].resize(imgAspect*.6, 0)
 
 function draw() {
     background("#FDFCD1");
+    fill(255, 0, 0);
+    textSize(30);
+    textAlign(CENTER, CENTER);
+    text("center", innerWidth/2, innerHeight/2);
    
 //top right
  image(img[rand3], 760-(frameCount*0.01),360-(frameCount*0.06));
