@@ -191,7 +191,7 @@ a.dropdown-item:hover {
 } 
 
 /*P5 sketch container*/
-commenting this out as not using
+
 .sketch {
     padding-right: 0;
     padding-left: 0;
@@ -503,7 +503,7 @@ h1 {
 }
 
 .feeling h1 {
-    font-size: 4.0em;
+    font-size: 5.5em;
     font-family: var(--font-feeling);
     /*margin-top: 160px;*/
     margin-bottom: 20px;
@@ -1243,6 +1243,7 @@ label input[type="radio"]:checked ~ span {
 
 .artwork-image-container {
     padding: 0px !important;
+    text-align: center;
 }
 
 .artwork-title-text {

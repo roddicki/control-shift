@@ -37,7 +37,7 @@ img[rand2].resize(imgAspect*.6, 0)
 }
 
 function draw() {
-    background("#FDFCD1");
+    background("#f3c3d2");
     fill(255, 0, 0);
     textSize(30);
     textAlign(CENTER, CENTER);
