@@ -7,7 +7,7 @@ var imgAspect = innerWidth/3;
 
 let x3 = 760;
 let y3 = 360;
-let x3speed = -0.1;
+let x3speed = -0.02;
 let y3speed = -0.06;
 
 let x2 = 450;
@@ -60,6 +60,7 @@ function draw() {
 //    text("center", innerWidth/2, innerHeight/2);
    
 
+    // set speeds
  x3 += x3speed;
   y3 += y3speed;
      x2 += x2speed;
@@ -68,11 +69,7 @@ function draw() {
     x1 += x1speed;
   y1 += y1speed;
 
-
-    //   rand_img_3X = 760-(frameCount*0.01);
-     //rand_img_3Y= 360-(frameCount*0.06);
-  //  rand_img_3Y= 360-(frameCount);
-
+    // draw image
     //top right
  image(img[rand3],x3, y3);
     
@@ -82,25 +79,29 @@ function draw() {
     //bottom
         image(img[rand1], x1,y1);
     
-     if (x1 > innerWidth || x1 < 0) {
+    
+    // make conditions for chaning direction
+
+    
+if (x3 > innerWidth - (img[rand3].width/2) || x3 < (img[rand3].width/2)) {
+    x3speed = -x3speed;
+  }
+  if (y3 > innerHeight - (img[rand3].height/2) || y3 < (img[rand3].height/2)) {
+    y3speed = -y3speed;
+  }
+    
+         if (x1 > innerWidth-(img[rand1].width/2) || x1 < (img[rand1].width/2)) {
     x1speed = -x1speed;
   }
-  if (y1 > innerHeight || y1 < 0) {
+  if (y1 > innerHeight-(img[rand1].height/2) || y1 < (img[rand1].height/2)) {
     y1speed = -y1speed;
   }
     
-         if (x2 > innerWidth || x2 < 0) {
+         if (x2 > innerWidth-(img[rand2].width/2) || x2 < (img[rand2].width/2)) {
     x2speed = -x2speed;
   }
-  if (y2 > innerHeight || y2 < 0) {
+  if (y2 > innerHeight -(img[rand2].height/2) || y2 < (img[rand2].height/2)) {
     y2speed = -y2speed;
-  }
-    
-if (x3 > innerWidth || x3 < 0) {
-    x3speed = -x3speed;
-  }
-  if (y3 > innerHeight || y3 < 0) {
-    y3speed = -y3speed;
   }
 
 }
