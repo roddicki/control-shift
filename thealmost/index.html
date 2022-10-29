@@ -17,15 +17,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <!--  Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="/..styles/style.css">
+
  
     <!-- Include p5js sketch -->
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="sketch.js" type="text/javascript"></script>
+   
     <style>
-
-        /*test for semi transparent bg*/
         
 :root {
     --background: #f3c3d2;
@@ -55,21 +53,40 @@ body {
     font-size: 18px;
     height: 100%;
             text-align: center;
+
 }
         
-.feeling h1 {
-    font-size: 5.5em;
+        .container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+  /*  border: 5px green solid;*/
+}
+        .container h1{
+    z-index: 1;
+    font-size: 9em;
     font-family: var(--font-feeling);
-    /*margin-top: 160px;*/
-    margin-bottom: 20px;
+    margin-top: 160px;
+    margin-bottom: 200px;
     letter-spacing: 8px;
-          z-index: -1;
-    /*    text-shadow: 2px 2px var(--dark-link);*/
+          /*  border: 4px red solid;*/
+        }
+
+        .sketch {
+    padding-right: 0;
+    padding-left: 0;
+              /*  border: 5px yellow solid;*/
 }
         
-        
-
-
+       #sketch-container{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+  /*  border: 5px black solid;*/
+        }
+    
     </style>
  
     
@@ -77,16 +94,12 @@ body {
 
 
 <body>
-  <!-- <div class="container home-page-content height-100 v-center"> -->
-    <div class="container home-page-content height-100 v-center nav-bar-space">
+    <div class="container">
       <div id="sketch-container"></div>
-      <div class="row ">
-      
-          <div class="feeling col-md-4 intro">
-            <h1 class="pt-4 text-nowrap">Feeling<br>Machines</h1>
+          <div class="feeling">
+            <h1>Feeling<br>Machines</h1>
           </div>
       </div>
-  </div>
       
 </body>
 
