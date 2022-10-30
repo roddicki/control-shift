@@ -120,9 +120,10 @@ a:hover {
 
 
 
-p a, h1 a, h2 a {
+p a, h1 a, h2 a, div a {
     color: var(--dark-primary);
-    border-bottom: 1px solid var(--mid-primary);
+    /*add other link styles here such as text-decoration*/ 
+    /*border-bottom: 1px solid var(--mid-primary);*/
 }
 
 .nav-link {
@@ -1250,12 +1251,15 @@ label input[type="radio"]:checked ~ span {
     display: inline-block;
     max-width: 800px;
     font-size: 1.8rem;
+    position: relative;
+    left: -20px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .artwork-title-text {
-        font-size: 1.6rem;
+        position: relative;
+        left: 0px;
     }
    
 }

@@ -101,8 +101,13 @@ function formatProgEvents(data) {
     imgContainer.className = "blueSquare";
 
     let img = document.createElement("img");
-    img.src = data[i]['artwork-image-thumb-url']; 
-    img.alt = data[i]['artwork-image-alt-text'];
+    let imgSrc = data[i]['artwork-image-thumb-url'];
+    // if image does not begin with http
+    if (imgSrc.indexOf("http") == -1) {
+      imgSrc = "img/2022/" + data[i]['artwork-image-thumb-url'];
+    }
+    img.src = imgSrc; 
+    img.alt = data[i]['alt-text-artwork-thumb'];
     img.className = "mx-auto d-block thumb-img img-fluid";
 
     imgContainer.appendChild(img);
@@ -137,7 +142,9 @@ function formatProgEvents(data) {
 
     textLink.appendChild(title);
     textLink.appendChild(artist);
-    textLink.appendChild(dates);
+    if(data[i]['show-date']) {
+      textLink.appendChild(dates);
+    }
     textLink.appendChild(description);
     
 
@@ -166,8 +173,13 @@ function formatEventPage(slug, data) {
       let artworkImgContainer = document.querySelector('.artwork-image');
       let artworkImg = document.createElement("img");
       artworkImg.className = "img-fluid";
-      artworkImg.src = data[i]['artwork-image-url'];
-      artworkImg.alt = data[i]['artwork-image-alt-text'];
+      let artworkSrc = data[i]['artwork-image-url'];
+      // if image does not begin with http
+      if (artworkSrc.indexOf("http") == -1) {
+        artworkSrc = "img/2022/" + data[i]['artwork-image-url'];
+      }
+      artworkImg.src = artworkSrc;
+      artworkImg.alt = data[i]['alt-text-artwork-image'];
       artworkImgContainer.appendChild(artworkImg);
 
       //artworkImg.innerHTML = "<img src=\""+ data[i]['artwork-image-url'] +"\"> ";//data[i]['artwork-image-url'];
@@ -179,39 +191,71 @@ function formatEventPage(slug, data) {
       let artistName = document.querySelector('.artist-name-text');
       artistName.innerHTML = data[i]['artist-name'];
 
-      let eventLocation = "";
-      if (data[i]["map-link"]) {
-        eventLocation = "<a class=\"map-icon\" href=\""+ data[i]["map-link"] +"\"><i class=\"fa fa-map-marker fa-xl\" aria-hidden=\"true\"></i></a>";
-      }
       let eventType = "<span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>"
 
       let artworkType = document.querySelector('.artwork-type');
-      artworkType.innerHTML = eventLocation + eventType;
+      artworkType.innerHTML = eventType;
       //artworkType.innerHTML = " <span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>";
 
-
+      // date column
       let artworkDate = document.querySelector('.artwork-date');
-      let startDate = new Date(data[i]['date-of-event']);
-      let endDate;  
-      let dateDescription = startDate.toDateString();
-      if (data[i]['end-date-of-event']) {
-          endDate = new Date(data[i]['end-date-of-event']); 
-          dateDescription = startDate.toDateString() + " -<br>" + endDate.toDateString();
-      }
-      if (data[i]['start-time'] && data[i]['end-time']) {
-          dateDescription += "<br>" + data[i]['start-time'] + " - " + data[i]['end-time'];
-      }
-      else if (data[i]['start-time']) {
-          dateDescription += "<br>" + data[i]['start-time'];
-      }
-      artworkDate.innerHTML = dateDescription;
-      
-      let needsBooking = data[i]['needs-booking']
-      if (needsBooking) {
+      let needsDate = data[i]['show-date'];
+      if (needsDate) {
         let col = document.createElement('div');
         col.className = "col-sm";
-        artworkBooking = "<h2 class=\"pt-2 pb-3 text-center artwork-book\"><a href='"+data[i]['booking-link']+"'>Book here</a></h2>";
-        col.innerHTML = artworkBooking;
+        // <h2 class="pt-2 pb-3 text-center artwork-date">Sun Oct 30 2022<br>14:00 - 17:00</h2>
+
+        let startDate;
+        let endDate;  
+        let dateDescription = "";
+        if(data[i]['date-of-event']) {
+          startDate = new Date(data[i]['date-of-event']);
+          dateDescription = startDate.toDateString();
+        }
+
+        if (data[i]['end-date-of-event']) {
+          endDate = new Date(data[i]['end-date-of-event']); 
+          dateDescription = startDate.toDateString() + " -<br>" + endDate.toDateString();
+        }
+
+        if (data[i]['start-time'] && data[i]['end-time']) {
+          dateDescription += "<br>" + data[i]['start-time'] + " - " + data[i]['end-time'];
+        }
+        else if (data[i]['start-time']) {
+            dateDescription += "<br>" + data[i]['start-time'];
+        }
+
+        col.innerHTML = "<h2 class=\"pt-2 pb-3 text-center artwork-date\">" +dateDescription+ "</h2>";
+
+        let artworkInfoRow = document.querySelector('.artwork-info');
+        artworkInfoRow.appendChild(col);
+      }
+
+
+      // booking call to action columns and links
+      let needsBooking = data[i]['needs-booking']
+      if (needsBooking || data[i]["physical-location"]) {
+        let col = document.createElement('div');
+        col.className = "col-sm";
+        let header = document.createElement('h2');
+        header.className = "pt-2 pb-3 text-center artwork-book";
+
+        if (needsBooking) {
+          let artworkBooking = "<a href='"+data[i]['booking-link']+"'>Book here</a><br>";
+          header.innerHTML = artworkBooking;
+        }
+        
+        let eventLocation = "";
+        if (data[i]["map-link"]) {
+          eventLocation = "<a class=\"map-icon\" href=\""+ data[i]["map-link"] +"\">" +data[i]["physical-location"]+ "</a>";
+        }
+        else if (data[i]["physical-location"]) {
+          eventLocation = data[i]["physical-location"];
+        }
+
+        header.innerHTML += eventLocation;
+
+        col.appendChild(header);
         let artworkInfoRow = document.querySelector('.artwork-info');
         artworkInfoRow.appendChild(col);
       }
