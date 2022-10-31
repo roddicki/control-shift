@@ -33,21 +33,87 @@
         
         :root {
     --background: #f3c3d2;
+    --light-background: #f3d8e0; 
     --light-primary: #294996;
     --mid-primary: #012643;
     --dark-primary: #012643;
 
-    --light-link: #c73f5c;
-    --light-link-hover: #d361dc;
+/*2022-2023 dark and light link colours are currently the same*/ 
+    --light-link: #bc4265;
+    --light-link-hover:#c7627c;
 
-    --dark-link: #c73f5c;
-    --dark-link-hover: #65dbb6;
+    --dark-link: #bc4265;
+    --dark-link-hover: #c7627c;
 
-    --text-highlight: #ecbbf0;
+    --text-highlight: #d6df4e;
            }
-    modal-text a{
-    color: var(--light-link);
-            }
+           
+    /* convert social media logo svgs to change colour */
+.filter-blue {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+   filter: invert(78%) sepia(78%) saturate(198%) hue-rotate(294deg) brightness(97%) contrast(95%);
+}
+
+.filter-blue:hover {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+
+.filter-green {
+    /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(37%) sepia(38%) saturate(1603%) hue-rotate(301deg) brightness(84%) contrast(85%);
+}
+
+.filter-green:hover {
+    /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+     filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+           
+           .menu-btn__burger {
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+           
+           .menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+       
+
+           .artwork-title-text  {
+                 font-size: 1.4em;
+    font-family: var(--font-feeling);
+    letter-spacing: 6px;
+}
+           /*
+             <h2 class="pt-2 pb-3 modal-h2-text">About <span class="artist-short-name modal-h2-text"></span></h2>
+          <!--  Artist Bio Text -->
+          <div id="aboutArtist" class="pb-2 artist-bio-text about-modal-text">
+            <!-- inject Artist Bio Text -->*/
+           
+           .artist-short-name{
+               font-size: 1.4em;
+  
+           }
+           .modal-h2-text   {  
+               font-size: 1.4em;
+          
+           }
+           
+           .about-modal-text{
+               font-size: 1.1em;
+          
+           } 
+           
     </style>
 </head>
 
@@ -69,8 +135,7 @@
       <div class="row">
             <!--  Artwork Title -->
             <div class="col-sm pb-3">   
-              
-            <h1 class="pb-4  artwork-title">
+            <h1 class="pb-4 artwork-title">
               <a class="modal-header-text" href="programme.html"> <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
               <span class="artwork-title-text modal-header-text pb-4">
                 <!-- inject title -->
@@ -79,7 +144,7 @@
             
             <!-- by Artist -->
             <h2 class="pt-2 pb-3 modal-h2-text">
-              <span class="artist-name-text"><!-- inject artist name --></span>
+             by <span class="artist-name-text"><!-- inject artist name --></span>
             </h2>
         
             <!-- event info -->  

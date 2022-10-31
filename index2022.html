@@ -25,27 +25,90 @@
     <script src="js/sketch.js" type="text/javascript"></script>
     <style>
       /*test for semi transparent bg*/
-      .container p {
-        z-index: 1;
-        background-color: rgba(243, 195, 210, 0.6);
-      }
+     
+          .container h1{
+    z-index: 1;
+    font-family: var(--font-feeling);
+    letter-spacing: 6px;
+    font-size: 4em;
+          /*  border: 4px red solid;*/
+        }
+        
+.event-card{
+     border-bottom: 1px solid yellow;
+}
+        
+        .feeling h1 {
+    font-size: 9em;
+    font-family: var(--font-feeling);
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+        text-align: center;
+    /*    text-shadow: 2px 2px var(--dark-link);*/
+}
+        
+       section#events {
+    background-color: var(--light-background);
+    padding-top: 2rem!important;
+}
         
         :root {
     --background: #f3c3d2;
+    --light-background: #f3d8e0; 
     --light-primary: #294996;
     --mid-primary: #012643;
     --dark-primary: #012643;
 
-    --light-link: #bb2cc6;
-    --light-link-hover: #d361dc;
+/*2022-2023 dark and light link colours are currently the same*/ 
+    --light-link: #bc4265;
+    --light-link-hover:#c7627c;
 
-    --dark-link: #c73f5c;
-    --dark-link-hover: #65dbb6;
+    --dark-link: #bc4265;
+    --dark-link-hover: #c7627c;
 
-    --text-highlight: #ecbbf0;
-        
+    --text-highlight: #d6df4e;
+        }
+               /* convert social media logo svgs to change colour */
+.filter-blue {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+   filter: invert(78%) sepia(78%) saturate(198%) hue-rotate(294deg) brightness(97%) contrast(95%);
+}
+
+.filter-blue:hover {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+
+.filter-green {
+    /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(37%) sepia(38%) saturate(1603%) hue-rotate(301deg) brightness(84%) contrast(85%);
+}
+
+.filter-green:hover {
+    /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+     filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+           
+           .menu-btn__burger {
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+           
+           .menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+            
     </style>
- 
     
 </head>
 
@@ -62,21 +125,20 @@
       
           <div class="feeling col-md-4 intro">
             <h1 class="pt-4 text-nowrap">Feeling<br>Machines</h1>
-            <p> 
-                In a time when phone apps define who our friends and lovers are, when AI have become artists, and algorithms decide the music that moves us we ask what it feels like to feel with machines. How do digital technologies intertwine with the most intimate aspects of our lives? 
-            </p>
           </div>
       </div>
   </div>
   <section class="pt-4" id="events">
-    <hr>
     <div class="container events">
           <!-- row  -->
           <div class="row">
               <div class="col-sm">
-                  <h1 class="pt-4">Programme</h1>
-                  
-                  <p>We are taking a deep dive into the sticky, messy, fluffy ways that we live our lives within the binary logics of digital machines. Join us as we programme artworks, workshops and events between October 2022 - April 2023 </p>
+                <p> 
+                In a time when phone apps define who our friends and lovers are, when AI have become artists, and algorithms decide the music that moves us we ask what it feels like to feel with machines. How do digital technologies intertwine with the most intimate aspects of our lives? 
+                </p>
+                   <p>We are taking a deep dive into the sticky, messy, fluffy ways that we live our lives within the binary logics of digital machines. Join us as for a <a href="programme.html">programme</a> of artworks, workshops and events between October 2022 and April 2023 </p>
+                  <h1 class="pt-4">Upcoming Events</h1>
+                
                  <!-- <p>data from this <a href="https://docs.google.com/spreadsheets/d/1fynslgkkR_e_GHcTjv65E_9fQL8XSgt4Iwy_ymVO2k8/edit#gid=0">Google sheet</a></p> -->
                 <div class="upcoming-events"></div>   
               </div>

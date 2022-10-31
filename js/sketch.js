@@ -3,11 +3,26 @@
 
 var img = [];
 var imgMain;
-var imgAspect = window.innerWidth/4;
+var imgAspect = innerWidth/3;
 
-     var rand1;
-  var rand2;
-  var rand3;
+let x3 = 760;
+let y3 = 360;
+let x3speed = -0.02;
+let y3speed = -0.06;
+
+let x2 = 450;
+let y2 = 400;
+let x2speed = 0.02;
+let y2speed = -0.03;
+
+let x1 = 239;
+let y1 = 600;
+let x1speed = -0.05;
+let y1speed = 0.008;
+
+var rand1;
+var rand2;
+var rand3;
 
 function preload() {
   // load images
@@ -38,20 +53,56 @@ img[rand2].resize(imgAspect*.6, 0)
 
 function draw() {
     background("#f3c3d2");
-    fill(255, 0, 0);
-    textSize(30);
-    textAlign(CENTER, CENTER);
-    text("center", innerWidth/2, innerHeight/2);
+    
+//    fill(255, 0, 0);
+//    textSize(30);
+//    textAlign(CENTER, CENTER);
+//    text("center", innerWidth/2, innerHeight/2);
    
-//top right
- image(img[rand3], 760-(frameCount*0.01),360-(frameCount*0.06));
+
+    // set speeds
+ x3 += x3speed;
+  y3 += y3speed;
+     x2 += x2speed;
+  y2 += y2speed;
+    
+    x1 += x1speed;
+  y1 += y1speed;
+
+    // draw image
+    //top right
+ image(img[rand3],x3, y3);
     
     //top left
-    image(img[rand2], 450+(frameCount*0.01),400-(frameCount*0.03));
+    image(img[rand2], x2, y2);
     
     //bottom
-        image(img[rand1], 239-(frameCount*0.04),600-frameCount*0.003);
+        image(img[rand1], x1,y1);
     
+    
+    // make conditions for chaning direction
+
+    
+if (x3 > innerWidth - (img[rand3].width/2) || x3 < (img[rand3].width/2)) {
+    x3speed = -x3speed;
+  }
+  if (y3 > innerHeight - (img[rand3].height/2) || y3 < (img[rand3].height/2)) {
+    y3speed = -y3speed;
+  }
+    
+         if (x1 > innerWidth-(img[rand1].width/2) || x1 < (img[rand1].width/2)) {
+    x1speed = -x1speed;
+  }
+  if (y1 > innerHeight-(img[rand1].height/2) || y1 < (img[rand1].height/2)) {
+    y1speed = -y1speed;
+  }
+    
+         if (x2 > innerWidth-(img[rand2].width/2) || x2 < (img[rand2].width/2)) {
+    x2speed = -x2speed;
+  }
+  if (y2 > innerHeight -(img[rand2].height/2) || y2 < (img[rand2].height/2)) {
+    y2speed = -y2speed;
+  }
 
 }
 

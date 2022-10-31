@@ -114,14 +114,14 @@ hr.yelz {
 }
 
 a:hover {
-    color: var(--light-link-hover);
+    color: var(--dark-link-hover);
     text-decoration: none;
 }
 
 
 
 p a, h1 a, h2 a, div a {
-    color: var(--dark-primary);
+    color: var(--dark-link);
     /*add other link styles here such as text-decoration*/ 
     /*border-bottom: 1px solid var(--mid-primary);*/
 }
@@ -140,9 +140,8 @@ a.dark-link:hover {
 }
 
 a.nav-link:hover {
-    color: #65dbb6 !important;
+    color: var(--mid-primary) !important;
 }
-
 
 /*
 commenting this out as not using dropdown
@@ -164,10 +163,10 @@ a.dropdown-item:hover {
     /*    border: 1px black solid;*/
 }
 
+
 .height-100 {
     height: 100vh !important;
 }
-
 .v-center {
     display: flex;
     align-items: center;
@@ -462,25 +461,24 @@ a.dropdown-item:hover {
     margin: 0 auto;
 }
 
-/* convert social media svgs to blue & turn green on hover */
+/* convert social media logo svgs to change colour */
 .filter-blue {
-    /* green */
+    /* this is for Control Shift social media logos in footer  */
     filter: invert(87%) sepia(35%) saturate(261%) hue-rotate(343deg) brightness(108%) contrast(103%);
 }
 
 .filter-blue:hover {
-    /* yellow hover */
+    /* this is for Control Shift social media logos in footer  */
     filter: invert(79%) sepia(35%) saturate(6989%) hue-rotate(114deg) brightness(101%) contrast(94%);
 }
 
 .filter-green {
-    /* blue */
+    /* this is for artists social media logos in artwork page  */
     filter: invert(15%) sepia(67%) saturate(5331%) hue-rotate(222deg) brightness(79%) contrast(96%);
 }
 
-
 .filter-green:hover {
-    /* pink hover */
+    /* this is for artists social media logos in artwork page  */
     filter: invert(53%) sepia(97%) saturate(1984%) hue-rotate(266deg) brightness(95%) contrast(80%);
 }
 
@@ -507,6 +505,7 @@ h1 {
     font-size: 5.5em;
     font-family: var(--font-feeling);
     /*margin-top: 160px;*/
+    margin-bottom: 20px;
     margin-bottom: 20px;
     letter-spacing: 8px;
     /*    text-shadow: 2px 2px var(--dark-link);*/
@@ -626,7 +625,7 @@ section#events {
     /*max-width: 900px;*/
     width: 70%;
     max-width: 2000px;
-    
+
 }
 
 .event-card {
@@ -634,8 +633,8 @@ section#events {
     /*margin: 20px;*/
     /*max-width: 900px;*/
     background-color: transparent;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     border: 0px;
     border-bottom: 1px solid;
     cursor: pointer;
@@ -643,31 +642,40 @@ section#events {
 
 .event-card:last-child {
     border-bottom: 0px;
+    
+    
 }
 
 .event-card .text-muted {
     color: var(--light-primary) !important;
+
 }
 
 .event-card .card-title {
-    margin-bottom: 2px !important;
-    font-size: 1.15em;
+    margin-bottom: 4px !important;
+    font-size: 1.5em;
     color: var(--mid-primary);
     font-family: var(--font-small-headings);
-    font-weight: 800;
-    letter-spacing: 0px; 
+    letter-spacing: 2px; 
+
 }
+
 
 .event-card .card-title a  {
     text-decoration: none;;
     border-bottom: 0px;
+}s
+
+.event-card{
+     border-bottom: 1px solid yellow;
 }
 
 .event-card .date {
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: 20px;
+    border-color: aliceblue;
+ 
 }
 
 .past-events-title {
@@ -718,7 +726,7 @@ section#events {
     background-clip: padding-box;
     border: transparent;
     border-radius: 0px;
-    border-bottom: solid 1px var(--dark-primary);
+    border-bottom: solid 1px var(--dark-primary);    border-bottom: solid 1px var(--dark-primary);
 }
 
 .justify-content-center {
@@ -1020,7 +1028,13 @@ input:-webkit-autofill {
     text-align: center;
     margin-top: 0.5em!important;
     padding-bottom:0.1em!important;
-        margin-bottom: 0.1em!important;
+    margin-bottom: 0.1em!important;
+}
+
+.artwork-title h1{    
+    font-size: 5em;
+    font-family: var(--font-feeling);
+    letter-spacing: 6px;
 }
 
 .artwork-title a {

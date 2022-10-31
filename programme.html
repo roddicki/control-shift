@@ -24,19 +24,80 @@
       /*test for colours*/
         
         :root {
-    --background: #f3c3d2;
+     --background: #f3c3d2;
+    --light-background: #f3d8e0; 
     --light-primary: #294996;
     --mid-primary: #012643;
     --dark-primary: #012643;
 
-    --light-link: #bb2cc6;
-    --light-link-hover: #d361dc;
+/*2022-2023 dark and light link colours are currently the same*/ 
+    --light-link: #bc4265;
+    --light-link-hover:#c7627c;
 
-    --dark-link: #c73f5c;
-    --dark-link-hover: #65dbb6;
+    --dark-link: #bc4265;
+    --dark-link-hover: #c7627c;
 
-    --text-highlight: #ecbbf0;
-        
+    --text-highlight: #d6df4e;
+       }
+               /* convert social media logo svgs to change colour */
+.filter-blue {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+   filter: invert(78%) sepia(78%) saturate(198%) hue-rotate(294deg) brightness(97%) contrast(95%);
+}
+
+.filter-blue:hover {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+
+.filter-green {
+    /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(37%) sepia(38%) saturate(1603%) hue-rotate(301deg) brightness(84%) contrast(85%);
+}
+
+.filter-green:hover {
+    /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+     filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+           
+           .menu-btn__burger {
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+           
+           .menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+       .past-events{
+        background-color: var(--light-background)!important;
+       }
+       
+       .programme h1{
+    
+     font-size: 4em;
+    font-family: var(--font-feeling);
+    /*margin-top: 160px;*/
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+    text-align: center;
+    
+}
+       @media (max-width: 850px){
+          .programme h1{
+     font-size: 3.3em;
+           }
+       }
+             
     </style>
     
     </head>
@@ -44,10 +105,10 @@
 <body>
     <div id="navbar"></div>
     <!-- <div class="container home-page-content pt-4 nav-bar-space"> -->
-    <div class="container nav-bar-space">
+    <div class="container nav-bar-space programme">
 
-        <h1 class="pt-4">Programme</h1>
-        <p>We are taking a deep dive into the sticky, messy, fluffy ways that we live our lives within the binary logics of digital machines. Join us at a 'Feeling Machines' event from October 2022 - April 2023 in Bristol or online. </p>
+        <h1 class="pt-4">Feeling Machines Programme</h1>
+        <p>We are taking a deep dive into the sticky, messy, fluffy ways that we live our lives within the binary logics of digital machines. Join us for this programme of artworks,  workshops and events between October 2022 and April 2023</p>
         <div id="upcoming-events" class="row pb-3">
             <!-- inject events -->
         </div>
