@@ -613,6 +613,11 @@ li {
 
 }
 
+.feeling-paragraph{
+    font-family: var(--font-feeling);
+     letter-spacing: 3px; 
+}
+
 /*event listings*/
 section#events hr {
     background-color: var(--dark-primary) !important;
@@ -636,14 +641,13 @@ section#events {
     padding-top: 30px;
     padding-bottom: 40px;
     border: 0px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--light-link);
     cursor: pointer;
 }
 
 .event-card:last-child {
     border-bottom: 0px;
-    
-    
+  
 }
 
 .event-card .text-muted {
@@ -651,30 +655,31 @@ section#events {
 
 }
 
+.event-card{
+      font-family: var(--font-paragraph-text);
+    
+}
+
 .event-card .card-title {
     margin-bottom: 4px !important;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--mid-primary);
     font-family: var(--font-small-headings);
-    letter-spacing: 2px; 
+    letter-spacing: 1px; 
 
 }
 
 
 .event-card .card-title a  {
     text-decoration: none;;
-    border-bottom: 0px;
+    border-bottom: 1px;
 }s
 
-.event-card{
-     border-bottom: 1px solid yellow;
-}
 
 .event-card .date {
-    position: absolute;
+   
     top: 0;
     right: 0;
-    border-color: aliceblue;
  
 }
 
