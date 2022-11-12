@@ -35,12 +35,18 @@
         }
 
         .feeling h1 {
-            font-size: 16vw;
+            font-size: 12.5vw;
             font-family: var(--font-feeling);
             margin-bottom: 20px;
             letter-spacing: 8px;
             text-align: center;
             /*    text-shadow: 2px 2px var(--dark-link);*/
+        }
+
+        @media (max-width: 700px) { 
+            .feeling h1 {
+                font-size: 15vw;
+            }
         }
 
         section#events {
