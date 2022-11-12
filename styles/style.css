@@ -157,6 +157,8 @@ a.dropdown-item:hover {
 
 .container {
     position: relative;
+    margin-bottom: 80px;
+    /* margin-top: 80px; */
     width: 100%;
     max-width: 1200px;
     overflow: hidden;
@@ -176,7 +178,7 @@ a.dropdown-item:hover {
 
 .intro {
     justify-content: center;
-    height: calc(100vh - 62px);
+    height: calc(90vh - 62px);
     display: flex;
     align-items: center;
 }
@@ -193,6 +195,12 @@ a.dropdown-item:hover {
 
     .feeling h1 {
         display: inline-block;
+    }
+
+    .container {
+        margin-bottom: 0; 
+        margin-top: 0;
+        width: 100%;
     }
 } 
 

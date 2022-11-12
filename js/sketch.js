@@ -1,8 +1,10 @@
 // making some sketches for Feeling Machines 2022
+let canvasWidth = window.innerWidth;
+let canvasHeight = window.innerHeight - 900;
 
-var img = [];
-var imgMain;
-var imgAspect = innerWidth / 3;
+let img = [];
+let imgMain;
+let imgAspect = innerWidth / 3;
 
 let x3 = 760;
 let y3 = 360;
@@ -24,7 +26,12 @@ var rand2;
 var rand3;
 
 function preload() {
+    // load images
+    for (var i = 0; i < 14; i++) {
+        img[i] = loadImage("js/models/" + i + ".png");
+    }
 
+    imgMain = loadImage("js/models/main.png");
 }
 
 
@@ -33,12 +40,7 @@ function setup() {
     canvas.parent('sketch-container');
     imageMode(CENTER);
 
-    // load images
-    for (var i = 0; i < 14; i++) {
-        img[i] = loadImage("js/models/" + i + ".png");
-    }
 
-    imgMain = loadImage("js/models/main.png");
 
     rand1 = ~~random(15);
     rand2 = ~~random(15);
