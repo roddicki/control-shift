@@ -211,7 +211,7 @@ a.dropdown-item:hover {
 }
 
 .home-page-2022-row {
-    padding-right: 20%;
+    padding: 50px 20% 100px 0;
 }
 
 @media (max-width: 600px) { 
