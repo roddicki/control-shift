@@ -157,7 +157,7 @@ a.dropdown-item:hover {
 
 .container {
     position: relative;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     /* margin-top: 80px; */
     width: 100%;
     max-width: 1200px;
@@ -265,7 +265,7 @@ a.dropdown-item:hover {
     position: absolute;
     top: 0;
     left:0;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*@media (max-width: 480px) { 
