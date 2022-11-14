@@ -64,7 +64,7 @@ function isMobile() {
 };
 
 function draw() {
-    background("#f3c3d2");
+    // background("#f3c3d2");
 
     //    fill(255, 0, 0);
     //    textSize(30);
