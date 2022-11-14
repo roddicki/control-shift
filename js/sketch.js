@@ -1,10 +1,9 @@
 // making some sketches for Feeling Machines 2022
-let canvasWidth = window.innerWidth;
-let canvasHeight = window.innerHeight - 900;
 
-let img = [];
-let imgMain;
-let imgAspect = innerWidth / 3;
+
+var img = [];
+var imgMain;
+var imgAspect = innerWidth / 3;
 
 let x3 = 760;
 let y3 = 360;
@@ -21,37 +20,33 @@ let y1 = 600;
 let x1speed = -0.05;
 let y1speed = 0.008;
 
-var rand1;
-var rand2;
-var rand3;
-
 function preload() {
-    // load images
-    for (var i = 0; i < 14; i++) {
-        img[i] = loadImage("js/models/" + i + ".png");
-    }
 
-    imgMain = loadImage("js/models/main.png");
 }
 
 
 function setup() {
-    canvas = createCanvas(innerWidth, innerHeight);
+    canvas = createCanvas(innerWidth, innerHeight - 62);
     canvas.parent('sketch-container');
     imageMode(CENTER);
 
+    imgMain = loadImage("js/models/main.png");
 
 
-    rand1 = ~~random(15);
-    rand2 = ~~random(15);
-    rand3 = ~~random(15);
 
-    img[rand3].resize(imgAspect * .8, 0)
-    img[rand2].resize(imgAspect * .6, 0)
-    img[rand1].resize(imgAspect, 0)
+    // load images
+    for (var i = 0; i < 3; i++) {
+        rand = ~~random(14);
+        console.log(rand)
+        img[i] = loadImage("js/models/" + rand + ".png");
+        console.log(img[i])
+    }
 
+    // console.log(img[rand3])
+    img[0].resize(imgAspect * .8, 0)
+    img[1].resize(imgAspect * .6, 0)
+    img[2].resize(imgAspect, 0)     
 }
-
 
 function windowResized() {
     resizeCanvas(window.innerWidth, window.innerHeight);
@@ -88,36 +83,36 @@ function draw() {
 
     // draw image
     //top right
-    image(img[rand3], x3, y3);
+    image(img[0], x3, y3);
 
     //top left
-    image(img[rand2], x2, y2);
+    image(img[1], x2, y2);
 
     //bottom
-    image(img[rand1], x1, y1);
+    image(img[2], x1, y1);
 
 
     // make conditions for chaning direction
 
 
-    if (x3 > innerWidth - (img[rand3].width / 2) || x3 < (img[rand3].width / 2)) {
+    if (x3 > innerWidth - (img[2].width / 2) || x3 < (img[2].width / 2)) {
         x3speed = -x3speed;
     }
-    if (y3 > innerHeight - (img[rand3].height / 2) || y3 < (img[rand3].height / 2)) {
+    if (y3 > innerHeight - (img[2].height / 2) || y3 < (img[2].height / 2)) {
         y3speed = -y3speed;
     }
 
-    if (x1 > innerWidth - (img[rand1].width / 2) || x1 < (img[rand1].width / 2)) {
+    if (x1 > innerWidth - (img[0].width / 2) || x1 < (img[0].width / 2)) {
         x1speed = -x1speed;
     }
-    if (y1 > innerHeight - (img[rand1].height / 2) || y1 < (img[rand1].height / 2)) {
+    if (y1 > innerHeight - (img[0].height / 2) || y1 < (img[0].height / 2)) {
         y1speed = -y1speed;
     }
 
-    if (x2 > innerWidth - (img[rand2].width / 2) || x2 < (img[rand2].width / 2)) {
+    if (x2 > innerWidth - (img[1].width / 2) || x2 < (img[1].width / 2)) {
         x2speed = -x2speed;
     }
-    if (y2 > innerHeight - (img[rand2].height / 2) || y2 < (img[rand2].height / 2)) {
+    if (y2 > innerHeight - (img[1].height / 2) || y2 < (img[1].height / 2)) {
         y2speed = -y2speed;
     }
 

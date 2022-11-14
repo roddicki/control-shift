@@ -157,7 +157,7 @@ a.dropdown-item:hover {
 
 .container {
     position: relative;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     /* margin-top: 80px; */
     width: 100%;
     max-width: 1200px;
@@ -178,7 +178,7 @@ a.dropdown-item:hover {
 
 .intro {
     justify-content: center;
-    height: calc(90vh - 62px);
+    height: calc(100vh - 62px);
     display: flex;
     align-items: center;
 }
@@ -263,7 +263,7 @@ a.dropdown-item:hover {
 
 #sketch-container {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left:0;
     z-index: -1;
 }
@@ -1034,9 +1034,7 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 400px) {
-    .home-page-content {
-        /*margin-top: 70px !important;*/
-    }
+
     .height-100 {
         height: auto !important;
     }
