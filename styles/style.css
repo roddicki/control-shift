@@ -151,7 +151,7 @@ section#events {
 
     /* END of everything from artwork*/
 
-</style > @font-face {
+@font-face {
     font-family: BagnardSans;
     src: url("../fonts/BagnardSans.otf") format("opentype");
 }
