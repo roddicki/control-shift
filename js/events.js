@@ -246,7 +246,7 @@ function formatEventPage(slug, data) {
           if(linkTwoLink) {
             artworkBooking = `<div class="pb-2"><a class="linkTwo" href=${data[i]['link-2']}>${linkTwoText}</a></div>`
           } else {
-            artworkBooking = `<p>${linkTwoText}</p><br>`
+            artworkBooking = `${linkTwoText}<br>`
           }
           console.log(data)
           header.innerHTML = artworkBooking;
