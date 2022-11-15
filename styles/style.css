@@ -1,17 +1,19 @@
 /* Setting up colours */
 :root {
-    --background: #FDFCD1;
-    --light-primary: #8badcc;
-    --mid-primary: #074bdd;
-    --dark-primary: #053cb0;
+    --background: #f3c3d2;
+    --light-background: #f3d8e0;
+    --light-primary: #294996;
+    --mid-primary: #012643;
+    --dark-primary: #012643;
 
-    --light-link: #bb2cc6;
-    --light-link-hover: #d361dc;
+    /*2022-2023 dark and light link colours are currently the same*/
+    --light-link: #bc4265;
+    --light-link-hover: #c7627c;
 
-    --dark-link: #07dd99;
-    --dark-link-hover: #65dbb6;
+    --dark-link: #bc4265;
+    --dark-link-hover: #c7627c;
 
-    --text-highlight: #ecbbf0;
+    --text-highlight: #d6df4e;
 
     --font-large-headings: OfficeCode, serif;
     --font-paragraph-modal: 'Karla', sans-serif;
@@ -21,7 +23,135 @@
     --font-feeling: PicNic;
 }
 
-@font-face {
+
+
+/*//////////////////////////////////
+////Everything from index2022   ////
+///////////////////////////////////*/
+
+.container h1 {
+    z-index: 1;
+    font-family: var(--font-feeling);
+    letter-spacing: 6px;
+    font-size: 4em;
+    /*  border: 4px red solid;*/
+}
+
+.feeling h1 {
+    font-size: 12.5vw;
+    font-family: var(--font-feeling);
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    text-align: center;
+    /*    text-shadow: 2px 2px var(--dark-link);*/
+}
+
+@media (max-width: 700px) {
+    .feeling h1 {
+        font-size: 15vw;
+    }
+}
+
+section#events {
+    background-color: var(--light-background);
+    padding-top: 2rem !important;
+}
+
+
+/* convert social media logo svgs to change colour */
+.filter-blue {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(78%) sepia(78%) saturate(198%) hue-rotate(294deg) brightness(97%) contrast(95%);
+}
+
+.filter-blue:hover {
+    /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+
+.filter-green {
+    /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(37%) sepia(38%) saturate(1603%) hue-rotate(301deg) brightness(84%) contrast(85%);
+}
+
+.filter-green:hover {
+    /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
+}
+
+.menu-btn__burger {
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--light-link);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+    /* END of everything from index2022*/
+
+    /* EVERYTHING FROM PROGRAMME*/
+
+        .programme h1 {
+            font-size: 4em;
+            font-family: var(--font-feeling);
+            /*margin-top: 160px;*/
+            margin-bottom: 20px;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+
+        @media (max-width: 850px) {
+            .programme h1 {
+                font-size: 3.3em;
+            }
+        }
+
+    /* END of everything from programme*/
+
+    /* EVERYTHING FROM ARTWORK*/
+
+   /*test for semi transparent bg*/
+        .container p {
+            z-index: 1;
+        
+        }
+
+        .artwork-title-text {
+            font-size: 1.4em;
+            font-family: var(--font-feeling);
+            letter-spacing: 6px;
+        }
+
+        /*
+             <h2 class="pt-2 pb-3 modal-h2-text">About <span class="artist-short-name modal-h2-text"></span></h2>
+          <!--  Artist Bio Text -->
+          <div id="aboutArtist" class="pb-2 artist-bio-text about-modal-text">
+            <!-- inject Artist Bio Text -->*/
+        
+
+        .modal-h2-text {
+            font-size: 1.4em;
+        }
+
+        .about-modal-text {
+            font-size: 1.1em;
+
+        }
+
+    /* END of everything from artwork*/
+
+</style > @font-face {
     font-family: BagnardSans;
     src: url("../fonts/BagnardSans.otf") format("opentype");
 }
@@ -120,9 +250,12 @@ a:hover {
 
 
 
-p a, h1 a, h2 a, div a {
+p a,
+h1 a,
+h2 a,
+div a {
     color: var(--dark-link);
-    /*add other link styles here such as text-decoration*/ 
+    /*add other link styles here such as text-decoration*/
     /*border-bottom: 1px solid var(--mid-primary);*/
 }
 
@@ -182,6 +315,7 @@ a.dropdown-item:hover {
     display: flex;
     align-items: center;
 }
+
 /* 
 .intro-home {
     position: relative;
@@ -214,13 +348,13 @@ a.dropdown-item:hover {
     padding: 50px 20% 100px 0;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
     .home-page-2022-row {
         padding-right: 0;
     }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .intro {
         top: 0px;
         margin-left: 0;
@@ -235,24 +369,28 @@ a.dropdown-item:hover {
     }
 
     .container {
-        margin-bottom: 0; 
+        margin-bottom: 0;
         margin-top: 0;
         width: 100%;
     }
+
     .intro-home {
         top: 0;
         margin-left: 0;
     }
+
     .title-2022 {
         font-size: 3.5em;
     }
+
     .home-page-content {
         margin-top: 150px;
     }
+
     .home-page-2022-row {
         padding-right: 0;
     }
-} 
+}
 
 /*P5 sketch container*/
 
@@ -264,7 +402,7 @@ a.dropdown-item:hover {
 #sketch-container {
     position: absolute;
     /* top: 0; */
-    left:0;
+    left: 0;
     z-index: -1;
 }
 
@@ -290,7 +428,7 @@ a.dropdown-item:hover {
     /*  background-position: center;*/
     /*  background-repeat: no-repeat;*/
     background-color: transparent;
-    background-size: 1000px; 
+    background-size: 1000px;
     /*        border: 1px black solid;*/
 
 }
@@ -349,7 +487,7 @@ a.dropdown-item:hover {
     font-size: 1.25rem;
     /* line-height: 0.2 !important; */
     background-color: transparent;
-     border: 0px solid transparent; 
+    border: 0px solid transparent;
     border-radius: 0.25rem;
 }
 
@@ -390,9 +528,9 @@ a.dropdown-item:hover {
 }
 
 @media (max-width: 370px) {
-   .navbar .navbar-brand {
+    .navbar .navbar-brand {
         font-size: 0.7em;
-    } 
+    }
 }
 
 
@@ -415,24 +553,7 @@ a.dropdown-item:hover {
 
 }
 
-.menu-btn__burger {
-    width: 40px;
-    height: 4px;
-    background: #07dd99;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-}
 
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    background: #07dd99;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-}
 
 .menu-btn__burger::before {
     transform: translateY(-16px);
@@ -523,27 +644,6 @@ a.dropdown-item:hover {
 
 .centerSocials {
     margin: 0 auto;
-}
-
-/* convert social media logo svgs to change colour */
-.filter-blue {
-    /* this is for Control Shift social media logos in footer  */
-    filter: invert(87%) sepia(35%) saturate(261%) hue-rotate(343deg) brightness(108%) contrast(103%);
-}
-
-.filter-blue:hover {
-    /* this is for Control Shift social media logos in footer  */
-    filter: invert(79%) sepia(35%) saturate(6989%) hue-rotate(114deg) brightness(101%) contrast(94%);
-}
-
-.filter-green {
-    /* this is for artists social media logos in artwork page  */
-    filter: invert(15%) sepia(67%) saturate(5331%) hue-rotate(222deg) brightness(79%) contrast(96%);
-}
-
-.filter-green:hover {
-    /* this is for artists social media logos in artwork page  */
-    filter: invert(53%) sepia(97%) saturate(1984%) hue-rotate(266deg) brightness(95%) contrast(80%);
 }
 
 /* home page central heading */
@@ -652,7 +752,7 @@ li {
 .gridText {
     font-family: var(--font-paragraph-text);
     letter-spacing: 0.5px;
-    
+
 }
 
 .gridTitle {
@@ -676,9 +776,9 @@ li {
 
 }
 
-.feeling-paragraph{
+.feeling-paragraph {
     font-family: var(--font-feeling);
-     letter-spacing: 3px; 
+    letter-spacing: 3px;
 }
 
 /*event listings*/
@@ -689,6 +789,7 @@ section#events hr {
 section#events {
     /*background-color: red;*/
 }
+
 .events.container {
     /*max-width: 900px;*/
     width: 70%;
@@ -710,7 +811,7 @@ section#events {
 
 .event-card:last-child {
     border-bottom: 0px;
-  
+
 }
 
 .event-card .text-muted {
@@ -718,9 +819,9 @@ section#events {
 
 }
 
-.event-card{
-      font-family: var(--font-paragraph-text);
-    
+.event-card {
+    font-family: var(--font-paragraph-text);
+
 }
 
 .event-card .card-title {
@@ -728,26 +829,26 @@ section#events {
     font-size: 1.3em;
     color: var(--mid-primary);
     font-family: var(--font-small-headings);
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
 
 }
 
 
-.event-card .card-title a  {
-    text-decoration: none;;
+.event-card .card-title a {
+    text-decoration: none;
+    ;
     border-bottom: 1px;
-}s
+}
 
+s .event-card .date {
 
-.event-card .date {
-   
     top: 0;
     right: 0;
- 
+
 }
 
 .past-events-title {
-    margin-top:40px;
+    margin-top: 40px;
     color: var(--light-primary) !important;
 }
 
@@ -764,15 +865,17 @@ section#events {
     .events.container {
         width: 100%;
     }
+
     .event-card {
         position: static;
         margin: 0;
     }
+
     .event-card .date {
         position: static;
     }
 
-    .event-card .card-title{
+    .event-card .card-title {
         padding-bottom: 10px;
     }
 }
@@ -794,7 +897,8 @@ section#events {
     background-clip: padding-box;
     border: transparent;
     border-radius: 0px;
-    border-bottom: solid 1px var(--dark-primary);    border-bottom: solid 1px var(--dark-primary);
+    border-bottom: solid 1px var(--dark-primary);
+    border-bottom: solid 1px var(--dark-primary);
 }
 
 .justify-content-center {
@@ -981,6 +1085,7 @@ input:-webkit-autofill {
     .height-100 {
         height: auto !important;
     }
+
     .jumbotron p {
         padding-top: 20px;
         /*  text-align: justify;*/
@@ -1004,7 +1109,8 @@ input:-webkit-autofill {
         font-size: 2em;
         /*        text-shadow: 2px 2px var(--dark-link);*/
     }
-     .indent{
+
+    .indent {
         padding-left: 25px;
     }
 
@@ -1018,7 +1124,7 @@ input:-webkit-autofill {
         background-image: url("");
     }
 
-    
+
 
     /*.video-container {
         margin-top: 80px !important;
@@ -1052,10 +1158,11 @@ input:-webkit-autofill {
         display: none;
     }
 
-    
+
     .logo-ht img {
         max-height: 60px;
     }
+
     .logo-ht-sml img {
         max-height: 40px;
     }
@@ -1092,12 +1199,12 @@ input:-webkit-autofill {
 /* STYLES FOR ARTWORK PAGE */
 .artwork-title {
     text-align: center;
-    margin-top: 0.5em!important;
-    padding-bottom:0.1em!important;
-    margin-bottom: 0.1em!important;
+    margin-top: 0.5em !important;
+    padding-bottom: 0.1em !important;
+    margin-bottom: 0.1em !important;
 }
 
-.artwork-title h1{    
+.artwork-title h1 {
     font-size: 5em;
     font-family: var(--font-feeling);
     letter-spacing: 6px;
@@ -1341,7 +1448,7 @@ label input[type="radio"]:checked ~ span {
         position: relative;
         left: 0px;
     }
-   
+
 }
 
 .mainLinkText {
@@ -1363,9 +1470,9 @@ a:hover.mainLinkText {
     color: var(--dark-primary);
     margin-bottom: 3px;
     font-style: italic;
-   /* padding-left: 100px;    
+    /* padding-left: 100px;    
     padding-right: 100px;*/
-    
+
 }
 
 .modal-text {
@@ -1373,7 +1480,7 @@ a:hover.mainLinkText {
     font-family: var(--font-paragraph-modal);
     color: var(--dark-primary);
     margin-bottom: 3px;
-   /* padding-left:100px;
+    /* padding-left:100px;
     padding-right:100px;*/
 }
 
@@ -1514,6 +1621,7 @@ a:hover.mainLinkText {
 }
 
 @media only screen and (max-width: 575px) {
+
     /*.fa-arrow-left:before {
         position: fixed;
         left: 20px;
@@ -1529,24 +1637,29 @@ a:hover.mainLinkText {
         padding-bottom: 10px;
     }
 
-    .blueSquare  {
+    .blueSquare {
         background: transparent
     }
+
     .artworkImage {
         mix-blend-mode: normal;
         /*opacity: 1;*/
     }
+
     .border-left {
         border-left: none !important;
     }
+
     .middleColumn {
         border-top: 1px solid var(--dark-link);
         width: 250px;
         margin: 0 auto;
     }
+
     .border-sides {
         border-bottom: 1px solid var(--dark-link);
     }
+
     .actionContainer {
         margin-top: 10px;
     }
@@ -1565,9 +1678,11 @@ a:hover.mainLinkText {
         border-bottom: 1px solid var(--dark-link);
         padding: 0;
     }
-    .blueSquare  {
+
+    .blueSquare {
         background: transparent
     }
+
     .artworkImage {
         mix-blend-mode: normal;
         /*opacity: 1;*/
@@ -1577,14 +1692,14 @@ a:hover.mainLinkText {
 /* SCHEDULE PAGE */
 
 /* the indivdual day boxes - setting width and min-width here*/
-.box { 
+.box {
     background: var(--background);
     border: solid 1px var(--dark-primary);
     margin: 5px;
     position: relative;
     width: calc(100%/8);
     min-height: 200px;
-    min-width:126px;
+    min-width: 126px;
 }
 
 /* This sets each box as a square and sets the height to this padding: stops boxes being different sizes depending on content */
@@ -1595,7 +1710,7 @@ a:hover.mainLinkText {
 } */
 
 /* style for inner div of each box - centering divs containing text & event boxes inside */
-.inner-div { 
+.inner-div {
     background: var(--background);
     /* position: absolute; */
     text-align: center;
@@ -1604,14 +1719,12 @@ a:hover.mainLinkText {
 }
 
 /* diagonal cross on unactive days */
-.greyBox { 
-    background: repeating-linear-gradient(
-        45deg,
-        #053cb0,
-        #053cb0 1px,
-        #FDFCD1 1px,
-        #FDFCD1 20px
-      );
+.greyBox {
+    background: repeating-linear-gradient(45deg,
+            #053cb0,
+            #053cb0 1px,
+            #FDFCD1 1px,
+            #FDFCD1 20px);
 }
 
 /* text styles for box title : day of the week */
@@ -1633,7 +1746,7 @@ a:hover.mainLinkText {
 
 
 /* text styles for text in event pink box */
-.event-text { 
+.event-text {
     color: var(--dark-primary);
     font-size: 14px;
     font-family: var(--font-paragraph-modal);
@@ -1663,11 +1776,14 @@ a:hover.mainLinkText {
 /* SMALL PHONES: 1 BOX PER WIDTH */
 @media only screen and (max-width: 420px) {
     [class*="col-xs"] {
-      width: 100%;
+        width: 100%;
     }
-    .greyBox { /*do not display crossed out days on mobile screens */
+
+    .greyBox {
+        /*do not display crossed out days on mobile screens */
         display: none;
     }
+
     .single-event-box {
         width: 95%;
         margin: 5px 0 5px 0;
@@ -1676,37 +1792,45 @@ a:hover.mainLinkText {
 }
 
 /* LARGER PHONES: 2 BOXES PER WIDTH */
-@media (min-width: 420px) and (max-width: 600px){ 
+@media (min-width: 420px) and (max-width: 600px) {
     [class*="col-xs"] {
         width: 45%;
     }
-    .greyBox { /*do not display crossed out days on mobile screens */
+
+    .greyBox {
+        /*do not display crossed out days on mobile screens */
         display: none;
     }
-    .widthAll { /* This removes the divide between week rows */
+
+    .widthAll {
+        /* This removes the divide between week rows */
         width: 0% !important;
     }
-} 
+}
 
 /* TABLETS: 3 BOXES PER WIDTH */
-@media (min-width: 600px) and (max-width: 1000px){ 
+@media (min-width: 600px) and (max-width: 1000px) {
     [class*="col-xs"] {
         width: 30%;
     }
-    .greyBox { /*do not display crossed out days on mobile screens */
+
+    .greyBox {
+        /*do not display crossed out days on mobile screens */
         display: none;
     }
-    .widthAll { /* This removes the divide between week rows */
+
+    .widthAll {
+        /* This removes the divide between week rows */
         width: 0% !important;
     }
-} 
+}
 
 /* LAPTOPS & DESKTOPS */
-@media (min-width: 1190px) { 
-    .box { 
+@media (min-width: 1190px) {
+    .box {
         min-width: 150px;
-    } 
-} 
+    }
+}
 
 /* anytime box */
 
@@ -1740,6 +1864,5 @@ a:hover.mainLinkText {
 }
 
 .anytimeContainer {
-    margin: 0 auto;    
+    margin: 0 auto;
 }
-

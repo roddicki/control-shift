@@ -33,7 +33,6 @@ function setup() {
     imgMain = loadImage("js/models/main.png");
 
 
-
     // load images
     for (var i = 0; i < 3; i++) {
         rand = ~~random(14);
@@ -64,7 +63,7 @@ function isMobile() {
 };
 
 function draw() {
-    // background("#f3c3d2");
+     background("#f3c3d2");
 
     //    fill(255, 0, 0);
     //    textSize(30);

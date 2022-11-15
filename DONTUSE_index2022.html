@@ -23,98 +23,9 @@
     <!-- Include p5js sketch -->
     <script src="js/libraries/p5.js" type="text/javascript"></script>
     <script src="js/sketch.js" type="text/javascript"></script>
-    <style>
-        /*test for semi transparent bg*/
-
-        .container h1 {
-            z-index: 1;
-            font-family: var(--font-feeling);
-            letter-spacing: 6px;
-            font-size: 4em;
-            /*  border: 4px red solid;*/
-        }
-
-        .feeling h1 {
-            font-size: 12.5vw;
-            font-family: var(--font-feeling);
-            margin-bottom: 20px;
-            letter-spacing: 8px;
-            text-align: center;
-            /*    text-shadow: 2px 2px var(--dark-link);*/
-        }
-
-        @media (max-width: 700px) { 
-            .feeling h1 {
-                font-size: 15vw;
-            }
-        }
-
-        section#events {
-            background-color: var(--light-background);
-            padding-top: 2rem !important;
-        }
-
-        :root {
-            --background: #f3c3d2;
-            --light-background: #f3d8e0;
-            --light-primary: #294996;
-            --mid-primary: #012643;
-            --dark-primary: #012643;
-
-            /*2022-2023 dark and light link colours are currently the same*/
-            --light-link: #bc4265;
-            --light-link-hover: #c7627c;
-
-            --dark-link: #bc4265;
-            --dark-link-hover: #c7627c;
-
-            --text-highlight: #d6df4e;
-        }
-
-        /* convert social media logo svgs to change colour */
-        .filter-blue {
-            /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
-            filter: invert(78%) sepia(78%) saturate(198%) hue-rotate(294deg) brightness(97%) contrast(95%);
-        }
-
-        .filter-blue:hover {
-            /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
-            filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
-        }
-
-        .filter-green {
-            /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
-            filter: invert(37%) sepia(38%) saturate(1603%) hue-rotate(301deg) brightness(84%) contrast(85%);
-        }
-
-        .filter-green:hover {
-            /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
-            filter: invert(48%) sepia(62%) saturate(381%) hue-rotate(294deg) brightness(88%) contrast(99%);
-        }
-
-        .menu-btn__burger {
-            width: 40px;
-            height: 4px;
-            background: var(--light-link);
-            border-radius: 5px;
-            transition: all .5s ease-in-out;
-        }
-
-        .menu-btn__burger::before,
-        .menu-btn__burger::after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 4px;
-            background: var(--light-link);
-            border-radius: 5px;
-            transition: all .5s ease-in-out;
-        }
-
-    </style>
+      
 
 </head>
-
 
 <body>
     <div id="navbar"></div>
