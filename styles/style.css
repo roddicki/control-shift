@@ -1866,3 +1866,7 @@ a:hover.mainLinkText {
 .anytimeContainer {
     margin: 0 auto;
 }
+
+.linkTwo {
+    border-bottom: 1px solid var(--light-link-hover)
+}

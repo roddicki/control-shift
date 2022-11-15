@@ -6,7 +6,7 @@ function formatEvents(data) {
     console.log(data[i]);
     let dateNow = new Date();
     dateNow.setDate(dateNow.getDate()-1);
-    let eventDate = new Date(data[i]['date-of-event']);
+    let eventDate = new Date(data[i]['start-date']);
     let slug = data[i]['slug'];
     let artworkName = data[i]['title-of-work'];
     let card = document.createElement("div");
@@ -41,14 +41,14 @@ function formatEvents(data) {
     //cardRow.appendChild(cardColDate);
     card.appendChild(cardRow);
 
-    let synopsisText = data[i]['event-synopsis'];
+    let synopsisText = data[i]['artwork-synopsis'];
     let shortdescription = document.createElement("p");
     shortdescription.className = "card-text";
     shortdescription.innerHTML = synopsisText;
 
     let cardColSynopis = document.createElement("div");
     cardColSynopis.className = "col-sm text-muted";
-    cardColSynopis.innerHTML = data[i]['event-synopsis'];
+    cardColSynopis.innerHTML = data[i]['artwork-synopsis'];
 
     cardRow = document.createElement("div");
     cardRow.className = "row";
@@ -78,13 +78,13 @@ function formatProgEvents(data) {
     console.log(data[i]);
     let dateNow = new Date();
     dateNow.setDate(dateNow.getDate()-1);
-    let eventDate = new Date(data[i]['date-of-event']);
+    let eventDate = new Date(data[i]['start-date']);
     let slug = data[i]['slug'];
     let artworkName = data[i]['title-of-work'];
-    let startDate = new Date(data[i]['date-of-event']);
+    let startDate = new Date(data[i]['start-date']);
     let endDate;  
-    if (data[i]['end-date-of-event']) {
-        endDate = new Date(data[i]['end-date-of-event']); 
+    if (data[i]['end-date']) {
+        endDate = new Date(data[i]['end-date']); 
     }
     let card = document.createElement("div");
     card.className = "col-md-4 pt-4 pb-3";
@@ -130,7 +130,7 @@ function formatProgEvents(data) {
 
     let description = document.createElement("div");
     description.className = "gridText aboutText pt-2 text-center";
-    description.innerHTML = data[i]['event-synopsis'];
+    description.innerHTML = data[i]['artwork-synopsis'];
 
     let dates = document.createElement("div");
     dates.className = "gridText gridAbout pt-2 text-center";
@@ -191,11 +191,10 @@ function formatEventPage(slug, data) {
       let artistName = document.querySelector('.artist-name-text');
       artistName.innerHTML = data[i]['artist-name'];
 
-      let eventType = "<span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>"
+      let eventType = `<span>${data[i]['artwork-type']}</span>`
 
       let artworkType = document.querySelector('.artwork-type');
       artworkType.innerHTML = eventType;
-      //artworkType.innerHTML = " <span>"+data[i]['attendance-type'] + " " + data[i]['artwork-type']+ "</span>";
 
       // date column
       let artworkDate = document.querySelector('.artwork-date');
@@ -208,13 +207,13 @@ function formatEventPage(slug, data) {
         let startDate;
         let endDate;  
         let dateDescription = "";
-        if(data[i]['date-of-event']) {
-          startDate = new Date(data[i]['date-of-event']);
+        if(data[i]['start-date']) {
+          startDate = new Date(data[i]['start-date']);
           dateDescription = startDate.toDateString();
         }
 
-        if (data[i]['end-date-of-event']) {
-          endDate = new Date(data[i]['end-date-of-event']); 
+        if (data[i]['end-date']) {
+          endDate = new Date(data[i]['end-date']); 
           dateDescription = startDate.toDateString() + " -<br>" + endDate.toDateString();
         }
 
@@ -231,26 +230,34 @@ function formatEventPage(slug, data) {
         artworkInfoRow.appendChild(col);
       }
 
+      console.log('data[i]', data[i])
 
       // booking call to action columns and links
-      let needsBooking = data[i]['needs-booking']
-      if (needsBooking || data[i]["physical-location"]) {
+      let linkTwoText = data[i]['link-2-text']
+      if (linkTwoText || data[i]["link-1-text"]) {
         let col = document.createElement('div');
         col.className = "col-sm";
         let header = document.createElement('h2');
         header.className = "pt-2 pb-3 text-center artwork-book";
 
-        if (needsBooking) {
-          let artworkBooking = "<a href='"+data[i]['booking-link']+"'>Book here</a><br>";
+        if (linkTwoText) {
+          linkTwoLink = data[i]['link-2']
+          let artworkBooking
+          if(linkTwoLink) {
+            artworkBooking = `<div class="pb-2"><a class="linkTwo" href=${data[i]['link-2']}>${linkTwoText}</a></div>`
+          } else {
+            artworkBooking = `<p>${linkTwoText}</p><br>`
+          }
+          console.log(data)
           header.innerHTML = artworkBooking;
         }
         
         let eventLocation = "";
-        if (data[i]["map-link"]) {
-          eventLocation = "<a class=\"map-icon\" href=\""+ data[i]["map-link"] +"\">" +data[i]["physical-location"]+ "</a>";
+        if (data[i]["link-1"]) {
+          eventLocation = `<a class="map-icon" href=${data[i]['link-1']}>${data[i]['link-1-text']}</a>`
         }
-        else if (data[i]["physical-location"]) {
-          eventLocation = data[i]["physical-location"];
+        else if (data[i]["link-1-text"]) {
+          eventLocation = data[i]["link-1-text"];
         }
 
         header.innerHTML += eventLocation;
