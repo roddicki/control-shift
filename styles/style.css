@@ -1251,7 +1251,7 @@ input:-webkit-autofill {
 }
 
 .artwork-type span {
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .map-icon .fa-map-marker {
