@@ -1250,8 +1250,9 @@ input:-webkit-autofill {
     border: 0;
 }
 
-.artwork-type span {
-    /* padding-left: 30px; */
+.b-text-spacing {
+    padding-top: 20px;
+    padding-bottom: 70px;
 }
 
 .map-icon .fa-map-marker {
