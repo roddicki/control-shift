@@ -42,9 +42,9 @@ function setup() {
     }
 
     // console.log(img[rand3])
-    img[0].resize(imgAspect * .8, 0)
-    img[1].resize(imgAspect * .6, 0)
-    img[2].resize(imgAspect, 0)     
+//    img[0].resize(imgAspect * .8, 0)
+//    img[1].resize(imgAspect * .6, 0)
+//    img[2].resize(imgAspect, 0)     
 }
 
 function windowResized() {

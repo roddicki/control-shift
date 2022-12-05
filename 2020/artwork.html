@@ -24,18 +24,65 @@
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <script src="https://kit.fontawesome.com/d18a6fd4fe.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <style>
+        :root {
+            --background: #FDFCD1;
+            --light-primary: #8badcc;
+            --mid-primary: #074bdd;
+            --dark-primary: #053cb0;
+
+            --light-link: #bb2cc6;
+            --light-link-hover: #d361dc;
+
+            --dark-link: #07dd99;
+            --dark-link-hover: #65dbb6;
+
+            --text-highlight: #ecbbf0;
+
+            --font-large-headings: OfficeCode, serif;
+            --font-paragraph-modal: 'Karla', sans-serif;
+            --font-paragraph-text: 'Karla', sans-serif;
+            --font-small-headings: OfficeCode, serif;
+            --font-nav-bar: OfficeCode, serif;
+            --font-feeling: PicNic;
+
+        }
+
+        /* convert social media logo svgs to change colour */
+        .filter-green {
+            /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+            filter: invert(21%) sepia(95%) saturate(6778%) hue-rotate(222deg) brightness(92%) contrast(94%);
+        }
+
+        .filter-green:hover {
+            /* CONTROL SHIFT social media logos in footer this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+            filter: invert(19%) sepia(94%) saturate(2064%) hue-rotate(213deg) brightness(86%) contrast(111%);
+        }
+
+        .filter-blue {
+            /* ARTIST social media logos in artwork page. this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+            filter: invert(91%) sepia(73%) saturate(466%) hue-rotate(80deg) brightness(87%) contrast(98%);
+        }
+
+        .filter-blue:hover {
+            /* this is for ARTIST social media logos in artwork page this is link to change https://isotropic.co/tool/hex-color-to-css-filter/ */
+           filter: invert(91%) sepia(10%) saturate(600%) hue-rotate(9deg) brightness(105%) contrast(102%); 
+        }
+
+    </style>
 </head>
+
 <body>
-    
-    
+
+
     <div id="navbar"></div>
     <!--  Grid of artworks generated from json file - see js below -->
     <div class="pb-3 container home-page-content pt-4 nav-bar-space">
-        
+
         <div id="page-content"></div>
     </div>
     <!-- <div id="modal"></div> -->
-    
+
     <!-- Include Footer -->
     <div id="footer"></div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -48,8 +95,13 @@
         $('#navbar').load('../components/navigation.html');
         $('#head').load('../components/head.html');
         $('#page-content').load('../components/artist-page.html')
-        setTimeout(function(){ $('#footer').load('../components/footer.html')}, 200); // stop flash of footer content before rest of the page is loaded
+        setTimeout(function() {
+            $('#footer').load('../components/footer.html')
+        }, 200); // stop flash of footer content before rest of the page is loaded
+
     </script>
     <script src="../js/page-content.js"></script>
     <script src="../js/image-slider.js"></script>
-</body></html>
+</body>
+
+</html>
