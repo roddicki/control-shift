@@ -15,14 +15,12 @@
 
     --text-highlight: #d6df4e;
 
-    --font-large-headings: OfficeCode, serif;
+    --font-large-headings: PicNic;
     --font-paragraph-modal: 'Karla', sans-serif;
     --font-paragraph-text: 'Karla', sans-serif;
     --font-small-headings: OfficeCode, serif;
     --font-nav-bar: OfficeCode, serif;
-    --font-feeling: PicNic;
 }
-
 
 
 /*//////////////////////////////////
@@ -31,7 +29,7 @@
 
 .container h1 {
     z-index: 1;
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
     letter-spacing: 6px;
     font-size: 4em;
     /*  border: 4px red solid;*/
@@ -39,7 +37,7 @@
 
 .feeling h1 {
     font-size: 12.5vw;
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
     margin-bottom: 20px;
     letter-spacing: 8px;
     text-align: center;
@@ -100,11 +98,11 @@ section#events {
 
     /* END of everything from index2022*/
 
-    /* EVERYTHING FROM PROGRAMME*/
+    /* EVERYTHING FROM PROGRAMME 2022*/
 
         .programme h1 {
             font-size: 4em;
-            font-family: var(--font-feeling);
+            font-family: var(--font-large-headings);
             /*margin-top: 160px;*/
             margin-bottom: 20px;
             letter-spacing: 6px;
@@ -119,7 +117,7 @@ section#events {
 
     /* END of everything from programme*/
 
-    /* EVERYTHING FROM ARTWORK*/
+    /* EVERYTHING FROM ARTWORK 2022*/
 
    /*test for semi transparent bg*/
         .container p {
@@ -129,7 +127,7 @@ section#events {
 
         .artwork-title-text {
             font-size: 1.4em;
-            font-family: var(--font-feeling);
+            font-family: var(--font-large-headings);
             letter-spacing: 6px;
         }
 
@@ -221,7 +219,6 @@ body {
 }
 
 
-
 @media (max-width: 850px) {
     #navbar {
         position: fixed;
@@ -248,8 +245,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
 p a,
 h1 a,
 h2 a,
@@ -275,17 +270,6 @@ a.dark-link:hover {
 a.nav-link:hover {
     color: var(--mid-primary) !important;
 }
-
-/*
-commenting this out as not using dropdown
-a.dropdown-item:hover {
-    color: var(--background) !important;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    background-color: var(--background);
-}
-*/
 
 
 .container {
@@ -316,22 +300,9 @@ a.dropdown-item:hover {
     align-items: center;
 }
 
-/* 
-.intro-home {
-    position: relative;
-    top: -80px;
-    margin-left: 200px;
-    min-width: 500px;
-    max-width: 500px;
-}
-
-.home-title {
-    font-size: 5.5em;
-} */
-
 .title-2022 {
     font-size: 5.5em;
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
 }
 
 .title-2022-container {
@@ -461,7 +432,7 @@ a.dropdown-item:hover {
 .nav-bar-mobile-open {
     border-bottom: 1px solid var(--dark-link);
     padding-bottom: 30px;
-    background-color: #fdfcd1;
+    background-color: var(--background);
 }
 
 .navbar .navbar-brand {
@@ -480,8 +451,6 @@ a.dropdown-item:hover {
     color: var(--mid-primary) !important;
 }*/
 
-
-
 .navbar-toggler {
     padding: 0.35rem 0.55rem;
     font-size: 1.25rem;
@@ -490,9 +459,6 @@ a.dropdown-item:hover {
     border: 0px solid transparent;
     border-radius: 0.25rem;
 }
-
-
-
 
 
 
@@ -549,10 +515,7 @@ a.dropdown-item:hover {
         font-size: 0.8em;
         padding-left: 50px;
     }
-
-
 }
-
 
 
 .menu-btn__burger::before {
@@ -667,7 +630,7 @@ h1 {
 
 .feeling h1 {
     /* font-size: 5.5em; */
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
     /*margin-top: 160px;*/
     margin-bottom: 20px;
     margin-bottom: 20px;
@@ -777,7 +740,7 @@ li {
 }
 
 .feeling-paragraph {
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
     letter-spacing: 3px;
 }
 
@@ -1206,7 +1169,7 @@ input:-webkit-autofill {
 
 .artwork-title h1 {
     font-size: 5em;
-    font-family: var(--font-feeling);
+    font-family: var(--font-large-headings);
     letter-spacing: 6px;
 }
 
