@@ -782,7 +782,7 @@ section#events {
 
 .event-card .text-muted {
     color: var(--light-primary) !important;
-
+    margin-bottom: 10px;
 }
 
 .event-card {
@@ -791,7 +791,7 @@ section#events {
 }
 
 .event-card .card-title {
-    margin-bottom: 4px !important;
+    margin-bottom: 20px;
     font-size: 1.3em;
     color: var(--mid-primary);
     font-family: var(--font-small-headings);
