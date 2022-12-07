@@ -244,7 +244,7 @@ function formatEventPage(slug, data) {
           linkTwoLink = data[i]['link-2']
           let artworkBooking
           if(linkTwoLink) {
-            artworkBooking = `<div class="pb-2"><a class="linkTwo" href=${data[i]['link-2']}>${linkTwoText}</a></div>`
+            artworkBooking = `<div class="pb-2"><a class="linkTwo" target="_blank" href=${data[i]['link-2']}>${linkTwoText}</a></div>`
           } else {
             artworkBooking = `${linkTwoText}<br>`
           }
