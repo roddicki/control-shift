@@ -1218,7 +1218,7 @@ input:-webkit-autofill {
 
 .b-text-spacing {
     padding-top: 20px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
 }
 
 .map-icon .fa-map-marker {
