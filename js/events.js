@@ -168,19 +168,26 @@ function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
     if (data[i]['slug'] == slug) {
       console.log(slug);
-      console.log(data[i]);
+      console.log('title of work', data[i]["title-of-work"]);
 
-      let artworkImgContainer = document.querySelector('.artwork-image');
-      let artworkImg = document.createElement("img");
-      artworkImg.className = "img-fluid";
-      let artworkSrc = data[i]['artwork-image-url'];
-      // if image does not begin with http
-      if (artworkSrc.indexOf("http") == -1) {
-        artworkSrc = "img/2022/" + data[i]['artwork-image-url'];
+      if (data[i]["title-of-work"] === "The Almost") {
+
       }
-      artworkImg.src = artworkSrc;
-      artworkImg.alt = data[i]['alt-text-artwork-image'];
-      artworkImgContainer.appendChild(artworkImg);
+
+
+      
+      // ARTWORK IMAGE
+      // let artworkImgContainer = document.querySelector('.artwork-image');
+      // let artworkImg = document.createElement("img");
+      // artworkImg.className = "img-fluid";
+      // let artworkSrc = data[i]['artwork-image-url'];
+      // // if image does not begin with http
+      // if (artworkSrc.indexOf("http") == -1) {
+      //   artworkSrc = "img/2022/" + data[i]['artwork-image-url'];
+      // }
+      // artworkImg.src = artworkSrc;
+      // artworkImg.alt = data[i]['alt-text-artwork-image'];
+      // artworkImgContainer.appendChild(artworkImg);
 
       //artworkImg.innerHTML = "<img src=\""+ data[i]['artwork-image-url'] +"\"> ";//data[i]['artwork-image-url'];
 
