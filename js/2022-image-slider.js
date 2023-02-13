@@ -1,42 +1,62 @@
 // FOR 2022 EVENTS !!!!
-
-console.log("IN CORRECT JS FILE");
-
-// Set modal images for slider
+// SET IMAGES FOR SLIDER HERE
 const sliderImages = [ 
   {
-    artworURLString: "the-almost",
+    artworURLString: "feeling-machines-weekender", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/Feeling_Machines_Weekender/weekender_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "ai-tattoo", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "https://lh3.googleusercontent.com/eiUrYtl8mf5sscDBhtCMugAr-adAfmmuLJaKIdd5CnQT3z3OTdWp6m_mf29NFf6uV6AE8N_7o73fqbHcUKjzMOoCNL4NBu8_gUQGuSGtCMtwIzcScJIxgsqbmHYstthFDQ0AKIp6TQ=w2400", alt: "Artwork image" }],
+  }, 
+  {
+    artworURLString: "poem-garden", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/Poem_Garden/POEM_thumb.gif", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "set-scripted-emergent-togetherness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/SET/MELT_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "can-a-website-be-a-garden", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/Garden_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "show-and-share", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/QTB_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "ready-s-e-t", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/MELT_workshopMAIN.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "introducing-feeling-machines", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/introducing_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
+    artworURLString: "the-almost", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
     images: [
-      { url: "../img/2022/The_Almost/0.jpg", alt: "The Almost art piece" },
-      { url: "../img/2022/The_Almost/1.jpg", alt: "The Almost art piece" },
-      { url: "../img/2022/The_Almost/2.jpeg", alt: "The Almost art piece" },
-      { url: "../img/2022/The_Almost/4.jpg", alt: "The Almost art piece" },
-      { url: "../img/2022/The_Almost/5.jpeg", alt: "The Almost art piece" },
-      { url: "../img/2022/The_Almost/6.jpg", alt: "The Almost art piece" }
+      { url: "../img/2022/The_Almost/0.jpg", alt: "Artwork image" },
+      { url: "../img/2022/The_Almost/1.jpg", alt: "Artwork image" },
+      { url: "../img/2022/The_Almost/2.jpeg", alt: "Artwork image" },
+      { url: "../img/2022/The_Almost/4.jpg", alt: "Artwork image" },
+      { url: "../img/2022/The_Almost/5.jpeg", alt: "Artwork image" },
+      { url: "../img/2022/The_Almost/6.jpg", alt: "Artwork image" }
     ],
   },
 ];
 
-console.log("length", sliderImages.length);
-
 const queryString = window.location.search;
 const artistURLParam = queryString.match(/[^=]*$/g)[0];
 const result = sliderImages.find(({ artworURLString }) => artworURLString === artistURLParam);
-console.log('result', )
-// if(sliderImages.some(sliderImages => sliderImages.artworkName === "Peter")){
-//     alert("Object found inside the array.");
-// } else{
-//     alert("Object not found.");
-// }
-
 
 
 const imageLoaded = result.images.map(function(image, i) {
   let sliderContainer = document.getElementById("slider-container");
   let imageOuterDiv = document.createElement("div");
   imageOuterDiv.setAttribute("class", "project project" + i);
-  sliderImages.length === 1
-    ? gsap.set(".button-container, .gallery-list__progress-bar", {
+  result.images.length === 1
+    ? gsap.set(".button-container, .gallery-list__progress-bar, .gallery-list__progress-track", {
         display: "none",
       })
     : "";
