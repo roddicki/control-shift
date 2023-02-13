@@ -27,11 +27,19 @@
 ////Everything from index2022   ////
 ///////////////////////////////////*/
 
+.hideElement {
+    display: none;
+}
+
+.showElement {
+    display: block;
+}
+
 .container h1 {
     z-index: 1;
     font-family: var(--font-large-headings);
     letter-spacing: 6px;
-    font-size: 4em;
+    /* font-size: 4em; */
     /*  border: 4px red solid;*/
 }
 

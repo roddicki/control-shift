@@ -34,30 +34,35 @@
 
         <div id="page-content">
 
-
-            <!-- PHOTO SLIDER -->
-            <div class="wrapper">
-                <div id="slider-container" class="projects">
-                    <div class="gallery-list__progress-track" style="transform: translate3d(0px, 0px, 1px); margin-left: 0px;">
-                        <div class="gallery-list__progress-bar"></div>
-                        <div class="gallery-list__progress-hit-area"></div>
+            <div class="row" id="singleImage">
+                <div class="col-sm artwork-image-container">
+                    <!-- ARTWORK IMAGE-->
+                    <div class="artwork-image">
+                        <!-- <img src="MELT_browser.png"> -->
                     </div>
                 </div>
+            </div>
 
-                <div class="button-container">
-                    <button class="btn prev"><span>Prev</span>
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="btn next"><span>Next</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+            <!-- PHOTO SLIDER -->
+            <div id="sliderImage">
+                <div class="wrapper">
+                    <div id="slider-container" class="projects">
+                        <div class="gallery-list__progress-track" style="transform: translate3d(0px, 0px, 1px); margin-left: 0px;">
+                            <div class="gallery-list__progress-bar"></div>
+                            <div class="gallery-list__progress-hit-area"></div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn prev"><span>Prev</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn next"><span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <div class="actionContainer col-sm text-center">
-                <a id="actionLink" target="_blank" class="modal-link-text modal-top-text" href="" role="button"></a>
-            </div>
-
 <!-- non slider code starts here -->
 
             <!-- row  -->
@@ -158,11 +163,13 @@
         }, 200); // stop flash of footer content before rest of the page is loaded
 
     </script>
+        <script>        setTimeout(function() {
+            init()
+        }, 1000)</script>
         <script src="js/events.js"></script>
         <script>
-            //get jsom data 
             getEventData();
         </script>
     <!-- <script src="../js/page-content.js"></script> -->
-    <!-- <script src="../js/image-slider.js"></script> -->
+    <script src="js/2022-image-slider.js"></script>
 </body></html>
