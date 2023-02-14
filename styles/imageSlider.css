@@ -123,6 +123,10 @@ button.btn.next:before {
     background: linear-gradient(to right,#07dd99 0,#07dd99 100%);
 }
 
+.twentyTwentyProgressTrack {
+    background: var(--dark-link);;
+}
+
 .gallery-list__progress-hit-area {
     position: absolute;
     height: 50px;
@@ -140,4 +144,8 @@ button.btn.next:before {
     border-radius: 3px;
     background-color: #074bdd;
     pointer-events: none;
+}
+
+.twentyTwentyProgressBar {
+    background-color: #83a5ee;
 }
