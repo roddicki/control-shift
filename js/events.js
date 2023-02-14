@@ -3,7 +3,6 @@
 // split into past and upcoming based on date
 function formatEvents(data) {
   for (var i = 0; i < data.length; i++) {
-    console.log(data[i]);
     let dateNow = new Date();
     dateNow.setDate(dateNow.getDate() - 1);
     let eventDate = new Date(data[i]["start-date"]);
@@ -12,7 +11,6 @@ function formatEvents(data) {
     let card = document.createElement("div");
     card.className = "card event-card";
     card.onclick = function() {
-      console.log("clicked id=" + id);
       location.href = "artwork.html?artwork=" + slug;
     };
 
@@ -82,7 +80,6 @@ function formatEvents(data) {
 // split into past and upcoming based on date
 function formatProgEvents(data) {
   for (var i = 0; i < data.length; i++) {
-    console.log(data[i]);
     let dateNow = new Date();
     dateNow.setDate(dateNow.getDate() - 1);
     let eventDate = new Date(data[i]["start-date"]);
@@ -250,8 +247,6 @@ function formatEventPage(slug, data) {
         artworkInfoRow.appendChild(col);
       }
 
-      console.log("data[i]", data[i]);
-
       // booking call to action columns and links
       let linkTwoText = data[i]["link-2-text"];
       if (linkTwoText || data[i]["link-1-text"]) {
@@ -378,7 +373,6 @@ function getProgrammeData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
-      console.log(data.sort(custom_sort));
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
     },

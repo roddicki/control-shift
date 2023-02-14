@@ -1,64 +1,71 @@
 <a href="index.html" class="navbar-brand">Control Shift</a>
 <nav class="navbar  navbar-light" id="menu-mobile">
-    <a class="anchor float-right navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Open the menu">
-        <div class="menu-btn">
-        <div class="menu-btn__burger">
-        </div>
-        </div>
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav float-right text-right pr-3">
-            <a class="nav-item nav-link" href="programme.html">programme</a>
-            <a class="nav-item nav-link" href="2020/index.html">archive</a>  
-            <a class="nav-item nav-link" href="about.html">about</a>
-        </div>
+  <a
+    class="anchor float-right navbar-toggler"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Open the menu"
+  >
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
-
-
+  </a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav float-right text-right pr-3">
+      <a class="nav-item nav-link" href="programme.html">programme</a>
+      <a class="nav-item nav-link" href="2020/index.html">archive</a>
+      <a class="nav-item nav-link" href="about.html">about</a>
+    </div>
+  </div>
 </nav>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        let url = window.location;
-        /*$('nav.navbar a').filter(function() {
-            return this.href == url;
-        }).addClass('active');*/
-        if (url.href.includes("2020") || url.href.includes("artwork")) {
-            $('nav.navbar a[href="2020/index.html"]').addClass('active');
-        }
-        else if (url.href.includes("call")) {
-            $('nav.navbar a[href="call/index.html"]').addClass('active');
-        }
-        else {
-            $('nav.navbar a').filter(function() {
-                return this.href == url;
-            }).addClass('active');
-        }
+  $(document).ready(function() {
+      let url = window.location;
+      /*$('nav.navbar a').filter(function() {
+          return this.href == url;
+      }).addClass('active');*/
+      if (url.href.includes("2020")) {
+          $('nav.navbar a[href="2020/index.html"]').addClass('active');
+      }
+      else if (url.href.includes("artwork")) {
+        $('nav.navbar a[href="programme.html"]').addClass('active');
+      }
+      else if (url.href.includes("call")) {
+          $('nav.navbar a[href="call/index.html"]').addClass('active');
+      }
+      else {
+          $('nav.navbar a').filter(function() {
+              return this.href == url;
+          }).addClass('active');
+      }
 
-        // if in 2020 archive folder add ../
-        var splitUrl = String(url).split("/");
-        console.log(splitUrl[splitUrl.length-2]);
-        // in directory if second to last item is not control-shift 
-        if (splitUrl[splitUrl.length-2].includes("control-shift") == false) {
-            $('nav.navbar a').each(function(){
-                let str = this.getAttribute('href');
-                this.setAttribute('href', "../"+str);
-            });
-        };
-    });
+      // if in 2020 archive folder add ../
+      var splitUrl = String(url).split("/");
+      console.log(splitUrl[splitUrl.length-2]);
+      // in directory if second to last item is not control-shift
+      if (splitUrl[splitUrl.length-2].includes("control-shift") == false) {
+          $('nav.navbar a').each(function(){
+              let str = this.getAttribute('href');
+              this.setAttribute('href', "../"+str);
+          });
+      };
+  });
 
-    const menuBtn = document.querySelector('.menu-btn');
-    let menuOpen = false;
-    menuBtn.addEventListener('click', () => {
-        if(!menuOpen) {
-            menuBtn.classList.add('open');
-            menuOpen = true;
-            $( "#menu-mobile" ).addClass( "nav-bar-mobile-open" );
-        } else {
-            menuBtn.classList.remove('open');
-            menuOpen = false;
-            $( "#menu-mobile" ).removeClass( "nav-bar-mobile-open" );
+  const menuBtn = document.querySelector('.menu-btn');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+      if(!menuOpen) {
+          menuBtn.classList.add('open');
+          menuOpen = true;
+          $( "#menu-mobile" ).addClass( "nav-bar-mobile-open" );
+      } else {
+          menuBtn.classList.remove('open');
+          menuOpen = false;
+          $( "#menu-mobile" ).removeClass( "nav-bar-mobile-open" );
 
-        }
-    });
+      }
+  });
 </script>
