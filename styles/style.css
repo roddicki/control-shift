@@ -802,6 +802,9 @@ section#events {
     margin-bottom: 20px;
     font-size: 1.3em;
     color: var(--mid-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
     font-family: var(--font-small-headings);
     letter-spacing: 1px;
 

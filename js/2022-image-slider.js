@@ -6,6 +6,10 @@ const sliderImages = [
     images: [ { url: "../img/2022/Feeling_Machines_Weekender/weekender_thumb.png", alt: "Artwork image" } ],
   }, 
   {
+    artworURLString: "feeling-machines-st-annes-house", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [ { url: "../img/2022/Feeling_Machines_Weekender/weekender_thumb.png", alt: "Artwork image" } ],
+  }, 
+  {
     artworURLString: "ai-tattoo", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
     images: [ { url: "https://lh3.googleusercontent.com/eiUrYtl8mf5sscDBhtCMugAr-adAfmmuLJaKIdd5CnQT3z3OTdWp6m_mf29NFf6uV6AE8N_7o73fqbHcUKjzMOoCNL4NBu8_gUQGuSGtCMtwIzcScJIxgsqbmHYstthFDQ0AKIp6TQ=w2400", alt: "Artwork image" }],
   }, 
