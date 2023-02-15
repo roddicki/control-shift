@@ -1,20 +1,18 @@
 // HOME PAGE FORMATTING
 // format incoming data from google sheet
-// split into past and upcoming based on date  
+// split into past and upcoming based on date
 function formatEvents(data) {
   for (var i = 0; i < data.length; i++) {
-    console.log(data[i]);
     let dateNow = new Date();
-    dateNow.setDate(dateNow.getDate()-1);
-    let eventDate = new Date(data[i]['start-date']);
-    let slug = data[i]['slug'];
-    let artworkName = data[i]['title-of-work'];
+    dateNow.setDate(dateNow.getDate() - 1);
+    let eventDate = new Date(data[i]["start-date"]);
+    let slug = data[i]["slug"];
+    let artworkName = data[i]["title-of-work"];
     let card = document.createElement("div");
     card.className = "card event-card";
     card.onclick = function() {
-        console.log('clicked id=' +  id);
-        location.href = "artwork.html?artwork="+slug;
-    }
+      location.href = "artwork.html?artwork=" + slug;
+    };
 
     let cardRow = document.createElement("div");
     cardRow.className = "row";
@@ -24,7 +22,14 @@ function formatEvents(data) {
 
     let title = document.createElement("h2");
     title.className = "card-title";
-    title.innerHTML = "<a href='artwork.html?artwork="+slug+"'>"+artworkName + "<br>by " + data[i]['artist-name']+"</a>";
+    title.innerHTML =
+      "<a href='artwork.html?artwork=" +
+      slug +
+      "'>" +
+      artworkName +
+      "<br>by " +
+      data[i]["artist-name"] +
+      "</a>";
 
     cardColTitle.appendChild(title);
 
@@ -41,14 +46,14 @@ function formatEvents(data) {
     //cardRow.appendChild(cardColDate);
     card.appendChild(cardRow);
 
-    let synopsisText = data[i]['artwork-synopsis'];
+    let synopsisText = data[i]["artwork-synopsis"];
     let shortdescription = document.createElement("p");
     shortdescription.className = "card-text";
     shortdescription.innerHTML = synopsisText;
 
     let cardColSynopis = document.createElement("div");
     cardColSynopis.className = "col-sm text-muted";
-    cardColSynopis.innerHTML = data[i]['artwork-synopsis'];
+    cardColSynopis.innerHTML = data[i]["artwork-synopsis"];
 
     cardRow = document.createElement("div");
     cardRow.className = "row";
@@ -58,12 +63,12 @@ function formatEvents(data) {
 
     let link = document.createElement("a");
     link.className = "btn btn-primary stretched-link";
-    link.href="event.html?id=";
-    link.innerHTML = "More..."
-    
-    if(data[i]['show-on-website'] && eventDate >= dateNow) {
+    link.href = "event.html?id=";
+    link.innerHTML = "More...";
+
+    if (data[i]["show-on-website"] && eventDate >= dateNow) {
       document.querySelector(".upcoming-events").appendChild(card);
-    } 
+    }
     /*else if(data[i]['show-on-website'] && eventDate < dateNow) {
       document.querySelector(".past-events").appendChild(card);
     }*/
@@ -72,42 +77,41 @@ function formatEvents(data) {
 
 // PROGRAMME PAGE FORMATTING
 // format incoming data from google sheet
-// split into past and upcoming based on date  
+// split into past and upcoming based on date
 function formatProgEvents(data) {
   for (var i = 0; i < data.length; i++) {
-    console.log(data[i]);
     let dateNow = new Date();
-    dateNow.setDate(dateNow.getDate()-1);
-    let eventDate = new Date(data[i]['start-date']);
-    let slug = data[i]['slug'];
-    let artworkName = data[i]['title-of-work'];
-    let startDate = new Date(data[i]['start-date']);
-    let endDate;  
-    if (data[i]['end-date']) {
-        endDate = new Date(data[i]['end-date']); 
+    dateNow.setDate(dateNow.getDate() - 1);
+    let eventDate = new Date(data[i]["start-date"]);
+    let slug = data[i]["slug"];
+    let artworkName = data[i]["title-of-work"];
+    let startDate = new Date(data[i]["start-date"]);
+    let endDate;
+    if (data[i]["end-date"]) {
+      endDate = new Date(data[i]["end-date"]);
     }
     let card = document.createElement("div");
     card.className = "col-md-4 pt-4 pb-3";
     card.onclick = function() {
-        console.log('clicked id=' +  id);
-        location.href = "artwork.html?artwork="+slug;
-    }
+      console.log("clicked id=" + id);
+      location.href = "artwork.html?artwork=" + slug;
+    };
 
     let imgLink = document.createElement("a");
     imgLink.className = "thumbnail";
-    imgLink.href = "artwork.html?artwork="+slug;
+    imgLink.href = "artwork.html?artwork=" + slug;
 
     let imgContainer = document.createElement("div");
     imgContainer.className = "blueSquare";
 
     let img = document.createElement("img");
-    let imgSrc = data[i]['artwork-image-thumb-url'];
+    let imgSrc = data[i]["artwork-image-thumb-url"];
     // if image does not begin with http
     if (imgSrc.indexOf("http") == -1) {
-      imgSrc = "img/2022/" + data[i]['artwork-image-thumb-url'];
+      imgSrc = "img/2022/" + data[i]["artwork-image-thumb-url"];
     }
-    img.src = imgSrc; 
-    img.alt = data[i]['alt-text-artwork-thumb'];
+    img.src = imgSrc;
+    img.alt = data[i]["alt-text-artwork-thumb"];
     img.className = "mx-auto d-block thumb-img img-fluid";
 
     imgContainer.appendChild(img);
@@ -118,7 +122,7 @@ function formatProgEvents(data) {
 
     let textLink = document.createElement("a");
     textLink.className = "mainLinkText";
-    textLink.href = "artwork.html?artwork="+slug;
+    textLink.href = "artwork.html?artwork=" + slug;
 
     let title = document.createElement("div");
     title.className = "gridText gridTitle pt-4 text-center";
@@ -126,38 +130,36 @@ function formatProgEvents(data) {
 
     let artist = document.createElement("div");
     artist.className = "gridText gridAbout pt-0 text-center";
-    artist.innerHTML = "by " + data[i]['artist-name'];
+    artist.innerHTML = "by " + data[i]["artist-name"];
 
     let description = document.createElement("div");
     description.className = "gridText aboutText pt-2 text-center";
-    description.innerHTML = data[i]['artwork-synopsis'];
+    description.innerHTML = data[i]["artwork-synopsis"];
 
     let dates = document.createElement("div");
     dates.className = "gridText gridAbout pt-2 text-center";
     let dateDescription = startDate.toDateString();
     if (endDate) {
-        dateDescription = startDate.toDateString() + " - " + endDate.toDateString();
+      dateDescription =
+        startDate.toDateString() + " - " + endDate.toDateString();
     }
     dates.innerHTML = dateDescription;
 
     textLink.appendChild(title);
     textLink.appendChild(artist);
-    if(data[i]['show-date']) {
+    if (data[i]["show-date"]) {
       textLink.appendChild(dates);
     }
     textLink.appendChild(description);
-    
 
     textContainer.appendChild(textLink);
     card.appendChild(textContainer);
 
-    if(data[i]['show-on-website'] && endDate >= dateNow) {
+    if (data[i]["show-on-website"] && endDate >= dateNow) {
       document.querySelector("#upcoming-events").appendChild(card);
-    } 
-    else if(data[i]['show-on-website'] && startDate >= dateNow) {
+    } else if (data[i]["show-on-website"] && startDate >= dateNow) {
       document.querySelector("#upcoming-events").appendChild(card);
-    } 
-    else if(data[i]['show-on-website'] && startDate < dateNow) {
+    } else if (data[i]["show-on-website"] && startDate < dateNow) {
       document.querySelector("#past-events").appendChild(card);
     }
   }
@@ -166,115 +168,127 @@ function formatProgEvents(data) {
 // INDIVIDUAL ARTWORK FORMATTING
 function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
-    if (data[i]['slug'] == slug) {
+    if (data[i]["slug"] == slug) {
       console.log(slug);
-      console.log(data[i]);
+      console.log("title of work", data[i]["title-of-work"]);
 
-      let artworkImgContainer = document.querySelector('.artwork-image');
-      let artworkImg = document.createElement("img");
-      artworkImg.className = "img-fluid";
-      let artworkSrc = data[i]['artwork-image-url'];
-      // if image does not begin with http
-      if (artworkSrc.indexOf("http") == -1) {
-        artworkSrc = "img/2022/" + data[i]['artwork-image-url'];
+      if (data[i]["title-of-work"] === "The Almost") {
       }
-      artworkImg.src = artworkSrc;
-      artworkImg.alt = data[i]['alt-text-artwork-image'];
-      artworkImgContainer.appendChild(artworkImg);
 
-      //artworkImg.innerHTML = "<img src=\""+ data[i]['artwork-image-url'] +"\"> ";//data[i]['artwork-image-url'];
+      // ARTWORK IMAGE
+      const artworksWithSlider = ['The Almost'];
+      if (artworksWithSlider.includes(data[i]["title-of-work"])) {
+        // document.getElementById('sliderImage').classList.add("showElement");
 
-      let artworkTitle = document.querySelector('.artwork-title-text');
+        // call slider JS
+      } else {
+
+        // if artist does not need a slider then pull main image from google sheets
+        // let artworkImgContainer = document.querySelector(".artwork-image");
+        // let artworkImg = document.createElement("img");
+        // artworkImg.className = "img-fluid";
+        // let artworkSrc = data[i]["artwork-image-url"];
+        // // if image does not begin with http
+        // if (artworkSrc.indexOf("http") == -1) {
+        //   artworkSrc = "img/2022/" + data[i]["artwork-image-url"];
+        // }
+        // artworkImg.src = artworkSrc;
+        // artworkImg.alt = data[i]["alt-text-artwork-image"];
+        // artworkImgContainer.appendChild(artworkImg);
+        // artworkImg.innerHTML = '<img src="' + data[i]["artwork-image-url"] + '"> '; //data[i]['artwork-image-url'];
+      }
+      let artworkTitle = document.querySelector(".artwork-title-text");
       //artworkTitle.innerHTML = "<a href=\"programme.html\"> <i class=\"fas fa-arrow-left\" aria-hidden=\"true\"></i></a>" + data[i]['title-of-work'];
-      artworkTitle.innerHTML = data[i]['title-of-work'];
+      artworkTitle.innerHTML = data[i]["title-of-work"];
 
-      let artistName = document.querySelector('.artist-name-text');
-      artistName.innerHTML = data[i]['artist-name'];
+      let artistName = document.querySelector(".artist-name-text");
+      artistName.innerHTML = data[i]["artist-name"];
 
-      let eventType = `<span>${data[i]['artwork-type']}</span>`
+      let eventType = `<span>${data[i]["artwork-type"]}</span>`;
 
-      let artworkType = document.querySelector('.artwork-type');
+      let artworkType = document.querySelector(".artwork-type");
       artworkType.innerHTML = eventType;
 
       // date column
-      let artworkDate = document.querySelector('.artwork-date');
-      let needsDate = data[i]['show-date'];
+      let artworkDate = document.querySelector(".artwork-date");
+      let needsDate = data[i]["show-date"];
       if (needsDate) {
-        let col = document.createElement('div');
+        let col = document.createElement("div");
         col.className = "col-sm";
         // <h2 class="pt-2 pb-3 text-center artwork-date">Sun Oct 30 2022<br>14:00 - 17:00</h2>
 
         let startDate;
-        let endDate;  
+        let endDate;
         let dateDescription = "";
-        if(data[i]['start-date']) {
-          startDate = new Date(data[i]['start-date']);
+        if (data[i]["start-date"]) {
+          startDate = new Date(data[i]["start-date"]);
           dateDescription = startDate.toDateString();
         }
 
-        if (data[i]['end-date']) {
-          endDate = new Date(data[i]['end-date']); 
-          dateDescription = startDate.toDateString() + " -<br>" + endDate.toDateString();
+        if (data[i]["end-date"]) {
+          endDate = new Date(data[i]["end-date"]);
+          dateDescription =
+            startDate.toDateString() + " -<br>" + endDate.toDateString();
         }
 
-        if (data[i]['start-time'] && data[i]['end-time']) {
-          dateDescription += "<br>" + data[i]['start-time'] + " - " + data[i]['end-time'];
-        }
-        else if (data[i]['start-time']) {
-            dateDescription += "<br>" + data[i]['start-time'];
+        if (data[i]["start-time"] && data[i]["end-time"]) {
+          dateDescription +=
+            "<br>" + data[i]["start-time"] + " - " + data[i]["end-time"];
+        } else if (data[i]["start-time"]) {
+          dateDescription += "<br>" + data[i]["start-time"];
         }
 
-        col.innerHTML = "<h2 class=\"pt-2 pb-3 text-center artwork-date\">" +dateDescription+ "</h2>";
+        col.innerHTML =
+          '<h2 class="pt-2 pb-3 text-center artwork-date">' +
+          dateDescription +
+          "</h2>";
 
-        let artworkInfoRow = document.querySelector('.artwork-info');
+        let artworkInfoRow = document.querySelector(".artwork-info");
         artworkInfoRow.appendChild(col);
       }
 
-      console.log('data[i]', data[i])
-
       // booking call to action columns and links
-      let linkTwoText = data[i]['link-2-text']
+      let linkTwoText = data[i]["link-2-text"];
       if (linkTwoText || data[i]["link-1-text"]) {
-        let col = document.createElement('div');
+        let col = document.createElement("div");
         col.className = "col-sm";
-        let header = document.createElement('h2');
+        let header = document.createElement("h2");
         header.className = "pt-2 pb-3 text-center artwork-book";
 
         if (linkTwoText) {
-          linkTwoLink = data[i]['link-2']
-          let artworkBooking
-          if(linkTwoLink) {
-            artworkBooking = `<div class="pb-2"><a class="linkTwo" target="_blank" href=${data[i]['link-2']}>${linkTwoText}</a></div>`
+          linkTwoLink = data[i]["link-2"];
+          let artworkBooking;
+          if (linkTwoLink) {
+            artworkBooking = `<div class="pb-2"><a class="linkTwo" target="_blank" href=${data[i]["link-2"]}>${linkTwoText}</a></div>`;
           } else {
-            artworkBooking = `${linkTwoText}<br>`
+            artworkBooking = `${linkTwoText}<br>`;
           }
-          console.log(data)
+          console.log(data);
           header.innerHTML = artworkBooking;
         }
-        
+
         let eventLocation = "";
         if (data[i]["link-1"]) {
-          eventLocation = `<a class="map-icon" href=${data[i]['link-1']}>${data[i]['link-1-text']}</a>`
-        }
-        else if (data[i]["link-1-text"]) {
+          eventLocation = `<a class="map-icon" href=${data[i]["link-1"]}>${data[i]["link-1-text"]}</a>`;
+        } else if (data[i]["link-1-text"]) {
           eventLocation = data[i]["link-1-text"];
         }
 
         header.innerHTML += eventLocation;
 
         col.appendChild(header);
-        let artworkInfoRow = document.querySelector('.artwork-info');
+        let artworkInfoRow = document.querySelector(".artwork-info");
         artworkInfoRow.appendChild(col);
       }
-      
-      let artworkInfoText = document.querySelector('.artwork-info-text');
-      artworkInfoText.innerHTML = data[i]['artwork-copy'];
 
-      let artistShortName = document.querySelector('.artist-short-name');
-      artistShortName.innerHTML = data[i]['artist-short-name'];
+      let artworkInfoText = document.querySelector(".artwork-info-text");
+      artworkInfoText.innerHTML = data[i]["artwork-copy"];
 
-      let artistBio = document.querySelector('.artist-bio-text');
-      artistBio.innerHTML = data[i]['artist-bio'];
+      let artistShortName = document.querySelector(".artist-short-name");
+      artistShortName.innerHTML = data[i]["artist-short-name"];
+
+      let artistBio = document.querySelector(".artist-bio-text");
+      artistBio.innerHTML = data[i]["artist-bio"];
 
       if (data[i]["artist-website-url"]) {
         let artistWebsite = document.querySelector("#website-container");
@@ -303,7 +317,6 @@ function formatEventPage(slug, data) {
         let twitLink = document.querySelector("#linkedInLink");
         twitLink.href = data[i]["artist-social-linkedin"];
       }
-
     }
   }
 }
@@ -316,59 +329,54 @@ function custom_sort(a, b) {
 // get query by param key
 function getParamKey(key) {
   const urlParams = new URLSearchParams(location.search);
-  const val = urlParams.get(key)
+  const val = urlParams.get(key);
   return val;
 }
 
 // get json data from google sheet and format
-function getHomePageData(){
+function getHomePageData() {
   $.ajax({
-    type: 'GET',
-    url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
-    data: {get_param: 'value'},
-    dataType: 'json',
-    success: function (data) {
+    type: "GET",
+    url:
+      "https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec",
+    data: { get_param: "value" },
+    dataType: "json",
+    success: function(data) {
       console.log(data.sort(custom_sort));
-      let sortedData = data.sort(custom_sort)
+      let sortedData = data.sort(custom_sort);
       formatEvents(sortedData);
-    }
+    },
   });
 }
 
 // get json data from google sheet and format
-function getEventData(){
+function getEventData() {
   $.ajax({
-    type: 'GET',
-    url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
-    data: {get_param: 'value'},
-    dataType: 'json',
-    success: function (data) {
-      let slug = getParamKey('artwork');
+    type: "GET",
+    url:
+      "https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec",
+    data: { get_param: "value" },
+    dataType: "json",
+    success: function(data) {
+      let slug = getParamKey("artwork");
       formatEventPage(slug, data);
-    }
+    },
   });
 }
 
 // get json data from google sheet and format
-function getProgrammeData(){
+function getProgrammeData() {
   $.ajax({
-    type: 'GET',
-    url: 'https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec',
-    data: {get_param: 'value'},
-    dataType: 'json',
-    success: function (data) {
-      console.log(data.sort(custom_sort));
-      let sortedData = data.sort(custom_sort)
+    type: "GET",
+    url:
+      "https://script.google.com/macros/s/AKfycbwoIykn6ohjA1gLzdcpv_88WQFRt556oLMjcGjwwhQM9zP5eD6tluIqIiCye3j-sOET/exec",
+    data: { get_param: "value" },
+    dataType: "json",
+    success: function(data) {
+      let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
-    }
+    },
   });
 }
 
 //getData();
-
-
-
-
-
-
-  

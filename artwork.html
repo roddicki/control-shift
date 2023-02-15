@@ -20,30 +20,52 @@
     <!--  Stylesheet -->
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/artworks.css">
+    <link rel="stylesheet" type="text/css" href="../styles/imageSlider.css">
+
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <script src="https://kit.fontawesome.com/d18a6fd4fe.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-
-    <style>
-     
-    </style>
 </head>
 
 <body>
     <div id="navbar"></div>
+    <!--  Grid of artworks generated from json file - see js below -->
+    <div class="pb-3 container home-page-content pt-4 nav-bar-space">
 
-    <div class="container nav-bar-space">
-        <!-- row  -->
-        <div class="row">
-            <div class="col-sm artwork-image-container">
-                <!-- ARTWORK IMAGE-->
-                <div class="artwork-image">
-                    <!-- <img src="MELT_browser.png"> -->
+        <div id="page-content">
+
+            <div class="row" id="singleImage">
+                <div class="col-sm artwork-image-container">
+                    <!-- ARTWORK IMAGE-->
+                    <div class="artwork-image">
+                        <!-- <img src="MELT_browser.png"> -->
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- row  -->
+            <!-- PHOTO SLIDER -->
+            <div id="sliderImage">
+                <div class="wrapper">
+                    <div id="slider-container" class="projects">
+                        <div class="gallery-list__progress-track twentyTwentyProgressTrack" style="transform: translate3d(0px, 0px, 1px); margin-left: 0px;">
+                            <div class="gallery-list__progress-bar twentyTwentyProgressBar"></div>
+                            <div class="gallery-list__progress-hit-area"></div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn prev"><span>Prev</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn next"><span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- non slider code starts here -->
+
+            <!-- row  -->
         <div class="row">
             <!--  Artwork Title -->
             <div class="col-sm pb-3">
@@ -122,8 +144,8 @@
         </div>
     </div>
     </div>
-    <!-- row  -->
     </div>
+    <!-- <div id="modal"></div> -->
 
     <!-- Include Footer -->
     <div id="footer"></div>
@@ -134,14 +156,20 @@
     <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
-        $('#navbar').load('./components/navigation.html');
-        $('#head').load('./components/head.html');
-        $('#footer').load('./components/footer.html');
+        $('#navbar').load('../components/navigation.html');
+        $('#head').load('../components/head.html');
+        setTimeout(function() {
+            $('#footer').load('../components/footer.html')
+        }, 200); // stop flash of footer content before rest of the page is loaded
+
     </script>
-    <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
-    <script src="js/events.js"></script>
-    <script>
-        //get jsom data 
-        getEventData();
-    </script>
+        <script>        setTimeout(function() {
+            init()
+        }, 1000)</script>
+        <script src="js/events.js"></script>
+        <script>
+            getEventData();
+        </script>
+    <!-- <script src="../js/page-content.js"></script> -->
+    <script src="js/2022-image-slider.js"></script>
 </body></html>
