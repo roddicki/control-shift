@@ -124,7 +124,7 @@ button.btn.next:before {
 }
 
 .twentyTwentyProgressTrack {
-    background: var(--dark-link);;
+    background: #3455a5;
 }
 
 .gallery-list__progress-hit-area {
@@ -147,5 +147,5 @@ button.btn.next:before {
 }
 
 .twentyTwentyProgressBar {
-    background-color: #83a5ee;
+    background-color: var(--dark-link);
 }

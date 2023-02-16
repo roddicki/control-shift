@@ -1860,3 +1860,7 @@ a:hover.mainLinkText {
 .linkTwo {
     border-bottom: 1px solid var(--light-link-hover)
 }
+
+.artwork-padding {
+    padding: 0 35px
+}
