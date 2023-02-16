@@ -1864,3 +1864,11 @@ a:hover.mainLinkText {
 .artwork-padding {
     padding: 0 35px
 }
+
+@media (min-width: 600px) {
+    .artwork-padding {
+        padding: 0 10%;
+    }
+}
+
+
