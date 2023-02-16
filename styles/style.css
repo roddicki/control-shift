@@ -1861,6 +1861,7 @@ a:hover.mainLinkText {
     border-bottom: 1px solid var(--light-link-hover)
 }
 
+/* TO ADD PADDING TO PAGES */
 .artwork-padding {
     padding: 0 35px
 }
