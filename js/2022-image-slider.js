@@ -8,17 +8,67 @@ const sliderImages = [
             alt: "Artwork image"
         }],
   },
+
     {
-        artworURLString: "feeling-machines-weekender", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "alorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
-            url: "../img/2022/weekender/weekender_thumb.png",
+            url: "../img/2022/algorave_thumb.png",
             alt: "Artwork image"
         }],
   },
+
+    {
+        artworURLString: "dzata-the-institute-of-technological-consciousness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/dzata1_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+        {
+        artworURLString: "dzata-live-scored-performance", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/dzata2_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+        {
+        artworURLString: "keeping-in-touch", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/keeping_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+
+    {
+        artworURLString: "periodical", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/perodical_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
     {
         artworURLString: "feeling-machines-st-annes-house", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
-            url: "../img/2022/Feeling_Machines_Weekender/weekender_thumb.png",
+            url: "../img/2022/weekender_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+    {
+        artworURLString: "drawing-sound-networks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/prrrrrt_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+        {
+        artworURLString: "rare-earth-walks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/rareearth_thumb.png",
             alt: "Artwork image"
         }],
   },
@@ -31,23 +81,64 @@ const sliderImages = [
   },
     {
         artworURLString: "poem-garden", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
-        images: [{
-            url: "../img/2022/Poem_Garden/POEM_main.png",
-            alt: "Artwork image"
+        images: [
+            {
+                url: "../img/2022/poem_site/1.jpg",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_site/2.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_site/3.jpg",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_site/4.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_site/5.jpg",
+                alt: "Artwork image"
         }],
   },
     {
         artworURLString: "set-scripted-emergent-togetherness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
-            url: "../img/2022/SET/MELT_thumb.png",
+            url: "../img/2022/SET_install_thumb.png",
             alt: "Artwork image"
         }],
   },
     {
         artworURLString: "can-a-website-be-a-garden", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
-        images: [{
-            url: "../img/2022/Garden_thumb.png",
-            alt: "Artwork image"
+        images: [
+            {
+                url: "../img/2022/poem_workshop/1.jpg",
+                alt: "Artwork image"
+
+            },
+            {
+                url: "../img/2022/poem_workshop/2.jpg",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_workshop/3.jpg",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_workshop/4.jpg",
+                alt: "Artwork image"
+            }, {
+                url: "../img/2022/poem_workshop/5.jpg",
+                alt: "Artwork image"
+            }, {
+                url: "../img/2022/poem_workshop/6.jpg",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/poem_workshop/7.jpg",
+                alt: "Artwork image"
         }],
   },
     {
@@ -59,9 +150,27 @@ const sliderImages = [
   },
     {
         artworURLString: "ready-s-e-t", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
-        images: [{
-            url: "../img/2022/MELT_workshopMAIN.png",
-            alt: "Artwork image"
+        images: [
+
+            {
+                url: "../img/2022/SET_workshop/1.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/SET_workshop/2.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/SET_workshop/3.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/SET_workshop/4.png",
+                alt: "Artwork image"
+            },
+            {
+                url: "../img/2022/SET_workshop/5.png",
+                alt: "Artwork image"
         }],
   },
     {
