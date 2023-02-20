@@ -176,13 +176,11 @@ function formatEventPage(slug, data) {
       }
 
       // ARTWORK IMAGE
-      const artworksWithSlider = ['The Almost'];
+      const artworksWithSlider = ["The Almost"];
       if (artworksWithSlider.includes(data[i]["title-of-work"])) {
         // document.getElementById('sliderImage').classList.add("showElement");
-
         // call slider JS
       } else {
-
         // if artist does not need a slider then pull main image from google sheets
         // let artworkImgContainer = document.querySelector(".artwork-image");
         // let artworkImg = document.createElement("img");
@@ -345,6 +343,8 @@ function getHomePageData() {
       console.log(data.sort(custom_sort));
       let sortedData = data.sort(custom_sort);
       formatEvents(sortedData);
+      // now the data has loaded:
+      document.getElementById("loading-placeholder").style.display = "none";
     },
   });
 }
@@ -360,6 +360,11 @@ function getEventData() {
     success: function(data) {
       let slug = getParamKey("artwork");
       formatEventPage(slug, data);
+      const elementsToShow = document.querySelectorAll(".dontDisplayUntilLoad");
+      elementsToShow.forEach((element) => {
+        element.classList.remove("dontDisplayUntilLoad");
+      });
+      document.getElementById("loading").style.display = "none";
     },
   });
 }
@@ -375,6 +380,10 @@ function getProgrammeData() {
     success: function(data) {
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
+      // now the data has loaded:
+      document.getElementById("loading-placeholder").style.display = "none";
+      document.getElementById("pastEventsTitle").style.display = "block";
+      console.log("c", pastEventsTitle);
     },
   });
 }

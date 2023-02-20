@@ -827,6 +827,7 @@ s .event-card .date {
 .past-events-title {
     margin-top: 40px;
     color: var(--light-primary) !important;
+    display: none;
 }
 
 .past-events .card-title a {
@@ -1872,4 +1873,30 @@ a:hover.mainLinkText {
     }
 }
 
+.spinner-image {
+    width: 70px;
+    animation: rotation 5s infinite linear;
+    margin-top: 20px;
+}
 
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#loading-placeholder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px
+}
+
+.dontDisplayUntilLoad {
+    display: none;
+}
