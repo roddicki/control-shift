@@ -508,6 +508,13 @@ a.nav-link:hover {
 }
 
 
+@media (max-width: 990px) and (min-width: 850px) {
+    .navbar-brand {
+        position: fixed;
+        left: 65px;
+        z-index: 1000;
+    }
+}
 @media (max-width: 850px) and (min-width: 370px) {
     .nav-bar-space {
         margin-top: 68px;

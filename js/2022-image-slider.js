@@ -287,7 +287,6 @@ function init() {
 
     let currentStep = 0; //first image
     const totalSlides = document.querySelectorAll(".project").length; //total divs in slider
-    console.log("total slides", totalSlides);
 
     const wrapper = gsap.utils.wrap(0, totalSlides); // slider will wrap back to 0 when total slides is reached
 

@@ -93,7 +93,6 @@ function formatProgEvents(data) {
     let card = document.createElement("div");
     card.className = "col-md-4 pt-4 pb-3";
     card.onclick = function() {
-      console.log("clicked id=" + id);
       location.href = "artwork.html?artwork=" + slug;
     };
 
@@ -169,9 +168,6 @@ function formatProgEvents(data) {
 function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
     if (data[i]["slug"] == slug) {
-      console.log(slug);
-      console.log("title of work", data[i]["title-of-work"]);
-
       if (data[i]["title-of-work"] === "The Almost") {
       }
 
@@ -261,7 +257,6 @@ function formatEventPage(slug, data) {
           } else {
             artworkBooking = `${linkTwoText}<br>`;
           }
-          console.log(data);
           header.innerHTML = artworkBooking;
         }
 
@@ -340,7 +335,6 @@ function getHomePageData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
-      console.log(data.sort(custom_sort));
       let sortedData = data.sort(custom_sort);
       formatEvents(sortedData);
       // now the data has loaded:
@@ -383,7 +377,6 @@ function getProgrammeData() {
       // now the data has loaded:
       document.getElementById("loading-placeholder").style.display = "none";
       document.getElementById("pastEventsTitle").style.display = "block";
-      console.log("c", pastEventsTitle);
     },
   });
 }
