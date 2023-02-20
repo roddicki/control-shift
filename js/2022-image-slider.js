@@ -2,7 +2,7 @@
 // SET IMAGES FOR SLIDER HERE
 const sliderImages = [
     {
-        artworURLString: "airgiants", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "giant-tactile-robots", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/airgiants_thumb.png",
             alt: "Artwork image"
@@ -10,7 +10,7 @@ const sliderImages = [
   },
 
     {
-        artworURLString: "alorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "algorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/algorave_thumb.png",
             alt: "Artwork image"
@@ -213,9 +213,15 @@ const sliderImages = [
 
 const queryString = window.location.search;
 const artistURLParam = queryString.match(/[^=]*$/g)[0];
-const result = sliderImages.find(({
+let result = sliderImages.find(({
     artworURLString
 }) => artworURLString === artistURLParam);
+// If there is no match then fall back on the Feeling weeekends thumbnail imaage
+if (!result) { 
+  result = sliderImages.find(({ artworURLString}) => artworURLString === "feeling-machines-st-annes-house");
+}
+
+
 
 
 const imageLoaded = result.images.map(function (image, i) {
