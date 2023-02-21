@@ -93,7 +93,6 @@ function formatProgEvents(data) {
     let card = document.createElement("div");
     card.className = "col-md-4 pt-4 pb-3";
     card.onclick = function() {
-      console.log("clicked id=" + id);
       location.href = "artwork.html?artwork=" + slug;
     };
 
@@ -169,20 +168,15 @@ function formatProgEvents(data) {
 function formatEventPage(slug, data) {
   for (var i = 0; i < data.length; i++) {
     if (data[i]["slug"] == slug) {
-      console.log(slug);
-      console.log("title of work", data[i]["title-of-work"]);
-
       if (data[i]["title-of-work"] === "The Almost") {
       }
 
       // ARTWORK IMAGE
-      const artworksWithSlider = ['The Almost'];
+      const artworksWithSlider = ["The Almost"];
       if (artworksWithSlider.includes(data[i]["title-of-work"])) {
         // document.getElementById('sliderImage').classList.add("showElement");
-
         // call slider JS
       } else {
-
         // if artist does not need a slider then pull main image from google sheets
         // let artworkImgContainer = document.querySelector(".artwork-image");
         // let artworkImg = document.createElement("img");
@@ -263,7 +257,6 @@ function formatEventPage(slug, data) {
           } else {
             artworkBooking = `${linkTwoText}<br>`;
           }
-          console.log(data);
           header.innerHTML = artworkBooking;
         }
 
@@ -342,9 +335,10 @@ function getHomePageData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
-      console.log(data.sort(custom_sort));
       let sortedData = data.sort(custom_sort);
       formatEvents(sortedData);
+      // now the data has loaded:
+      document.getElementById("loading-placeholder").style.display = "none";
     },
   });
 }
@@ -360,6 +354,11 @@ function getEventData() {
     success: function(data) {
       let slug = getParamKey("artwork");
       formatEventPage(slug, data);
+      const elementsToShow = document.querySelectorAll(".dontDisplayUntilLoad");
+      elementsToShow.forEach((element) => {
+        element.classList.remove("dontDisplayUntilLoad");
+      });
+      document.getElementById("loading").style.display = "none";
     },
   });
 }
@@ -375,6 +374,9 @@ function getProgrammeData() {
     success: function(data) {
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
+      // now the data has loaded:
+      document.getElementById("loading-placeholder").style.display = "none";
+      document.getElementById("pastEventsTitle").style.display = "block";
     },
   });
 }

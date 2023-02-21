@@ -70,6 +70,7 @@
             <!--  Artwork Title -->
             <div class="col-sm pb-3 artwork-padding">
                 <h1 class="pb-4 artwork-title">
+                    <span id="loading">Loading...</span>
                     <a class="modal-header-text" href="programme.html"> <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
                     <span class="artwork-title-text modal-header-text pb-4">
                         <!-- inject title -->
@@ -78,7 +79,7 @@
 
                 <!-- by Artist -->
                 <h2 class="pt-2 pb-3 modal-h2-text">
-                    by <span class="artist-name-text">
+                    <span class="dontDisplayUntilLoad">by</span> <span class="artist-name-text">
                         <!-- inject artist name --></span>
                 </h2>
 
@@ -105,7 +106,7 @@
                 </div>
                 <hr>
                 <!--  About Artist -->
-                <h2 class="pt-2 pb-3 modal-h2-text">About <span class="artist-short-name modal-h2-text"></span></h2>
+                <h2 class="pt-2 pb-3 modal-h2-text"><span class="dontDisplayUntilLoad">About</span> <span class="artist-short-name modal-h2-text"></span></h2>
                 <!--  Artist Bio Text -->
                 <div id="aboutArtist" class="pb-2 artist-bio-text about-modal-text">
                     <!-- inject Artist Bio Text -->
