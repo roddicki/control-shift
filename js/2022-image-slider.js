@@ -16,6 +16,15 @@ const sliderImages = [
             alt: "Artwork image"
         }],
   },
+    
+     {
+        artworURLString: "lunchtime-talk", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/lunchtimetalk_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+
 
     {
         artworURLString: "dzata-the-institute-of-technological-consciousness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
@@ -25,10 +34,26 @@ const sliderImages = [
         }],
   },
     
+     {
+        artworURLString: "live-coding-for-performance", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/livecoding_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
         {
-        artworURLString: "dzata-live-scored-performance", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "live-scored-performance-of-dzata", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/dzata2_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+            {
+        artworURLString: "choreographing-web-environments", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/choreo_thumb.png",
             alt: "Artwork image"
         }],
   },
@@ -50,9 +75,9 @@ const sliderImages = [
   },
     
     {
-        artworURLString: "feeling-machines-st-annes-house", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "divination-is-an-intimate-affair", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
-            url: "../img/2022/weekender_thumb.png",
+            url: "../img/2022/digitalwitch_thumb.png",
             alt: "Artwork image"
         }],
   },
