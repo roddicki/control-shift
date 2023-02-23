@@ -91,6 +91,14 @@ const sliderImages = [
   },
     
         {
+        artworURLString: "the-phone-project", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/phone_thumb.png",
+            alt: "Artwork image"
+        }],
+  },
+    
+        {
         artworURLString: "rare-earth-walks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/rareearth_thumb.png",
