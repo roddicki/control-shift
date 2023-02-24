@@ -5,7 +5,7 @@ const sliderImages = [
         artworURLString: "giant-tactile-robots", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/airgiants_thumb.png",
-            alt: "Artwork image"
+            alt: "Two children hug an illuminated inflatable robot in a park"
         }],
   },
 
@@ -13,7 +13,7 @@ const sliderImages = [
         artworURLString: "algorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/algorave_thumb.png",
-            alt: "Artwork image"
+            alt: "A man with a wooly hat on DJ-ing, with pink and polka dots projected image over him and the wall"
         }],
   },
     
@@ -21,7 +21,7 @@ const sliderImages = [
         artworURLString: "lunchtime-talk", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/lunchtimetalk_thumb.png",
-            alt: "Artwork image"
+            alt: "A grid of people on a zoom screen showing art"
         }],
   },
 
@@ -30,7 +30,7 @@ const sliderImages = [
         artworURLString: "dzata-the-institute-of-technological-consciousness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/dzata1_thumb.png",
-            alt: "Artwork image"
+            alt: "Three futuristic people hike across a rock face seen from distance, and above, the golden rocks look like a close up of wrinkled skin "
         }],
   },
     
@@ -38,7 +38,7 @@ const sliderImages = [
         artworURLString: "live-coding-for-performance", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/livecoding_thumb.png",
-            alt: "Artwork image"
+            alt: "A man DJ-ing in front of bright green, blue, purple, pink glitched projected image over him and the wall."
         }],
   },
     
@@ -46,7 +46,7 @@ const sliderImages = [
         artworURLString: "live-scored-performance-of-dzata", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/dzata2_thumb.png",
-            alt: "Artwork image"
+            alt: "Three futuristic masked people stand on a hill in front of a mountain, they are carrying backpacks, which are laboratory containing the cosmos. "
         }],
   },
     
@@ -54,7 +54,7 @@ const sliderImages = [
         artworURLString: "choreographing-web-environments", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/choreo_thumb.png",
-            alt: "Artwork image"
+            alt: "A woman kneels on a stage in front of a laptop and microphone holding a manuscript, in front is a large projection of a website."
         }],
   },
     
@@ -62,7 +62,7 @@ const sliderImages = [
         artworURLString: "keeping-in-touch", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/keeping_thumb.png",
-            alt: "Artwork image"
+            alt: "An animated gif of a woman staring, deep in thought out of the window, they sit on an armchair with a bold print. The image glitches in yellow, green, pink, red and blue"
         }],
   },
 
@@ -70,7 +70,7 @@ const sliderImages = [
         artworURLString: "periodical", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/perodical_thumb.png",
-            alt: "Artwork image"
+            alt: "A linocut print of a body with faceless features on thick paper"
         }],
   },
     
@@ -78,7 +78,7 @@ const sliderImages = [
         artworURLString: "divination-is-an-intimate-affair", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/digitalwitch_thumb.png",
-            alt: "Artwork image"
+            alt: "The text -the working class is a daughter- is written above a digital render of a sheet, and blue triangle graphics"
         }],
   },
     
@@ -86,7 +86,7 @@ const sliderImages = [
         artworURLString: "drawing-sound-networks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/prrrrrt_thumb.png",
-            alt: "Artwork image"
+            alt: "Close up of someone holding a printed circuit board, wires come of of the top of the board, and the board has a spotty and stripy design"
         }],
   },
     
@@ -94,7 +94,7 @@ const sliderImages = [
         artworURLString: "the-phone-project", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/phone_thumb.png",
-            alt: "Artwork image"
+            alt: "Two hands, one holds a phone and the other, painted with red nail polish ,zooms in with two fingers. The phone is off"
         }],
   },
     
@@ -102,14 +102,14 @@ const sliderImages = [
         artworURLString: "rare-earth-walks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/rareearth_thumb.png",
-            alt: "Artwork image"
+            alt: "A fragment of a rock, wrapped in a copper bow "
         }],
   },
     {
         artworURLString: "ai-tattoo", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "https://lh3.googleusercontent.com/eiUrYtl8mf5sscDBhtCMugAr-adAfmmuLJaKIdd5CnQT3z3OTdWp6m_mf29NFf6uV6AE8N_7o73fqbHcUKjzMOoCNL4NBu8_gUQGuSGtCMtwIzcScJIxgsqbmHYstthFDQ0AKIp6TQ=w2400",
-            alt: "Artwork image"
+            alt: "A white, femme appearing person looks through the lens of a camera at their intricate tattoo on their arm. The black and white tattoo is of a winding snake with dancing creatures attached."
         }],
   },
     {
@@ -117,30 +117,30 @@ const sliderImages = [
         images: [
             {
                 url: "../img/2022/poem_site/1.jpg",
-                alt: "Artwork image"
+                alt: "A collage of a pink flower with long stamen and green leaf with text inside three bubbles - the garden - the nasturtiums - the rose bush"
             },
             {
                 url: "../img/2022/poem_site/2.png",
-                alt: "Artwork image"
+                alt: "A brightly coloured collage of orange flowers, green leaves and a telegraph pole"
             },
             {
                 url: "../img/2022/poem_site/3.jpg",
-                alt: "Artwork image"
+                alt: "Text in a box - the scraggaly wild rose bush grew fast and raggid throughout the year, though we seem to always be cutting it back"
             },
             {
                 url: "../img/2022/poem_site/4.png",
-                alt: "Artwork image"
+                alt: "multi-coloured wires in a server room looking like woven fabric arranged on a frame"
             },
             {
                 url: "../img/2022/poem_site/5.jpg",
-                alt: "Artwork image"
+                alt: "A cut out of a yellow flower, the image is textured, and there are drops of water on the petals"
         }],
   },
     {
         artworURLString: "set-scripted-emergent-togetherness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/SET_install_thumb.png",
-            alt: "Artwork image"
+            alt: "A collage features the names of some feelings in handwritten form on a grid drawn in wobbly lines: calm, interested, annoyed, slow, excited, released, sad, tired, happy, anxious, rested, joyful, grateful, relaxed, sleepy, understood, questioning, amused, amazed, exhausted, clarity, full. Cut-out scans of stim bracelets surround some of the words, and some of the lines consist of rearranged stim bracelet pieces."
         }],
   },
     {
@@ -148,37 +148,37 @@ const sliderImages = [
         images: [
             {
                 url: "../img/2022/poem_workshop/1.jpg",
-                alt: "Artwork image"
+                alt: "Three gloves on a flagstone pavement, made into a digital collage with orange, yellow and green. The text says - why are lost gloves so strangely expressive? Once you start looking for them you see them everywhere-"
 
             },
             {
                 url: "../img/2022/poem_workshop/2.jpg",
-                alt: "Artwork image"
+                alt: "A workshop, someone sits, and someone stands pointing to a projection on the wall"
             },
             {
                 url: "../img/2022/poem_workshop/3.jpg",
-                alt: "Artwork image"
+                alt: "A pink website with a retro apple computer and nokia phone"
             },
             {
                 url: "../img/2022/poem_workshop/4.jpg",
-                alt: "Artwork image"
+                alt: "A website with an image of a jaffa cake chopped in half and digestive biscuit, website code is on left of screen"
             }, {
                 url: "../img/2022/poem_workshop/5.jpg",
-                alt: "Artwork image"
+                alt: "another image of laptop screen with digestive biscuit on a blue background with text - dunk me but not for too long. Text under the jaffa cake reads - don't even think about it. Text under ginger biscuit - the original dunker, dunk me forever xxx"
             }, {
                 url: "../img/2022/poem_workshop/6.jpg",
-                alt: "Artwork image"
+                alt: "A laptop screen with a zig zag pattern and a curled up insect"
             },
             {
                 url: "../img/2022/poem_workshop/7.jpg",
-                alt: "Artwork image"
+                alt: "In a workshop people are looking at images on screens"
         }],
   },
     {
         artworURLString: "show-and-share", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/QTB_thumb.png",
-            alt: "Artwork image"
+            alt: "A woman with long hair sits at a computer, the image is textured and looks retro. Written are the words -queer tech bristol, Tuesday 15th November, 6-8pm, PM Studio, Watershed-"
         }],
   },
     {
@@ -187,30 +187,30 @@ const sliderImages = [
 
             {
                 url: "../img/2022/SET_workshop/1.png",
-                alt: "Artwork image"
+                alt: "In a blue lit space a woman lies on a textured mat, speaking to someone in their phone, their face is lit by the light of the phone."
             },
             {
                 url: "../img/2022/SET_workshop/2.png",
-                alt: "Artwork image"
+                alt: "A grid of people on a zoom workshop, in one of the squares there are people around a table"
             },
             {
                 url: "../img/2022/SET_workshop/3.png",
-                alt: "Artwork image"
+                alt: "A collection of deep green and red maple leaf, an acorn, a sicamore seed, an honesty seed"
             },
             {
                 url: "../img/2022/SET_workshop/4.png",
-                alt: "Artwork image"
+                alt: "people sit around a table focusing on something they are reading whilst text is projected on a screen in a blue lit room"
             },
             {
                 url: "../img/2022/SET_workshop/5.png",
-                alt: "Artwork image"
+                alt: "Someone on a call, looking at a tablet wearing headphones"
         }],
   },
     {
         artworURLString: "introducing-feeling-machines", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/introducing_thumb.png",
-            alt: "Artwork image"
+            alt: ""
         }],
   },
     {
@@ -218,27 +218,27 @@ const sliderImages = [
         images: [
             {
                 url: "../img/2022/The_Almost/0.jpg",
-                alt: "Artwork image"
+                alt: "A painting of a figure emerging out of the backdrop of a phone, being held. Painted in a textural way, with neon yellows, reds, and blues."
             },
             {
                 url: "../img/2022/The_Almost/1.jpg",
-                alt: "Artwork image"
+                alt: "Close up of a painted hand"
             },
             {
                 url: "../img/2022/The_Almost/2.jpeg",
-                alt: "Artwork image"
+                alt: "A close up of painting of a figure emerging out of the backdrop of a phone, being held. Painted in a textural way, with neon yellows, reds, and blues"
             },
             {
                 url: "../img/2022/The_Almost/4.jpg",
-                alt: "Artwork image"
+                alt: "A close up of painting of an arm in neon colours"
             },
             {
                 url: "../img/2022/The_Almost/5.jpeg",
-                alt: "Artwork image"
+                alt: "A close up of painting of two figures"
             },
             {
                 url: "../img/2022/The_Almost/6.jpg",
-                alt: "Artwork image"
+                alt: "Close up of a painted fragment"
             }
     ],
   },
