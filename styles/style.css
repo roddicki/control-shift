@@ -1907,3 +1907,58 @@ a:hover.mainLinkText {
 .dontDisplayUntilLoad {
     display: none;
 }
+
+/* Filter Button Styles on artworks page */
+
+.filterInputs {
+    padding-bottom: 5px;
+}
+
+.filterInputs input {
+    display: none;
+    /* does not display tick box as per normal radio button */
+}
+
+.filterInputs label {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    /* prevent highlight */
+}
+
+.filterInputs i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.time-filter input:checked + i {
+    background: var(--mid-primary);
+}
+
+.time-filter {
+    font-weight: bolder;
+    color: var(--dark-primary);
+    border: 1px solid var(--dark-primary);
+    font-family: var(--font-large-headings);
+}
+
+.online-filter {
+    font-weight: bolder;
+    color: var(--dark-link);
+    border: 1px solid var(--dark-link);
+    font-family: var(--font-large-headings);
+}
+
+.online-filter input:checked + i {
+    background: var(--dark-link);
+}
+
+label input[type="radio"]:checked ~ span {
+    color: var(--background);
+}
