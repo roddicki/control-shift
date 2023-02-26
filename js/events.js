@@ -91,7 +91,8 @@ function formatProgEvents(data) {
       endDate = new Date(data[i]["end-date"]);
     }
     let card = document.createElement("div");
-    card.className = "col-md-4 pt-4 pb-3";
+    let filters = "StAnnes"
+    card.className = `col-md-4 pt-4 pb-3 data-filterable=${filters}`;
     card.onclick = function() {
       location.href = "artwork.html?artwork=" + slug;
     };
