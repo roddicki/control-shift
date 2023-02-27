@@ -1283,25 +1283,25 @@ input:-webkit-autofill {
     z-index: -1;
 }
 
-.time-filter input:checked + i {
+.location-filter input:checked + i {
     background: var(--mid-primary);
 }
 
-.time-filter {
+.location-filter {
     font-weight: bolder;
     color: var(--dark-primary);
     border: 1px solid var(--dark-primary);
     font-family: var(--font-large-headings);
 }
 
-.online-filter {
+.date-filter {
     font-weight: bolder;
     color: var(--dark-link);
     border: 1px solid var(--dark-link);
     font-family: var(--font-large-headings);
 }
 
-.online-filter input:checked + i {
+.date-filter input:checked + i {
     background: var(--dark-link);
 }
 
@@ -1910,6 +1910,7 @@ a:hover.mainLinkText {
 
 /* Filter Button Styles on artworks page */
 
+
 .filterInputs {
     padding-bottom: 5px;
 }
@@ -1937,28 +1938,32 @@ a:hover.mainLinkText {
     z-index: -1;
 }
 
-.time-filter input:checked + i {
+.location-filter input:checked + i {
     background: var(--mid-primary);
 }
 
-.time-filter {
+.location-filter {
     font-weight: bolder;
     color: var(--dark-primary);
     border: 1px solid var(--dark-primary);
-    font-family: var(--font-large-headings);
+    font-family: var(--font-small-headings);
 }
 
-.online-filter {
+.date-filter {
     font-weight: bolder;
     color: var(--dark-link);
     border: 1px solid var(--dark-link);
-    font-family: var(--font-large-headings);
+    font-family: var(--font-small-headings);
 }
 
-.online-filter input:checked + i {
+.date-filter input:checked + i {
     background: var(--dark-link);
 }
 
 label input[type="radio"]:checked ~ span {
     color: var(--background);
+}
+
+#noEvents-placeholder {
+    display: none;
 }

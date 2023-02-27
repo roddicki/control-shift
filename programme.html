@@ -40,19 +40,22 @@
             <br><br> Most of the programme is FREE, with the exception of the Algorave and Dzata live scored perfromance. 
         </p>
         <div class="filterInputs">
-            <label class="time-filter"><input type="radio" name="location" value="" checked><i></i><span>All</span></label>
-            <label class="time-filter"><input type="radio" name="location" value="LostHorizon"><i></i><span>Last Horizonn</span></label>
-            <label class="time-filter"><input type="radio" name="location" value="exhibition"><i></i><span>Arnolfini</span></label>
-            <label class="time-filter"><input type="radio" name="location" value="StAnnesHouse"><i></i><span>St Annes House</span></label>
-            <label class="time-filter"><input type="radio" name="location" value="PervasiveMediaStudio"><i></i><span>Pervasive Media Studio</span></label>
+            <label class="location-filter all"><input type="radio" name="filter" value="" checked><i></i><span>All</span></label>
+            <label class="location-filter"><input type="radio" name="filter" value="LostHorizon"><i></i><span>Last Horizonn</span></label>
+            <label class="location-filter"><input type="radio" name="filter" value="Arnolfini"><i></i><span>Arnolfini</span></label>
+            <label class="location-filter"><input type="radio" name="filter" value="StAnnesHouse"><i></i><span>St Annes House</span></label>
+            <label class="location-filter"><input type="radio" name="filter" value="PervasiveMediaStudio"><i></i><span>Pervasive Media Studio</span></label>
         </div> 
         <div class="filterInputs pb-3">
-            <label class="online-filter"><input type="radio" name="date" value="2023-03-30"><i></i><span>Thurs 30.03</span></label>
-            <label class="online-filter"><input type="radio" name="date" value="2023-03-31"><i></i><span>Fri 31.03</span></label>
-            <label class="online-filter"><input type="radio" name="date" value="2023-04-01"><i></i><span>Sat 01.04</span></label>
-            <label class="online-filter"><input type="radio" name="date" value="2023-04-02"><i></i><span>Sun 02.04</span></label>
+            <label class="date-filter"><input type="radio" name="filter" value="2023-03-30"><i></i><span>Thurs 30.03</span></label>
+            <label class="date-filter"><input type="radio" name="filter" value="2023-03-31"><i></i><span>Fri 31.03</span></label>
+            <label class="date-filter"><input type="radio" name="filter" value="2023-04-01"><i></i><span>Sat 01.04</span></label>
+            <label class="date-filter"><input type="radio" name="filter" value="2023-04-02"><i></i><span>Sun 02.04</span></label>
         </div>
         <div id="upcoming-events" class="row pb-3">
+            <div class="pl-3" id="noEvents-placeholder">
+                <p>There are no events matching this filter</p>
+            </div>
             <div id="loading-placeholder">
                 <h2>Loading upcoming events</h2>
                 <img class="spinner-image" src="/img/2022/weekender_thumb.png" alt="spinning image">
@@ -62,28 +65,7 @@
 
         <h1 class="pt-4 past-events-title text-muted" id="pastEventsTitle">Past Events</h1>
         <!-- row  -->
-        <div id="past-events" class="row pb-3">
-            <!-- inject events -->
-
-            <!-- artist block -->
-            <!-- <div class="col-md-4 artworkImageDiv pt-4 pb-3">
-                <a href="artwork.html?artwork=Oracle_Bots" data-id="DANAE and Annika Kappner" class="thumbnail">
-                    <div class="blueSquare">
-                        <img src="2020/img/artists-work/oracle-bot_thumb.png" alt="image of robot in blue on pink and black background" class=" mx-auto d-block artworkImage img-fluid" id="artworkID">
-                    </div>
-                </a>
-                <div>
-                    <a href="artwork.html?artwork=Oracle_Bots" class="mainLinkText">
-                        <div class="gridText gridTitle pt-4 text-center" id="gridTitleHighlight">Oracle Bots</div>
-                        <div class="gridText gridAbout pt-0 text-center"> by DANAE and Annika Kappner</div>
-                        <div class="gridText gridAbout pt-0 text-center"> 30 Nov 2022</div>
-                        <div class="gridText aboutText pt-2 text-center">Workshop for coding Bots that provided spiritual advice</div>
-                    </a>
-                </div>
-            </div> -->
-            <!-- artist block -->
-
-        </div>
+        <div id="past-events" class="row pb-3"></div>
         <!-- row  -->
 
     </div>

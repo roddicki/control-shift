@@ -94,11 +94,11 @@ function formatProgEvents(data) {
 
     // setting data-attribute on artist divs so user can filter by date and location
     const dateString = data[i]["start-date"];
-    const regex = new RegExp('^\\d{4}-\\d{2}-\\d{2}');
+    const regex = new RegExp("^\\d{4}-\\d{2}-\\d{2}");
     const match = dateString.match(regex);
-    const dateFilter = match ? match[0] : '';
+    const dateFilter = match ? match[0] : "";
     let filters = `${data[i]["location-filter"]} ${dateFilter}`;
-    card.setAttribute("data-filterable", filters)
+    card.setAttribute("data-filterable", filters);
 
     card.className = `col-md-4 pt-4 pb-3`;
     card.onclick = function() {
@@ -173,38 +173,48 @@ function formatProgEvents(data) {
   }
 
   // FILTER FUNCTIONALITY
-  const el_filters = document.querySelectorAll( '[name="location"], [name="date"]'), 
-  el_filterable = document.querySelectorAll("[data-filterable]");
-  console.log('el_filters', el_filters, 'el_filterable', el_filterable)
+  const el_filters = document.querySelectorAll('[name="filter"]'),
+    el_filterable = document.querySelectorAll("[data-filterable]");
   const applyFilter = () => {
-    console.log('inside applyFilter')
     // Filter checked inputs
     const el_checked = [...el_filters].filter((el) => el.checked && el.value);
-    console.log('el_checked', el_checked)
     // Collect checked inputs values to array
     const filters = [...el_checked].map((el) => el.value);
-    console.log('filters', filters)
     // Get elements to filter
-    console.log('el_filterable inside', el_filterable)
     const el_filtered = [...el_filterable].filter((el) => {
-      console.log('el', el)
       const props = el
         .getAttribute("data-filterable")
         .trim()
         .split(/\s+/);
       return filters.every((fi) => props.includes(fi));
     });
-    console.log('el_filtered', el_filtered)
+    el_filtered.length === 0 ? document.getElementById("noEvents-placeholder").style.display = "inline" : document.getElementById("noEvents-placeholder").style.display = "none";
     // Hide all
     el_filterable.forEach((el) => el.classList.add("is-hidden"));
     // Show filtered
     el_filtered.forEach((el) => el.classList.remove("is-hidden"));
+
+    if (document.querySelector("#past-events").hasChildNodes()) {
+      let array = [ ...document.querySelector("#past-events").childNodes ];
+      // onnly show 'past events' title if there are past events there
+      let someShow = false;
+      array.forEach(el => {
+        if(!el.className.includes('is-hidden')) someShow = true;
+      })
+      if (!someShow) {
+        document.getElementById("pastEventsTitle").style.display = "none"
+      } else {
+        document.getElementById("pastEventsTitle").style.display = "block"
+      }
+    } 
   };
   // Assign event listener
   el_filters.forEach((el) => el.addEventListener("change", applyFilter));
+
+
+
   // Init
   applyFilter();
-
 }
 
 // INDIVIDUAL ARTWORK FORMATTING
@@ -415,7 +425,6 @@ function getProgrammeData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
-      console.log('prgramme data', data)
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
       // now the data has loaded:
