@@ -93,13 +93,13 @@ function formatProgEvents(data) {
     let card = document.createElement("div");
 
     // setting data-attribute on artist divs so user can filter by date and location
-    const dateString = data[i]["start-date"];
-    const regex = new RegExp("^\\d{4}-\\d{2}-\\d{2}");
-    const match = dateString.match(regex);
-    const dateFilter = match ? match[0] : "";
-    let filters = `${data[i]["location-filter"]} ${dateFilter}`;
+    let filters = `${data[i]["location-filter"]} ${data[i]["date-filter"]}`;
     card.setAttribute("data-filterable", filters);
 
+    if (data[i]["title-of-work"] === "Lunchtime talk") {
+      console.log(data[i]["date-filter"], filters)
+
+    }
     card.className = `col-md-4 pt-4 pb-3`;
     card.onclick = function() {
       location.href = "artwork.html?artwork=" + slug;
@@ -188,6 +188,7 @@ function formatProgEvents(data) {
         .split(/\s+/);
       return filters.every((fi) => props.includes(fi));
     });
+    console.log('el_filtered', el_filtered)
     el_filtered.length === 0
       ? (document.getElementById("noEvents-placeholder").style.display =
           "inline")
@@ -427,6 +428,7 @@ function getProgrammeData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
+      console.log('data', data)
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
       // now the data has loaded:
