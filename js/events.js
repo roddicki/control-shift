@@ -188,30 +188,32 @@ function formatProgEvents(data) {
         .split(/\s+/);
       return filters.every((fi) => props.includes(fi));
     });
-    el_filtered.length === 0 ? document.getElementById("noEvents-placeholder").style.display = "inline" : document.getElementById("noEvents-placeholder").style.display = "none";
+    el_filtered.length === 0
+      ? (document.getElementById("noEvents-placeholder").style.display =
+          "inline")
+      : (document.getElementById("noEvents-placeholder").style.display =
+          "none");
     // Hide all
     el_filterable.forEach((el) => el.classList.add("is-hidden"));
     // Show filtered
     el_filtered.forEach((el) => el.classList.remove("is-hidden"));
 
     if (document.querySelector("#past-events").hasChildNodes()) {
-      let array = [ ...document.querySelector("#past-events").childNodes ];
+      let array = [...document.querySelector("#past-events").childNodes];
       // onnly show 'past events' title if there are past events there
       let someShow = false;
-      array.forEach(el => {
-        if(!el.className.includes('is-hidden')) someShow = true;
-      })
+      array.forEach((el) => {
+        if (!el.className.includes("is-hidden")) someShow = true;
+      });
       if (!someShow) {
-        document.getElementById("pastEventsTitle").style.display = "none"
+        document.getElementById("pastEventsTitle").style.display = "none";
       } else {
-        document.getElementById("pastEventsTitle").style.display = "block"
+        document.getElementById("pastEventsTitle").style.display = "block";
       }
-    } 
+    }
   };
   // Assign event listener
   el_filters.forEach((el) => el.addEventListener("change", applyFilter));
-
-
 
   // Init
   applyFilter();
@@ -430,6 +432,10 @@ function getProgrammeData() {
       // now the data has loaded:
       document.getElementById("loading-placeholder").style.display = "none";
       document.getElementById("pastEventsTitle").style.display = "block";
+      let filterBar = document.getElementsByClassName("filterInputs");
+      for (let item of filterBar) {
+        item.style.display = "block";
+      }
     },
   });
 }
