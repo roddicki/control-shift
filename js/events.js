@@ -79,40 +79,6 @@ function formatEvents(data) {
 // format incoming data from google sheet
 // split into past and upcoming based on date
 function formatProgEvents(data) {
-  
-  // FILTER FUNCTIONALITY
-  const el_filters = document.querySelectorAll( '[name="location"], [name="online"]'), 
-  el_filterable = document.querySelectorAll("[data-filterable]");
-  console.log('el_filters', el_filters, 'el_filterable', el_filterable)
-  const applyFilter = () => {
-    console.log('inside applyFilter')
-    // Filter checked inputs
-    const el_checked = [...el_filters].filter((el) => el.checked && el.value);
-    console.log('el_checked', el_checked)
-    // Collect checked inputs values to array
-    const filters = [...el_checked].map((el) => el.value);
-    console.log('filters', filters)
-    // Get elements to filter
-    console.log('el_filterable inside', el_filterable)
-    const el_filtered = [...el_filterable].filter((el) => {
-      console.log('el', el)
-      const props = el
-        .getAttribute("data-filterable")
-        .trim()
-        .split(/\s+/);
-      return filters.every((fi) => props.includes(fi));
-    });
-    console.log('el_filtered', el_filtered)
-    // Hide all
-    el_filterable.forEach((el) => el.classList.add("is-hidden"));
-    // Show filtered
-    el_filtered.forEach((el) => el.classList.remove("is-hidden"));
-  };
-  // Assign event listener
-  el_filters.forEach((el) => el.addEventListener("change", applyFilter));
-  // Init
-  applyFilter();
-
   for (var i = 0; i < data.length; i++) {
     let dateNow = new Date();
     dateNow.setDate(dateNow.getDate() - 1);
@@ -125,9 +91,15 @@ function formatProgEvents(data) {
       endDate = new Date(data[i]["end-date"]);
     }
     let card = document.createElement("div");
-    let test = data[i]["location-filter"] === "StAnnesHouse" ? "online" : "person";
-    let filters = `${data[i]["location-filter"]} ${test}`;
+
+    // setting data-attribute on artist divs so user can filter by date and location
+    const dateString = data[i]["start-date"];
+    const regex = new RegExp('^\\d{4}-\\d{2}-\\d{2}');
+    const match = dateString.match(regex);
+    const dateFilter = match ? match[0] : '';
+    let filters = `${data[i]["location-filter"]} ${dateFilter}`;
     card.setAttribute("data-filterable", filters)
+
     card.className = `col-md-4 pt-4 pb-3`;
     card.onclick = function() {
       location.href = "artwork.html?artwork=" + slug;
@@ -199,6 +171,40 @@ function formatProgEvents(data) {
       document.querySelector("#past-events").appendChild(card);
     }
   }
+
+  // FILTER FUNCTIONALITY
+  const el_filters = document.querySelectorAll( '[name="location"], [name="date"]'), 
+  el_filterable = document.querySelectorAll("[data-filterable]");
+  console.log('el_filters', el_filters, 'el_filterable', el_filterable)
+  const applyFilter = () => {
+    console.log('inside applyFilter')
+    // Filter checked inputs
+    const el_checked = [...el_filters].filter((el) => el.checked && el.value);
+    console.log('el_checked', el_checked)
+    // Collect checked inputs values to array
+    const filters = [...el_checked].map((el) => el.value);
+    console.log('filters', filters)
+    // Get elements to filter
+    console.log('el_filterable inside', el_filterable)
+    const el_filtered = [...el_filterable].filter((el) => {
+      console.log('el', el)
+      const props = el
+        .getAttribute("data-filterable")
+        .trim()
+        .split(/\s+/);
+      return filters.every((fi) => props.includes(fi));
+    });
+    console.log('el_filtered', el_filtered)
+    // Hide all
+    el_filterable.forEach((el) => el.classList.add("is-hidden"));
+    // Show filtered
+    el_filtered.forEach((el) => el.classList.remove("is-hidden"));
+  };
+  // Assign event listener
+  el_filters.forEach((el) => el.addEventListener("change", applyFilter));
+  // Init
+  applyFilter();
+
 }
 
 // INDIVIDUAL ARTWORK FORMATTING
