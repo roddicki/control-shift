@@ -8,6 +8,13 @@ const sliderImages = [
             alt: "Two children hug an illuminated inflatable robot in a park"
         }],
   },
+  {
+    artworURLString: "marbling-with-machine-bodies", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+    images: [{
+        url: "../img/2022/jo-wilk-min.jpeg",
+        alt: "Drawing tools as an assistive aids - spinning plate with marbling paint on it."
+    }],
+},
 
     {
         artworURLString: "algorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
