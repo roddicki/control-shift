@@ -1,6 +1,14 @@
 // FOR 2022 EVENTS !!!!
 // SET IMAGES FOR SLIDER HERE
 const sliderImages = [
+    
+    {
+        artworURLString: "no-light-work", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/nolight_thumb.png",
+            alt: "Absract lines and shapes arranged on a red and black background"
+        }],
+  },
     {
         artworURLString: "giant-tactile-robots", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
