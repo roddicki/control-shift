@@ -19,7 +19,7 @@ const sliderImages = [
   {
     artworURLString: "marbling-with-machine-bodies", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
     images: [{
-        url: "../img/2022/jo-wilk-min.jpeg",
+        url: "../img/2022/marbling.png",
         alt: "Drawing tools as an assistive aids - spinning plate with marbling paint on it."
     }],
 },
