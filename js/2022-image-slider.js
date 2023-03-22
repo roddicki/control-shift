@@ -3,7 +3,7 @@
 const sliderImages = [
    
     {
-        artworURLString: "st-annes-house-live-broardcast", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        artworURLString: "st-annes-house-live-broadcast", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/st-annes_thumb.png",
             alt: "Two people stand in front of St Annes House, a large office style building"
