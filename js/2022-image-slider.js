@@ -1,6 +1,22 @@
 // FOR 2022 EVENTS !!!!
 // SET IMAGES FOR SLIDER HERE
 const sliderImages = [
+   
+    {
+        artworURLString: "st-annes-house-live-broardcast", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/st-annes_thumb.png",
+            alt: "Two people stand in front of St Annes House, a large office style building"
+        }],
+  },
+    
+    {
+        artworURLString: "from-cyber-punk-to-time-hunting", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/podcast_thumb.png",
+            alt: "A brightly coloured illustration of the artists"
+        }],
+  },
     
     {
         artworURLString: "no-light-work", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
