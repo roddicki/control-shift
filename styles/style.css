@@ -1222,7 +1222,7 @@ input:-webkit-autofill {
 .artwork-type {
     font-family: var(--font-small-headings);
     position: relative;
-    font-size: 15px;
+    /* font-size: 15px; */
     margin-bottom: 0;
     /*left: 10px;
     min-height: 60px;*/
