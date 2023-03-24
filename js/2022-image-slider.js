@@ -6,7 +6,7 @@ const sliderImages = [
         artworURLString: "st-annes-house-live-broadcast", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/st-annes_thumb.png",
-            alt: "Two people stand in front of St Annes House, a large office style building"
+            alt: "Two people stand in front of St Annes House, a large office style building",
         }],
   },
     
@@ -14,7 +14,7 @@ const sliderImages = [
         artworURLString: "from-cyber-punk-to-time-hunting", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/podcast_thumb.png",
-            alt: "A brightly coloured illustration of the artists"
+            alt: "A brightly coloured illustration of the artists",
         }],
   },
     
@@ -22,21 +22,23 @@ const sliderImages = [
         artworURLString: "no-light-work", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/nolight_thumb.png",
-            alt: "Absract lines and shapes arranged on a red and black background"
+            alt: "Absract lines and shapes arranged on a red and black background",
         }],
   },
     {
         artworURLString: "giant-tactile-robots", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/airgiants_thumb.png",
-            alt: "Two children hug an illuminated inflatable robot in a park"
+            alt: "Two children hug an illuminated inflatable robot in a park",
+            credit: "Air Giants"
         }],
   },
   {
     artworURLString: "marbling-with-machine-bodies", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
     images: [{
         url: "../img/2022/marbling.png",
-        alt: "Drawing tools as an assistive aids - spinning plate with marbling paint on it."
+        alt: "Drawing tools as an assistive aids - spinning plate with marbling paint on it.",
+        credit: "Joseph Wilk"
     }],
 },
 
@@ -44,7 +46,8 @@ const sliderImages = [
         artworURLString: "algorave", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/algorave_thumb.png",
-            alt: "A man with a wooly hat on DJ-ing, with pink and polka dots projected image over him and the wall"
+            alt: "A man with a wooly hat on DJ-ing, with pink and polka dots projected image over him and the wall",
+            credit: "Richard Hodgkinson"
         }],
   },
     
@@ -148,23 +151,28 @@ const sliderImages = [
         images: [
             {
                 url: "../img/2022/poem_site/1.jpg",
-                alt: "A collage of a pink flower with long stamen and green leaf with text inside three bubbles - the garden - the nasturtiums - the rose bush"
+                alt: "A collage of a pink flower with long stamen and green leaf with text inside three bubbles - the garden - the nasturtiums - the rose bush",
+                credit: "Harriet Horobin-Worley"
             },
             {
                 url: "../img/2022/poem_site/2.png",
-                alt: "A brightly coloured collage of orange flowers, green leaves and a telegraph pole"
+                alt: "A brightly coloured collage of orange flowers, green leaves and a telegraph pole",
+                credit: "Harriet Horobin-Worley"
             },
             {
                 url: "../img/2022/poem_site/3.jpg",
-                alt: "Text in a box - the scraggaly wild rose bush grew fast and raggid throughout the year, though we seem to always be cutting it back"
+                alt: "Text in a box - the scraggaly wild rose bush grew fast and raggid throughout the year, though we seem to always be cutting it back",
+                credit: "Harriet Horobin-Worley"
             },
             {
                 url: "../img/2022/poem_site/4.png",
-                alt: "multi-coloured wires in a server room looking like woven fabric arranged on a frame"
+                alt: "multi-coloured wires in a server room looking like woven fabric arranged on a frame",
+                credit: "Harriet Horobin-Worley"
             },
             {
                 url: "../img/2022/poem_site/5.jpg",
-                alt: "A cut out of a yellow flower, the image is textured, and there are drops of water on the petals"
+                alt: "A cut out of a yellow flower, the image is textured, and there are drops of water on the petals",
+                credit: "Harriet Horobin-Worley"
         }],
   },
     {
@@ -305,12 +313,17 @@ const imageLoaded = result.images.map(function (image, i) {
         imageInnerDiv.setAttribute("class", "project-image");
     }
 
+    let credit = document.createElement("p");
+    credit.className = "image-credit pt-2";
+    credit.innerHTML = image.credit ? `Image credit: ${image.credit}` : "";
     sliderElem = document.createElement("img");
     sliderElem.setAttribute("class", "sliderImage");
     sliderElem.setAttribute("src", image.url);
     sliderElem.setAttribute("alt", image.alt);
     // add slider element
     imageInnerDiv.appendChild(sliderElem);
+    imageInnerDiv.appendChild(credit)
+
     imageOuterDiv.appendChild(imageInnerDiv);
     sliderContainer.appendChild(imageOuterDiv);
 });

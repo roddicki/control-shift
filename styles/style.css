@@ -1220,7 +1220,10 @@ input:-webkit-autofill {
 }
 
 .artwork-type {
+    font-family: var(--font-small-headings);
     position: relative;
+    font-size: 15px;
+    margin-bottom: 0;
     /*left: 10px;
     min-height: 60px;*/
 }
@@ -1912,4 +1915,10 @@ label input[type="radio"]:checked ~ span {
 
 #noEvents-placeholder {
     display: none;
+}
+
+
+.image-credit {
+    text-align: center;
+    font-size: 15px;
 }

@@ -97,8 +97,7 @@ function formatProgEvents(data) {
     card.setAttribute("data-filterable", filters);
 
     if (data[i]["title-of-work"] === "Lunchtime talk") {
-      console.log(data[i]["date-filter"], filters)
-
+      console.log(data[i]["date-filter"], filters);
     }
     card.className = `col-md-4 pt-4 pb-3`;
     card.onclick = function() {
@@ -188,7 +187,7 @@ function formatProgEvents(data) {
         .split(/\s+/);
       return filters.every((fi) => props.includes(fi));
     });
-    console.log('el_filtered', el_filtered)
+    console.log("el_filtered", el_filtered);
     el_filtered.length === 0
       ? (document.getElementById("noEvents-placeholder").style.display =
           "inline")
@@ -201,6 +200,7 @@ function formatProgEvents(data) {
 
     if (document.querySelector("#past-events").hasChildNodes()) {
       let array = [...document.querySelector("#past-events").childNodes];
+      console.log("ARRAY", array);
       // onnly show 'past events' title if there are past events there
       let someShow = false;
       array.forEach((el) => {
@@ -254,10 +254,19 @@ function formatEventPage(slug, data) {
       let artistName = document.querySelector(".artist-name-text");
       artistName.innerHTML = data[i]["artist-name"];
 
-      let eventType = `<span>${data[i]["artwork-type"]}</span>`;
-
+      // Adding artwork type
       let artworkType = document.querySelector(".artwork-type");
-      artworkType.innerHTML = eventType;
+      artworkType.innerHTML = data[i]["artwork-type"];
+      
+      // Adding location to furthest left column
+      let locationInfo = document.querySelector(".locationInfo");
+      let eventLocation = "";
+      if (data[i]["link-1"]) {
+        eventLocation = `<a class="map-icon" href=${data[i]["link-1"]} target="_blank">${data[i]["link-1-text"]}</a>`;
+      } else if (data[i]["link-1-text"]) {
+        eventLocation = data[i]["link-1-text"];
+      }
+      locationInfo.innerHTML += eventLocation;
 
       // date column
       let artworkDate = document.querySelector(".artwork-date");
@@ -299,33 +308,37 @@ function formatEventPage(slug, data) {
 
       // booking call to action columns and links
       let linkTwoText = data[i]["link-2-text"];
-      if (linkTwoText || data[i]["link-1-text"]) {
+      if (linkTwoText) {
         let col = document.createElement("div");
         col.className = "col-sm";
-        let header = document.createElement("h2");
-        header.className = "pt-2 pb-3 text-center artwork-book";
+        let linkTwoH2 = document.createElement("h2");
+        linkTwoH2.className = "pt-2 text-center artwork-book";
+        linkTwoLink = data[i]["link-2"];
+        let artworkBooking;
+        if (linkTwoLink) {
+          artworkBooking = `<div><a class="linkTwo" target="_blank" href=${data[i]["link-2"]}>${linkTwoText}</a></div>`;
+        } else {
+          artworkBooking = `${linkTwoText}<br>`;
+        }
+        linkTwoH2.innerHTML = artworkBooking;
 
-        if (linkTwoText) {
-          linkTwoLink = data[i]["link-2"];
-          let artworkBooking;
-          if (linkTwoLink) {
-            artworkBooking = `<div class="pb-2"><a class="linkTwo" target="_blank" href=${data[i]["link-2"]}>${linkTwoText}</a></div>`;
+        
+        let linkThreeH2 = document.createElement("h2");
+        linkThreeH2.className = "pt-2 text-center artwork-book";
+        let artworkBookingTwo;
+        if (data[i]["link-3-text"]) {
+          console.log('data',data[i]["link-3"],data[i]["link-3-text"])
+          if (data[i]["link-3"]) {
+            artworkBookingTwo = `<div><a class="linkTwo" target="_blank" href=${data[i]["link-3"]}>${data[i]["link-3-text"]}</a></div>`;
           } else {
-            artworkBooking = `${linkTwoText}<br>`;
+            artworkBookingTwo = `${data[i]["link-3"]}<br>`;
           }
-          header.innerHTML = artworkBooking;
+          linkThreeH2.innerHTML += artworkBookingTwo;
         }
 
-        let eventLocation = "";
-        if (data[i]["link-1"]) {
-          eventLocation = `<a class="map-icon" href=${data[i]["link-1"]}>${data[i]["link-1-text"]}</a>`;
-        } else if (data[i]["link-1-text"]) {
-          eventLocation = data[i]["link-1-text"];
-        }
+        col.appendChild(linkTwoH2);
+        col.appendChild(linkThreeH2);
 
-        header.innerHTML += eventLocation;
-
-        col.appendChild(header);
         let artworkInfoRow = document.querySelector(".artwork-info");
         artworkInfoRow.appendChild(col);
       }
@@ -428,7 +441,7 @@ function getProgrammeData() {
     data: { get_param: "value" },
     dataType: "json",
     success: function(data) {
-      console.log('data', data)
+      console.log("data", data);
       let sortedData = data.sort(custom_sort);
       formatProgEvents(sortedData);
       // now the data has loaded:
