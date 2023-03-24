@@ -15,6 +15,7 @@ const sliderImages = [
         images: [{
             url: "../img/2022/podcast_thumb.png",
             alt: "A brightly coloured illustration of the artists",
+            credit: "Container / Lucy J Turner",
         }],
   },
     
@@ -23,6 +24,7 @@ const sliderImages = [
         images: [{
             url: "../img/2022/nolight_thumb.png",
             alt: "Absract lines and shapes arranged on a red and black background",
+            credit: "David Matunda",
         }],
   },
     {
@@ -64,7 +66,8 @@ const sliderImages = [
         artworURLString: "dzata-the-institute-of-technological-consciousness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/dzata1_thumb.png",
-            alt: "Three futuristic people hike across a rock face seen from distance, and above, the golden rocks look like a close up of wrinkled skin "
+            alt: "Three futuristic people hike across a rock face seen from distance, and above, the golden rocks look like a close up of wrinkled skin ",
+            credit: "Drone Still by Haroon Gunn-Salie. Courtesy of Russel Hlongwane, Francois Knoetze, Amy Louise Wilson",
         }],
   },
     
@@ -72,15 +75,17 @@ const sliderImages = [
         artworURLString: "live-coding-for-performance", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/livecoding_thumb.png",
-            alt: "A man DJ-ing in front of bright green, blue, purple, pink glitched projected image over him and the wall."
+            alt: "A man DJ-ing in front of bright green, blue, purple, pink glitched projected image over him and the wall.",
+            credit: "Marcin Sz",
         }],
   },
     
         {
         artworURLString: "live-scored-performance-of-dzata", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
-            url: "../img/2022/dzata2_thumb.png",
-            alt: "Three futuristic masked people stand on a hill in front of a mountain, they are carrying backpacks, which are laboratory containing the cosmos. "
+            url: "../img/2022/dzata3_thumb.png",
+            alt: "A messy futuristic scene with a man in front of a big yellow lit table",
+            credit: "Russel Hlongwane, Francois Knoetze, Amy Louise Wilson",
         }],
   },
     
@@ -88,7 +93,8 @@ const sliderImages = [
         artworURLString: "choreographing-web-environments", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/choreo_thumb.png",
-            alt: "A woman kneels on a stage in front of a laptop and microphone holding a manuscript, in front is a large projection of a website."
+            alt: "A woman kneels on a stage in front of a laptop and microphone holding a manuscript, in front is a large projection of a website.",
+            credit: "Ana Caria and Leonor Fonseca",
         }],
   },
     
@@ -96,7 +102,8 @@ const sliderImages = [
         artworURLString: "keeping-in-touch", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/keeping_thumb.png",
-            alt: "An animated gif of a woman staring, deep in thought out of the window, they sit on an armchair with a bold print. The image glitches in yellow, green, pink, red and blue"
+            alt: "An animated gif of a woman staring, deep in thought out of the window, they sit on an armchair with a bold print. The image glitches in yellow, green, pink, red and blue",
+            credit: "Giulia Carla Rossi",
         }],
   },
 
@@ -104,7 +111,9 @@ const sliderImages = [
         artworURLString: "periodical", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/perodical_thumb.png",
-            alt: "A linocut print of a body with faceless features on thick paper"
+            alt: "A linocut print of a body with faceless features on thick paper",
+            credit: "Wisterlitz",
+            
         }],
   },
     
@@ -112,7 +121,8 @@ const sliderImages = [
         artworURLString: "divination-is-an-intimate-affair", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/digitalwitch_thumb.png",
-            alt: "The text -the working class is a daughter- is written above a digital render of a sheet, and blue triangle graphics"
+            alt: "The text -the working class is a daughter- is written above a digital render of a sheet, and blue triangle graphics",
+            credit: "DANNEA",
         }],
   },
     
@@ -120,7 +130,8 @@ const sliderImages = [
         artworURLString: "drawing-sound-networks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/prrrrrt_thumb.png",
-            alt: "Close up of someone holding a printed circuit board, wires come of of the top of the board, and the board has a spotty and stripy design"
+            alt: "Close up of someone holding a printed circuit board, wires come of of the top of the board, and the board has a spotty and stripy design",
+            credit: "PRRRRRT!",
         }],
   },
     
@@ -128,7 +139,7 @@ const sliderImages = [
         artworURLString: "the-phone-project", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/phone_thumb.png",
-            alt: "Two hands, one holds a phone and the other, painted with red nail polish ,zooms in with two fingers. The phone is off"
+            alt: "Two hands, one holds a phone and the other, painted with red nail polish ,zooms in with two fingers. The phone is off",
         }],
   },
     
@@ -136,14 +147,16 @@ const sliderImages = [
         artworURLString: "rare-earth-walks", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/rareearth_thumb.png",
-            alt: "A fragment of a rock, wrapped in a copper bow "
+            alt: "A fragment of a rock, wrapped in a copper bow ",
+            credit: "Max Dovey",
         }],
   },
     {
         artworURLString: "ai-tattoo", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "https://lh3.googleusercontent.com/eiUrYtl8mf5sscDBhtCMugAr-adAfmmuLJaKIdd5CnQT3z3OTdWp6m_mf29NFf6uV6AE8N_7o73fqbHcUKjzMOoCNL4NBu8_gUQGuSGtCMtwIzcScJIxgsqbmHYstthFDQ0AKIp6TQ=w2400",
-            alt: "A white, femme appearing person looks through the lens of a camera at their intricate tattoo on their arm. The black and white tattoo is of a winding snake with dancing creatures attached."
+            alt: "A white, femme appearing person looks through the lens of a camera at their intricate tattoo on their arm. The black and white tattoo is of a winding snake with dancing creatures attached.",
+            credit: "Alice Stewart",
         }],
   },
     {
@@ -179,7 +192,7 @@ const sliderImages = [
         artworURLString: "set-scripted-emergent-togetherness", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
             url: "../img/2022/SET_install_thumb.png",
-            alt: "A collage features the names of some feelings in handwritten form on a grid drawn in wobbly lines: calm, interested, annoyed, slow, excited, released, sad, tired, happy, anxious, rested, joyful, grateful, relaxed, sleepy, understood, questioning, amused, amazed, exhausted, clarity, full. Cut-out scans of stim bracelets surround some of the words, and some of the lines consist of rearranged stim bracelet pieces."
+            alt: "A collage features the names of some feelings in handwritten form on a grid drawn in wobbly lines: calm, interested, annoyed, slow, excited, released, sad, tired, happy, anxious, rested, joyful, grateful, relaxed, sleepy, understood, questioning, amused, amazed, exhausted, clarity, full. Cut-out scans of stim bracelets surround some of the words, and some of the lines consist of rearranged stim bracelet pieces.",
         }],
   },
     {
