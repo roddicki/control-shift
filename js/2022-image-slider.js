@@ -2,6 +2,24 @@
 // SET IMAGES FOR SLIDER HERE
 const sliderImages = [
    
+    
+    {
+        artworURLString: "algozine", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/zine_thumb.png",
+            alt: "A hand written zine with illustration drawn in felt-tip pen",
+        }],
+  },
+    
+    {
+        artworURLString: "look-up", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
+        images: [{
+            url: "../img/2022/look_thumb.png",
+            alt: "Colourful digital blocks in a grid",
+        }],
+  },
+    
+    
     {
         artworURLString: "st-annes-house-live-broadcast", //must match url param, ex - https://www.control-shift.network/artwork.html?artwork=poem-garden would be "poem-garden" 
         images: [{
