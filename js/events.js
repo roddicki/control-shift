@@ -258,6 +258,12 @@ function formatEventPage(slug, data) {
       let artworkType = document.querySelector(".artwork-type");
       artworkType.innerHTML = data[i]["artwork-type"];
 
+      if (!data[i]["link-1-text"] && !data[i]["link-2-text"] && data[i]["start-date"]) {
+        let noShowLine = document.getElementsByClassName("hide-when-empty");
+        for (let item of noShowLine) {
+          item.style.display = "none";
+        }
+      }
       // Adding location to furthest left column
       if (data[i]["link-1-text"]){
         let col = document.createElement("div");
