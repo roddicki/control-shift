@@ -257,16 +257,27 @@ function formatEventPage(slug, data) {
       // Adding artwork type
       let artworkType = document.querySelector(".artwork-type");
       artworkType.innerHTML = data[i]["artwork-type"];
-      
+
       // Adding location to furthest left column
-      let locationInfo = document.querySelector(".locationInfo");
-      let eventLocation = "";
-      if (data[i]["link-1"]) {
-        eventLocation = `<a class="map-icon" href=${data[i]["link-1"]} target="_blank">${data[i]["link-1-text"]}</a>`;
-      } else if (data[i]["link-1-text"]) {
-        eventLocation = data[i]["link-1-text"];
+      if (data[i]["link-1-text"]){
+        let col = document.createElement("div");
+        col.className = "col-sm pt-2";
+        let text = document.createElement("h2")
+        text.className = "locationInfo text-center"
+        let eventLocation = "";
+        if (data[i]["link-1"]) {
+          eventLocation = `<a class="map-icon" href=${data[i]["link-1"]} target="_blank">${data[i]["link-1-text"]}</a>`;
+        } else if (data[i]["link-1-text"]) {
+          eventLocation = data[i]["link-1-text"];
+        }
+        text.innerHTML += eventLocation;
+        col.appendChild(text);
+        let artworkInfoRow = document.querySelector(".artwork-info");
+        artworkInfoRow.appendChild(col);
       }
-      locationInfo.innerHTML += eventLocation;
+
+
+
 
       // date column
       let artworkDate = document.querySelector(".artwork-date");
