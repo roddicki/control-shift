@@ -28,60 +28,37 @@
 </head>
 
 <body>
-    <div id="navbar"></div>
-
-
-
-    <!-- <div class="container home-page-content height-100 v-center"> -->
-    <div class="container home-page-content nav-bar-space">
-        <div id="sketch-container"></div>
-            <div class="feeling intro">
-                <h1 class="pt-4 text-nowrap">Feeling<br>Machines</h1>
-            </div>
+    <div class="feeling intro">
+    <div class="site-logo col-4">
+        <a  aria-label="Site logo" href="https://control-shift.io/">
+      <svg id="xshift-OG-1" data-name="CONTROL xshift" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 915.42 344.47">
+  <g id="b" data-name="Original">
+    <g id="c" data-name="CONTROL">
+      <path id="d" data-name="C" class="t" d="M63.18,163.1c-19.42,0-34.8-5.41-46.15-16.24C5.67,136.04,0,120.54,0,100.37v-37.64C0,42.57,5.67,27.08,17.03,16.24,28.38,5.42,43.76,0,63.18,0s34.17,5.27,44.7,15.8c10.53,10.53,15.8,24.98,15.8,43.35v1.34h-29.13v-2.24c0-9.26-2.58-16.88-7.73-22.85-5.15-5.97-13.03-8.96-23.64-8.96s-18.67,3.21-24.64,9.63c-5.98,6.42-8.96,15.16-8.96,26.21v38.54c0,10.9,2.99,19.6,8.96,26.1,5.97,6.5,14.19,9.75,24.64,9.75s18.49-3.03,23.64-9.07c5.15-6.05,7.73-13.63,7.73-22.74v-4.03h29.13v3.14c0,18.37-5.27,32.82-15.8,43.35-10.53,10.53-25.43,15.79-44.7,15.79Z"/>
+      <path id="e" data-name="O" class="t" d="M201.05,163.1c-19.72,0-35.4-5.41-47.05-16.24-11.65-10.83-17.47-26.33-17.47-46.49v-37.64c0-20.16,5.83-35.66,17.47-46.49C165.65,5.42,181.34,0,201.05,0s35.4,5.42,47.05,16.24c11.65,10.83,17.47,26.33,17.47,46.49v37.64c0,20.16-5.82,35.66-17.47,46.49-11.65,10.83-27.33,16.24-47.05,16.24ZM201.05,136.67c11.05,0,19.64-3.21,25.77-9.63,6.12-6.42,9.18-15.01,9.18-25.76v-39.43c0-10.75-3.06-19.34-9.18-25.76-6.13-6.42-14.71-9.63-25.77-9.63s-19.46,3.21-25.65,9.63c-6.2,6.42-9.3,15.01-9.3,25.76v39.43c0,10.75,3.1,19.34,9.3,25.76,6.2,6.42,14.75,9.63,25.65,9.63Z"/>
+      <path id="f" data-name="N" class="t" d="M277.99,159.97V3.14h56.24l31.14,136.67h4.03V3.14h29.13v156.83h-56.23l-31.14-136.67h-4.03v136.67h-29.13Z"/>
+      <path id="g" data-name="T" class="t" d="M455.95,159.97V30.02h-45.71V3.14h120.98v26.89h-45.71v129.95h-29.57Z"/>
+      <path id="h" data-name="R" class="t" d="M543.75,159.97V3.14h68.11c9.86,0,18.44,1.72,25.76,5.15,7.32,3.44,13,8.29,17.03,14.56s6.05,13.67,6.05,22.18v2.69c0,9.41-2.24,17.03-6.72,22.85-4.48,5.83-10.01,10.08-16.58,12.77v4.03c5.97.3,10.6,2.35,13.89,6.16,3.28,3.81,4.93,8.85,4.93,15.12v51.31h-29.57v-47.05c0-3.58-.93-6.5-2.8-8.74-1.87-2.24-4.97-3.36-9.3-3.36h-41.22v59.15h-29.57ZM573.33,73.94h35.4c7.02,0,12.51-1.9,16.47-5.71,3.96-3.81,5.94-8.85,5.94-15.12v-2.24c0-6.27-1.94-11.32-5.83-15.12-3.89-3.81-9.41-5.71-16.58-5.71h-35.4v43.91Z"/>
+      <path id="i" data-name="O2" class="t" d="M737.22,163.1c-19.72,0-35.4-5.41-47.05-16.24-11.65-10.83-17.47-26.33-17.47-46.49v-37.64c0-20.16,5.83-35.66,17.47-46.49,11.65-10.83,27.33-16.24,47.05-16.24s35.4,5.42,47.05,16.24c11.65,10.83,17.47,26.33,17.47,46.49v37.64c0,20.16-5.82,35.66-17.47,46.49-11.65,10.83-27.33,16.24-47.05,16.24ZM737.22,136.67c11.05,0,19.64-3.21,25.77-9.63,6.12-6.42,9.18-15.01,9.18-25.76v-39.43c0-10.75-3.06-19.34-9.18-25.76-6.13-6.42-14.71-9.63-25.77-9.63s-19.46,3.21-25.65,9.63c-6.2,6.42-9.3,15.01-9.3,25.76v39.43c0,10.75,3.1,19.34,9.3,25.76,6.2,6.42,14.75,9.63,25.65,9.63Z"/>
+      <path id="j" data-name="L" class="t" d="M814.15,159.97V3.14h29.57v129.95h71.69v26.89h-101.27Z"/>
+    </g>
+    <g id="k" data-name="xshift">
+      <path id="l" data-name="S" class="t" d="M61.61,344.47c-12.1,0-22.78-2.17-32.04-6.5-9.26-4.33-16.51-10.53-21.73-18.6-5.23-8.06-7.84-17.77-7.84-29.13v-6.27h29.12v6.27c0,9.41,2.91,16.47,8.74,21.17,5.83,4.7,13.74,7.06,23.75,7.06s17.73-2.02,22.74-6.05,7.51-9.19,7.51-15.46c0-4.33-1.23-7.84-3.7-10.53-2.46-2.69-6.05-4.89-10.75-6.61-4.71-1.72-10.42-3.32-17.14-4.82l-5.15-1.12c-10.75-2.39-19.98-5.41-27.67-9.07-7.69-3.66-13.59-8.48-17.7-14.45-4.11-5.97-6.16-13.74-6.16-23.3s2.28-17.73,6.83-24.53c4.56-6.79,10.98-12.02,19.27-15.68,8.29-3.66,18.04-5.49,29.24-5.49s21.17,1.91,29.91,5.71c8.74,3.81,15.61,9.49,20.61,17.03,5,7.54,7.51,16.99,7.51,28.34v6.72h-29.13v-6.72c0-5.97-1.16-10.79-3.47-14.45-2.32-3.66-5.64-6.35-9.97-8.06-4.33-1.72-9.48-2.58-15.46-2.58-8.96,0-15.57,1.68-19.83,5.04s-6.38,7.95-6.38,13.78c0,3.89,1.01,7.17,3.02,9.86,2.02,2.69,5.04,4.93,9.07,6.72,4.03,1.79,9.19,3.36,15.46,4.71l5.15,1.12c11.2,2.39,20.95,5.45,29.24,9.19,8.29,3.73,14.75,8.66,19.38,14.79,4.63,6.13,6.95,13.97,6.95,23.52s-2.43,17.96-7.28,25.21c-4.86,7.25-11.73,12.92-20.61,17.03-8.89,4.11-19.38,6.16-31.48,6.16Z"/>
+      <path id="original-xshift" data-name="H" class="t" d="M129.65,341.33v-156.83h29.57v64.75h58.25v-64.75h29.58v156.83h-29.58v-65.2h-58.25v65.2h-29.57Z"/>
+      <path id="original-xshifti" data-name="I" class="t" d="M262.75,341.33v-156.83h29.57v156.83h-29.57Z"/>
+      <path id="original-xshiftf" data-name="F" class="t" d="M308.03,341.33v-156.83h98.58v26.89h-69.01v37.86h63.63v26.88h-63.63v65.2h-29.57Z"/>
+      <path id="original-xshiftt" data-name="T2" class="t" d="M463,341.33v-129.95h-45.71v-26.89h120.99v26.89h-45.71v129.95h-29.57Z"/>
+    </g>
+  </g>
+</svg>
+    </a>
+         <br>
+        <p>We have a new website! 
+            <br>
+            <a href="https://control-shift.io/" >www.control-shift.io</a></p>
+    
+     </div><!-- .site-branding -->
     </div>
-    <section class="pt-4" id="events">
-        <div class="container events">
-            <!-- row  -->
-            <div class="row">
-                <div class="col-sm">
-                    <p>In a time when phone apps define who our friends and lovers are, when AI have become artists, and algorithms decide the music that moves us we ask what it feels like to feel with machines. How do digital technologies intertwine with the most intimate aspects of our lives?
-                    </p>
-                    <p>We are taking a deep dive into the sticky, messy, fluffy ways that we live our lives within the binary logics of digital machines. </p>
-
-                    <h1 class="pt-4">Upcoming Events</h1>
-                    <p class="b-text-spacing"><strong>Join us for the <a class="feeling-paragraph" href="programme.html">Feeling Machines Weekender</a> programme of installations, workshops and events, Thursday 30 March to Sunday 2 April</strong> </p>
-                    <!-- <p>data from this <a href="https://docs.google.com/spreadsheets/d/1fynslgkkR_e_GHcTjv65E_9fQL8XSgt4Iwy_ymVO2k8/edit#gid=0">Google sheet</a></p> -->
-                    <div id="loading-placeholder" style="margin-bottom: 40px">
-                        <h2>Loading upcoming events</h2>
-                        <img class="spinner-image" src="/img/2022/weekender_thumb.png" alt="spinning image">
-                    </div>
-                    <div class="upcoming-events"></div>
-                </div>
-            </div>
-            <!-- row  -->
-        </div>
-    </section>
-    <!-- Include Footer -->
-    <div id="footer"></div>
-
-    <!-- jQuery, Popper.js, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        $('#navbar').load('./components/navigation.html');
-        $('#head').load('./components/head.html');
-        $('#footer').load('./components/footer.html');
-
-    </script>
-    <script src="https://cdn.enable.co.il/licenses/enable-L6149fc2kjs39v6-0720-14619/init.js"></script>
-    <script src="js/events.js"></script>
-    <script>
-        //get jsom data 
-        getHomePageData();
-
-    </script>
 </body>
 
 </html>
